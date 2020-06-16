@@ -1,0 +1,8 @@
+_resources/
+options/
+*.exe
+*.win
+*.ini
+*.zip
+*.lnk
+*.mp3
