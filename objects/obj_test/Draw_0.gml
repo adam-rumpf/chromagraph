@@ -12,5 +12,12 @@ for (var i = 0; i < array_height_2d(part); i++)
 	for (var j = 0; j < array_length_2d(part, i); j++)
 		draw_text_color(50 + 50*j, 400 + 50*i, string(part[i,j]), c_white, c_white, c_white, c_white, 1);
 }*/
+/*if (room == rm_puzzle_coloring)
+	draw_text_color(200, 375, string(eo), c_white, c_white, c_white, c_white, 1);*/
 if (room == rm_puzzle_coloring)
-	draw_text_color(200, 375, string(eo), c_white, c_white, c_white, c_white, 1);
+{
+	for (var i = 0; i < array_length_1d(g.v); i++)
+	{
+		draw_text_color(50 + 50*i, 400, string(scr_vertex_degree(g.v[i], 0)), c_white, c_white, c_white, c_white, 1);
+	}
+}

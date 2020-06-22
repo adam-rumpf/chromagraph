@@ -1,6 +1,6 @@
 //###
 
-if (room == rm_puzzle_coloring)
+/*if (room == rm_puzzle_coloring)
 {
 	var vo = [];
 	var part;
@@ -15,4 +15,7 @@ if (room == rm_puzzle_coloring)
 		}
 	}
 	eo = scr_partitioned_spanning_tree(part, vo);
-}
+}*/
+
+if (room == rm_puzzle_coloring)
+	g = instance_create_layer(0, 0, "Graph", obj_graph);

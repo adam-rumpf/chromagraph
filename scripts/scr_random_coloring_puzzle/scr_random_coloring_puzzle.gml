@@ -35,6 +35,9 @@ var part = scr_partition_sequence(vi, c, eps);
 // Initialize edge object list as a spanning tree to ensure connectivity
 var eo = scr_partitioned_spanning_tree(part, vo);
 
+// Generate additional edges to raise the total
+var eo_new = scr_partitioned_additional_edges(part, vo, eo, m, deg2);
+
 
 
 
@@ -53,3 +56,5 @@ for (var i = 0; i < array_height_2d(part); i++)
 	for (var j = 0; j < array_length_2d(part, i); j++)
 		vo[part[i,j]].label = i;
 }
+
+return scr_create_graph(vo, eo);

@@ -72,9 +72,7 @@ while (total > 0)
 	var v = vo[partp[jj,vi]];
 	
 	// Define an edge between the vertices
-	eo[m] = instance_create_layer(mean(u.x,v.x), mean(u.y,v.y), "Graph", obj_edge);
-	eo[m].tail = u;
-	eo[m].head = v;
+	eo[m] = scr_create_edge(u, v);
 	m++;
 	
 	// Mark the new vertex as processed
@@ -83,19 +81,4 @@ while (total > 0)
 	total--;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-return vo;//###
+return eo;
