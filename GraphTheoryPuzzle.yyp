@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "1441660c-3e51-41cc-8eb0-c0b7399c01e4",
-            "Value": {
-                "id": "ae4ce816-69ba-4a5c-9235-37392e5b2677",
-                "resourcePath": "views\\1441660c-3e51-41cc-8eb0-c0b7399c01e4.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "1a3805be-d642-4c7e-bb0b-241cc9c286b4",
             "Value": {
                 "id": "b54521fd-f48b-4f68-b02f-c1b505107a2c",
@@ -68,6 +60,14 @@
                 "id": "925a1b0c-10b8-4537-985c-b8e5af245d88",
                 "resourcePath": "views\\30ca1fb5-0289-4764-82f4-f0e542936bf1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "33dc680b-45fa-4496-b379-0c95a4e923ac",
+            "Value": {
+                "id": "8d1f6429-d964-47ba-a8db-9b0568f2f869",
+                "resourcePath": "rooms\\rm_puzzle_coloring\\rm_puzzle_coloring.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -159,18 +159,18 @@
             }
         },
         {
-            "Key": "a964218f-fe80-4c4d-a37b-9641a7495923",
-            "Value": {
-                "id": "4c046110-cc89-4675-bd63-f5d8d201b051",
-                "resourcePath": "rooms\\rm_coloring\\rm_coloring.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "aa3276fd-4728-464e-af4b-92ef451d8c5f",
             "Value": {
                 "id": "6479d74d-81bb-4ebd-bf72-bc71fed5b7f1",
                 "resourcePath": "views\\aa3276fd-4728-464e-af4b-92ef451d8c5f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "af1aae07-2b1d-44e8-8207-6841d9d45e0e",
+            "Value": {
+                "id": "c06bab91-31e0-4a39-9122-eb4a6125ba31",
+                "resourcePath": "views\\6c26d34e-557a-435e-a5ec-e71dcc572ed3-room.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -242,7 +242,7 @@
             "Key": "db1ff5fc-e441-4f8e-aef1-b6f00b7844de",
             "Value": {
                 "id": "0a51c2aa-365a-4d7d-adc3-5394a008e2ba",
-                "resourcePath": "scripts\\scr_random_coloring\\scr_random_coloring.yy",
+                "resourcePath": "scripts\\scr_random_coloring_puzzle\\scr_random_coloring_puzzle.yy",
                 "resourceType": "GMScript"
             }
         },
