@@ -32,7 +32,22 @@ for (var i = 0; i < n; i++)
 // Generate color class partition
 var part = scr_partition_sequence(vi, c, eps);
 
+// Initialize edge object list as a spanning tree to ensure connectivity
+var eo = scr_partitioned_spanning_tree(part, vo);
+
+
+
+
+
+
+
+
+
+
+
+
 //###
+// Initialize correct vertex labels for testing.
 for (var i = 0; i < array_height_2d(part); i++)
 {
 	for (var j = 0; j < array_length_2d(part, i); j++)

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0a4a40e9-dd31-4908-ab03-98235cbc33e6",
+            "Value": {
+                "id": "b90ce3c3-4eea-4f37-9f9c-6e73a9ea9c76",
+                "resourcePath": "scripts\\scr_choose_nonnegative_2d\\scr_choose_nonnegative_2d.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1a3805be-d642-4c7e-bb0b-241cc9c286b4",
             "Value": {
                 "id": "b54521fd-f48b-4f68-b02f-c1b505107a2c",
@@ -52,6 +60,14 @@
                 "id": "d51addbb-2f12-4be2-8947-17a2c8f853b8",
                 "resourcePath": "views\\221beae0-c15c-401d-be16-256523e86f20.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "29f9663b-ca32-4064-a146-fb9a9cfc5f17",
+            "Value": {
+                "id": "60e8e200-663b-4de0-8164-288363213d68",
+                "resourcePath": "scripts\\scr_choose_nonnegative_partition\\scr_choose_nonnegative_partition.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -207,6 +223,14 @@
             }
         },
         {
+            "Key": "bb6c3adf-3a08-4dfc-a8e8-2cddcc617ba6",
+            "Value": {
+                "id": "9ac49575-0dc4-4ec2-8859-2a3e735a7b83",
+                "resourcePath": "scripts\\scr_count_nonnegative_2d\\scr_count_nonnegative_2d.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c4cf0024-a034-4d0d-a717-d356490f08d4",
             "Value": {
                 "id": "2d40616d-1d13-41fa-8988-7a17e7d4383e",
@@ -260,6 +284,14 @@
                 "id": "69859755-0b47-4a7c-8670-165a6f7bd066",
                 "resourcePath": "views\\df099003-ebf8-411b-b642-0fb83c57d376.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e325f5de-d903-4619-b98e-a0c3d9021692",
+            "Value": {
+                "id": "b092393f-6c7a-4ef0-9068-cfe7d3cd1e6b",
+                "resourcePath": "scripts\\scr_partitioned_spanning_tree\\scr_partitioned_spanning_tree.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -322,6 +354,10 @@
     "script_order": [
         "ecaccff7-9907-4f1b-aa6a-528583e24875",
         "f7bcaa5f-2e89-4c4c-b04b-fdc04256a734",
+        "e325f5de-d903-4619-b98e-a0c3d9021692",
+        "bb6c3adf-3a08-4dfc-a8e8-2cddcc617ba6",
+        "0a4a40e9-dd31-4908-ab03-98235cbc33e6",
+        "29f9663b-ca32-4064-a146-fb9a9cfc5f17",
         "db1ff5fc-e441-4f8e-aef1-b6f00b7844de",
         "c7c4dde3-2677-44cd-aff9-d1c60a6c0601"
     ],
