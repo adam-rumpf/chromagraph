@@ -24,4 +24,4 @@ if (n < 1)
 	return -1;
 // Otherwise, return a random choice
 else
-	return ind[irandom(array_length_1d(ind)-1)];
+	return ind[irandom(n-1)];

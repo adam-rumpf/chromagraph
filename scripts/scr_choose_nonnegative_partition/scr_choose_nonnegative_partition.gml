@@ -22,4 +22,4 @@ if (n < 1)
 	return -1;
 // Otherwise, return a random choice
 else
-	return rows[irandom(array_length_1d(rows)-1)];
+	return rows[irandom(n-1)];

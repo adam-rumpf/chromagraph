@@ -9,10 +9,9 @@ part = argument[0];
 vo = argument[1];
 
 // Initialize objects
-var eo; // edge object list
+var eo = []; // edge object list
+var m = 0; // length of edge list
 var seg = array_height_2d(part); // number of partitions
-var partu; // unprocessed vertex IDs (partitioned)
-var partp; // processed vertex IDs (partitioned)
 
 // Initialize processed and unprocessed vertex lists
 var partu; // unprocessed vertex IDs (partitioned; -1 as a placeholder for unprocessed IDs)
@@ -32,22 +31,21 @@ for (var i = 0; i < seg; i++)
 // Choose an initial vertex to process
 var ii = scr_choose_nonnegative_partition(partu);
 var ui = scr_choose_nonnegative_2d(partu, ii);
-var u = partu[ii,ui];
 
 // Move the vertex from unprocessed to processed
+partp[ii,ui] = partu[ii,ui];
 partu[ii,ui] = -1;
-partp[ii,ui] = u;
 total--;
 
-// Choose vertices and add edges as long as there remain unprocessed vertices
+// Add edges between processed and unprocessed vertices until all vertices are processed
 while (total > 0)
 {
 	// Choose an unprocessed vertex
 	var ii = scr_choose_nonnegative_partition(partu);
 	var ui = scr_choose_nonnegative_2d(partu, ii);
-	var u = partu[ii,ui];
+	var u = vo[partu[ii,ui]];
 	
-	// Make a list of all partitions containing at least one unprocessed element
+	// Make a list of all partitions containing at least one processed element
 	var rows = [];
 	var choices = 0; // number of valid choices
 	for (var i = 0; i < seg; i++)
@@ -57,27 +55,32 @@ while (total > 0)
 			continue;
 		
 		// Count as a valid choice if there is at least one nonzero index
-		if (scr_count_nonnegative_2d(partu, i) > 0)
+		if (scr_count_nonnegative_2d(partp, i) > 0)
 		{
 			rows[choices] = i;
 			choices++;
 		}
 	}
 	
+	// If no other partition is valid, restart
+	if (choices < 1)
+		continue;
 	
+	// Otherwise, pick another partition and a processed vertex from that partition
+	var jj = rows[irandom(choices-1)];
+	var vi = scr_choose_nonnegative_2d(partp, jj);
+	var v = vo[partp[jj,vi]];
 	
+	// Define an edge between the vertices
+	eo[m] = instance_create_layer(mean(u.x,v.x), mean(u.y,v.y), "Graph", obj_edge);
+	eo[m].tail = u;
+	eo[m].head = v;
+	m++;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	break;//###
+	// Mark the new vertex as processed
+	partp[ii,ui] = partu[ii,ui];
+	partu[ii,ui] = -1;
+	total--;
 }
 
 
@@ -95,4 +98,4 @@ while (total > 0)
 
 
 
-return partu;//###
+return vo;//###

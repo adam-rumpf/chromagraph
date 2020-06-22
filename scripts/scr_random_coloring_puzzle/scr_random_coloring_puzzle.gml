@@ -15,8 +15,8 @@ eps = argument[3];
 deg2 = argument[4];
 
 // Generate a vertex list
-var vo; // vertex objects
-var vi; // vertex indices
+var vo = []; // vertex objects
+var vi = []; // vertex indices
 for (var i = 0; i < n; i++)
 {
 	// Label vertices 0, 1, ..., n-1
