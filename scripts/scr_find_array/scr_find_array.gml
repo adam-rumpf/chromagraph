@@ -2,7 +2,7 @@
 /// @desc Finds the first occurrence of a specified element in a 1D array and returns its index.
 /// @param {real[]} arr Array to search.
 /// @param {real} elem Element to search for.
-/// @returns {int} First array index corresponding to specified element (or -1 if not found).
+/// @return {int} First array index corresponding to specified element (or -1 if not found).
 
 // Rename arguments
 var arr, elem;

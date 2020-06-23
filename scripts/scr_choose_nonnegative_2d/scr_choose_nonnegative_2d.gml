@@ -2,7 +2,7 @@
 /// @desc Chooses the index of a random nonnegative element from a 2D array at a specified index.
 /// @param {real[]} arr Array to be chosen from.
 /// @param {int} index Index of array to be chosen from.
-/// @returns {real} Randomly-chosen index of a nonnegative element (or -1 if none exists).
+/// @return {real} Randomly-chosen index of a nonnegative element (or -1 if none exists).
 
 // Rename arguments
 var arr = argument[0];

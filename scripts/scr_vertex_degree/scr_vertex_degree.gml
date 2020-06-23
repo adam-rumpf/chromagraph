@@ -2,7 +2,7 @@
 /// @desc Calculates the degree of a vertex.
 /// @param {obj_vertex} v Vertex object.
 /// @param {int} flag Set to 0 to calculate undirected degree, -1 to calculate indegree, and +1 to calculate outdegree.
-/// @returns {int} Degree of vertex.
+/// @return {int} Degree of vertex.
 
 // Rename arguments
 var v, flag;

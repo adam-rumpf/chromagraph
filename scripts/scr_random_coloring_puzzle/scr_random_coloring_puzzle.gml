@@ -5,7 +5,7 @@
 /// @param {int} c Number of color classes.
 /// @param {real} eps Color class unevenness parameter.
 /// @param {bool} deg2 If true, forces all degrees to be at least 2.
-/// @returns {obj_graph} Graph object corresponding to created puzzle.
+/// @return {obj_graph} Graph object corresponding to created puzzle.
 
 // Rename arguments
 var n, m, c, eps, deg2;

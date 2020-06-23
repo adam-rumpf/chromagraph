@@ -2,7 +2,7 @@
 /// @desc Creates a graph object and returns its ID.
 /// @param {obj_vertex[]} v List of vertex objects.
 /// @param {obj_edge[]} e List of edge objects.
-/// @returns {obj_graph} Created graph object.
+/// @return {obj_graph} Created graph object.
 
 // Rename arguments
 var v, e;
