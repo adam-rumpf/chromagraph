@@ -1,7 +1,8 @@
 /// @func scr_find_array_row(arr, elem)
-/// @desc Finds the (first) row of a 2D array to which a specified element belongs and returns its index (or -1 if not found).
+/// @desc Finds the (first) row of a 2D array to which a specified element belongs and returns its index.
 /// @param {real[]} arr Array to search.
 /// @param {real} elem Element to search for.
+/// @returns {int} First row index containing the specified element (or -1 if not found).
 
 // Rename arguments
 var arr, elem;

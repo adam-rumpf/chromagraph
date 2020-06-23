@@ -2,6 +2,7 @@
 /// @desc Returns a random index where a specified element occurs.
 /// @param {real[]} arr Array to search.
 /// @param {real} elem Element to search for.
+/// @returns {int} Randomly-chosen index corresponding to the specified element (or -1 if none exists).
 
 // Rename arguments
 var arr, elem;

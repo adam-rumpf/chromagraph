@@ -2,6 +2,7 @@
 /// @desc Generates a list of edges for a spanning tree such that vertices in the same partition are nonadjacent.
 /// @param {int[]} part List of lists corresponding to the vertex IDs in each partition.
 /// @param {obj_vertex[]} vo List of vertex objects.
+/// @returns {obj_edge[]} Array of created edge objects.
 
 // Rename arguments
 var part, vo;

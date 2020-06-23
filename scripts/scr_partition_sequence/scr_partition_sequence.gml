@@ -3,6 +3,7 @@
 /// @param {real[]} seq Array to be partitioned.
 /// @param {int} seg Number of partitions to create.
 /// @param {real} eps Unevenness parameter, representing how far partition boundaries are allowed to deviate from being as even as possible.
+/// @returns {real[]} 2D array whose rows correspond to the partitions.
 
 // Rename arguments
 var seq, seg, eps;

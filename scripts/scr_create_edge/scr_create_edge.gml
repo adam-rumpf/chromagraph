@@ -2,6 +2,7 @@
 /// @desc Creates an edge object and returns its ID.
 /// @param {int} tail Tail vertex ID.
 /// @param {int} head Head vertex ID.
+/// @returns {obj_edge} Created edge object.
 
 // Rename arguments
 var tail, head;

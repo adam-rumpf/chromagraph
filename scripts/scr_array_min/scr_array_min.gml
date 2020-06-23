@@ -1,6 +1,7 @@
 /// @func scr_array_min(arr)
 /// @desc Returns the minimum element of an array.
 /// @param {real[]} arr Array of numerical values.
+/// @returns {real} Minimum element of array.
 
 // Rename argument
 var arr = argument[0];

@@ -1,6 +1,7 @@
 /// @func scr_choose_nonnegative_partition(arr)
 /// @desc Chooses a random row from a 2D array which contains at least one nonnegative element.
 /// @param {real[]} arr Array to be chosen from.
+/// @returns {int} Randomly-chosen partition index containing a nonnegative element (or -1 if none exist).
 
 // Rename argument
 var arr = argument[0];

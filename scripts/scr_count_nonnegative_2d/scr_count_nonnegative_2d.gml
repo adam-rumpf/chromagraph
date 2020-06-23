@@ -2,6 +2,7 @@
 /// @desc Counts the number of nonnegative elements in a 2D array at a specified index.
 /// @param {real[]} arr Array to be counted.
 /// @param {int} index Index of array to be counted.
+/// @returns {real} Number of nonnegative elements.
 
 // Rename arguments
 var arr = argument[0];

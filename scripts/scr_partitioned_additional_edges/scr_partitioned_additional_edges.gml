@@ -5,6 +5,7 @@
 /// @param {obj_edge[]} eo List of edge objects.
 /// @param {int} m Desired total number of edges.
 /// @param {bool} deg2 If true, forces all degrees to be at least 2.
+/// @returns {obj_edge[]} Array of created edge objects.
 
 // Rename arguments
 var part, vo, eo, m, deg2;
