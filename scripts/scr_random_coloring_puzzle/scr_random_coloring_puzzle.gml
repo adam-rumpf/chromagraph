@@ -27,6 +27,7 @@ for (var i = 0; i < n; i++)
 	xx = (room_width/2) + (room_width/4)*cos((2*pi*i)/n);
 	yy = (room_height/2) + (room_height/4)*sin((2*pi*i)/n);
 	vo[i] = instance_create_layer(xx, yy, "Graph", obj_vertex);
+	vo[i].index = i;
 }
 
 // Generate color class partition

@@ -8,4 +8,4 @@ tail = id;
 label = -1;
 
 // Weight (interpretation depends on puzzle type)
-weight = 0;
+weight = 1;
