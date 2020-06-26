@@ -81,13 +81,29 @@ if (deg2 == true)
 		deg[ui]++;
 		deg[vi]++;
 	}
-	
-	
-	
-	
-	
-	//###
 }
+
+// Add edges until reaching the desired number
+while (mm + mn < m)
+{
+	// Choose two random, different partitions
+	var pid = []; // array of partition numbers
+	for (var i = 0; i < seg; i++)
+		pid[i] = i;
+	var s = scr_array_random_sample(pid, 2, false); // two random, distinct partitions
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	break;
+}
+
 
 
 

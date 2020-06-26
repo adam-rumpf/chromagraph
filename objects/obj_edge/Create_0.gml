@@ -9,3 +9,6 @@ label = -1;
 
 // Weight (interpretation depends on puzzle type)
 weight = 1;
+
+// Whether edge is currently selected by cursor
+selected = false;

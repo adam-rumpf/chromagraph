@@ -1,28 +1,18 @@
 {
-    "id": "dbd5de66-e92f-4451-99ff-92c3560c352e",
+    "id": "5ba1e354-ab45-45fd-a728-00220844696d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_graph",
+    "name": "obj_button",
     "eventList": [
         {
-            "id": "00419606-8da0-402d-992f-2edee791074b",
+            "id": "c5d47d3c-bc0e-4c35-809b-b4be13c466f3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "dbd5de66-e92f-4451-99ff-92c3560c352e"
-        },
-        {
-            "id": "531a60a8-1eb0-4a22-bcc7-a5c3b76e761e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "dbd5de66-e92f-4451-99ff-92c3560c352e"
+            "m_owner": "5ba1e354-ab45-45fd-a728-00220844696d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -44,5 +34,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": false
+    "visible": true
 }

@@ -9,3 +9,6 @@ in_arcs = [];
 
 // Label (interpretation depends on puzzle type)
 label = -1;
+
+// Whether vertex is currently selected by cursor
+selected = false;
