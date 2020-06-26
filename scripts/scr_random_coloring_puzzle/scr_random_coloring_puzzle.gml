@@ -40,23 +40,19 @@ var eo = scr_partitioned_spanning_tree(part, vo);
 // Generate additional edges to raise the total
 var eo_new = scr_partitioned_additional_edges(part, vo, eo, m, deg2);
 
-
-
-
-
-
-
-
-
-
-
+// Combine edge sets
+var eo_all = [];
+for (var i = 0; i < array_length_1d(eo); i++)
+	eo_all[i] = eo[i];
+for (var i = 0; i < array_length_1d(eo_new); i++)
+	eo_all[i+array_length_1d(eo)] = eo_new[i];
 
 //###
 // Initialize correct vertex labels for testing.
-for (var i = 0; i < array_height_2d(part); i++)
+/*for (var i = 0; i < array_height_2d(part); i++)
 {
 	for (var j = 0; j < array_length_2d(part, i); j++)
 		vo[part[i,j]].label = i;
-}
+}*/
 
-return scr_create_graph(vo, eo);
+return scr_create_graph(vo, eo_all);

@@ -32,8 +32,11 @@ if (deg2 == true)
 		deg[i] = scr_vertex_degree(vo[i], 0);
 	
 	// Add edges until all degrees are at least 2
-	while (scr_array_min(deg) < 2)
+	var tries = 0; // number of attempts for use in cutoff
+	while (scr_array_min(deg) < 2 && tries < 1000)
 	{
+		tries++;
+		
 		// Choose a random vertex of degree 1
 		var ui = scr_array_random_occurrence(deg, 1);
 		
@@ -84,35 +87,30 @@ if (deg2 == true)
 }
 
 // Add edges until reaching the desired number
-while (mm + mn < m)
+var tries = 0; // number of attempts for use in cutoff
+while (mm + mn < m && tries < 1000)
 {
+	tries++;
+	
 	// Choose two random, different partitions
 	var pid = []; // array of partition numbers
 	for (var i = 0; i < seg; i++)
 		pid[i] = i;
 	var s = scr_array_random_sample(pid, 2, false); // two random, distinct partitions
+	var ii = s[0];
+	var jj = s[1];
 	
+	// Choose a random element from each partition
+	var ui = part[ii,irandom(array_length_2d(part,ii)-1)];
+	var vi = part[jj,irandom(array_length_2d(part,jj)-1)];
 	
+	// If these vertices are neighbors, restart
+	if (scr_adjacent(vo[ui], vo[vi], false) == true)
+		continue;
 	
-	
-	
-	
-	
-	
-	
-	
-	break;
+	// Otherwise define an edge between the vertices
+	en[mn] = scr_create_edge(vo[ui], vo[vi]);
+	mn++;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 return en;

@@ -14,10 +14,10 @@ for (var i = 0; i < array_height_2d(part); i++)
 }*/
 /*if (room == rm_puzzle_coloring)
 	draw_text_color(200, 375, string(eo), c_white, c_white, c_white, c_white, 1);*/
-if (room == rm_puzzle_coloring)
+/*if (room == rm_puzzle_coloring)
 {
 	for (var i = 0; i < array_length_1d(g.v); i++)
 	{
 		draw_text_color(50 + 50*i, 400, string(scr_vertex_degree(g.v[i], 0)), c_white, c_white, c_white, c_white, 1);
 	}
-}
+}*/
