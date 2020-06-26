@@ -3,7 +3,8 @@
 draw_text_color(50, 50, "Press [N] to go to test room.", c_white, c_white, c_white, c_white, 1);
 draw_text_color(50, 100, "Press [G] to spawn a test graph.", c_white, c_white, c_white, c_white, 1);
 draw_text_color(50, 150, "Press [R] to spawn a random coloring graph.", c_white, c_white, c_white, c_white, 1);
-draw_text_color(50, 200, "Press [Esc] to restart the game.", c_white, c_white, c_white, c_white, 1);
+draw_text_color(50, 200, "Press [T] to verify the coloring.", c_white, c_white, c_white, c_white, 1);
+draw_text_color(50, 250, "Press [Esc] to restart the game.", c_white, c_white, c_white, c_white, 1);
 
 //###
 /*draw_text_color(200, 375, "length1 = " + string(array_length_2d(part, 0)), c_white, c_white, c_white, c_white, 1);
