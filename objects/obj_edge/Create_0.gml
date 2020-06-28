@@ -12,3 +12,7 @@ weight = 1;
 
 // Whether edge is currently selected by cursor
 selected = false;
+
+// Edge highlighting object
+eh = instance_create_layer(x, y, "Overlays", obj_edge_selection);
+eh.e = id;

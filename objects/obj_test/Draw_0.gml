@@ -22,3 +22,10 @@ for (var i = 0; i < array_height_2d(part); i++)
 		draw_text_color(50 + 50*i, 400, string(scr_vertex_degree(g.v[i], 0)), c_white, c_white, c_white, c_white, 1);
 	}
 }*/
+
+/*var vec = [mouse_x - room_width/2, mouse_y - room_height/2];
+draw_line(room_width/2, room_height/2, room_width/2 + vec[0], room_height/2 + vec[1]);
+draw_line(0, 0, vec[0], vec[1]);
+vec = scr_rotate_vector(scr_resize_vector(vec, 40), 20);
+draw_line(room_width/2, room_height/2, room_width/2 + vec[0], room_height/2 + vec[1]);
+draw_line(0, 0, vec[0], vec[1]);*/

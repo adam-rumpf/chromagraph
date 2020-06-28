@@ -12,3 +12,7 @@ label = -1;
 
 // Whether vertex is currently selected by cursor
 selected = false;
+
+// Vertex highlighting object
+vh = instance_create_layer(x, y, "Overlays", obj_vertex_selection);
+vh.v = id;
