@@ -39,9 +39,61 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Vertex_Effects",
+            "id": "9ae7a59a-10e2-43fc-9ba7-ec66e1e0f0f2",
+            "depth": 100,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": true,
+            "inheritLayerSettings": true,
+            "inheritSubLayers": true,
+            "inheritVisibility": true,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "cce8b540-f551-482f-ab1d-efb0fbff35e7",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Edge_Effects",
+            "id": "cd044b4d-c64b-46ea-ace3-4d372db789d0",
+            "depth": 200,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": true,
+            "inheritLayerSettings": true,
+            "inheritSubLayers": true,
+            "inheritVisibility": true,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "34b74d64-b54d-4036-90a9-5a6eaa5c8d3f",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Instances",
             "id": "47a6e3d0-e0c9-43a8-a28b-a75966500bbf",
-            "depth": 100,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -65,9 +117,9 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Graph",
-            "id": "4eb4ddc3-5210-49fc-977d-43ef11d1b288",
-            "depth": 200,
+            "name": "Vertices",
+            "id": "4371cd7e-3fff-441a-88c2-a131ea41c6b7",
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -82,7 +134,33 @@
             "layers": [
 
             ],
-            "m_parentID": "45cd3d48-0775-4d16-aca5-ebaedafb4e01",
+            "m_parentID": "256acd97-108d-4a09-9e9c-3b5c614ccad2",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Edges",
+            "id": "53954d9b-1d78-4782-8065-0732694fdb26",
+            "depth": 500,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": true,
+            "inheritLayerSettings": true,
+            "inheritSubLayers": true,
+            "inheritVisibility": true,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "5a3e13d8-86bf-4319-af84-3d90f4df6cfb",
             "m_serialiseFrozen": false,
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
@@ -96,7 +174,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4283256141 },
-            "depth": 300,
+            "depth": 600,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

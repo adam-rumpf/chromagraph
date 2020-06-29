@@ -10,7 +10,7 @@ v = argument[0];
 e = argument[1];
 
 // Define graph and assign vertex and edge sets
-var g = instance_create_layer(0, 0, "Graph", obj_graph);
+var g = instance_create_layer(0, 0, "Instances", obj_graph);
 g.v = v;
 g.e = e;
 

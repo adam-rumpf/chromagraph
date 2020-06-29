@@ -1,3 +1,4 @@
-/// @desc Destroy vertex highlighting object.
+/// @desc Destroy vertex effect objects.
 
+instance_destroy(vc);
 instance_destroy(vh);

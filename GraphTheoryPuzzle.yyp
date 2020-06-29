@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "5249b649-1e89-4fa1-9714-f13282dd311a",
+            "Value": {
+                "id": "e888644a-2793-47d0-9a0a-e9e80c20adef",
+                "resourcePath": "objects\\obj_edge_color\\obj_edge_color.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5285b623-eb93-4314-b476-f9f1d9b11633",
             "Value": {
                 "id": "72a5a192-d7d7-471e-908c-f2cd688b7b33",
@@ -259,6 +267,14 @@
             "Value": {
                 "id": "beefb5a9-8db3-46e2-b27e-952e251c2ed1",
                 "resourcePath": "scripts\\scr_find_array\\scr_find_array.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7a843869-489c-42e2-bcc7-dc167afd70ec",
+            "Value": {
+                "id": "d544750c-fdea-4682-bf2e-54b0cd18a5b9",
+                "resourcePath": "scripts\\scr_vertex_jitter\\scr_vertex_jitter.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -447,6 +463,14 @@
             }
         },
         {
+            "Key": "d936b44d-daa9-4269-9d80-03fae501b199",
+            "Value": {
+                "id": "af4cf2ca-f615-4ca4-940b-ec2208922d3b",
+                "resourcePath": "views\\d936b44d-daa9-4269-9d80-03fae501b199.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "db1ff5fc-e441-4f8e-aef1-b6f00b7844de",
             "Value": {
                 "id": "0a51c2aa-365a-4d7d-adc3-5394a008e2ba",
@@ -476,6 +500,14 @@
                 "id": "69859755-0b47-4a7c-8670-165a6f7bd066",
                 "resourcePath": "views\\df099003-ebf8-411b-b642-0fb83c57d376.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e0538148-036b-4647-aee8-88cf60654e97",
+            "Value": {
+                "id": "4a7df74e-f238-49ac-bd5e-ca897abf2fc0",
+                "resourcePath": "objects\\obj_vertex_color\\obj_vertex_color.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -590,7 +622,8 @@
         "b1f88251-5686-41f5-beb1-8f56f6911d5a",
         "70123a51-541f-4ec7-94a6-9d8cb88bfc93",
         "4d9d04a3-c604-4f31-a451-4406b380243d",
-        "b386dd82-1fc7-472e-9190-71a2ffa49462"
+        "b386dd82-1fc7-472e-9190-71a2ffa49462",
+        "7a843869-489c-42e2-bcc7-dc167afd70ec"
     ],
     "tutorial": ""
 }

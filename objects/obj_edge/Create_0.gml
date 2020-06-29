@@ -13,6 +13,10 @@ weight = 1;
 // Whether edge is currently selected by cursor
 selected = false;
 
+// Edge coloring object
+ec = instance_create_layer(x, y, "Edge_Effects", obj_edge_color);
+ec.e = id;
+
 // Edge highlighting object
 eh = instance_create_layer(x, y, "Overlays", obj_edge_selection);
 eh.e = id;

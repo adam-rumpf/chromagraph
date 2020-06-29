@@ -18,4 +18,4 @@
 }*/
 
 if (room == rm_puzzle_coloring)
-	g = instance_create_layer(0, 0, "Graph", obj_graph);
+	g = instance_create_layer(0, 0, "Instances", obj_graph);

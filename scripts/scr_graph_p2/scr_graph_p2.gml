@@ -4,9 +4,9 @@
 
 // Define vertices
 var v = [];
-v[0] = instance_create_layer(room_width/3, 2*room_height/3, "Graph", obj_vertex);
-v[1] = instance_create_layer(room_width/2, room_height/3, "Graph", obj_vertex);
-v[2] = instance_create_layer(2*room_width/3, 2*room_height/3, "Graph", obj_vertex);
+v[0] = instance_create_layer(room_width/3, 2*room_height/3, "Vertices", obj_vertex);
+v[1] = instance_create_layer(room_width/2, room_height/3, "Vertices", obj_vertex);
+v[2] = instance_create_layer(2*room_width/3, 2*room_height/3, "Vertices", obj_vertex);
 
 // Define edges
 var e = [];

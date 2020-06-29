@@ -10,7 +10,7 @@ tail = argument[0];
 head = argument[1];
 
 // Define edge and assign endpoints
-var e = instance_create_layer(mean(tail.x,head.x), mean(tail.y,head.y), "Graph", obj_edge);
+var e = instance_create_layer(mean(tail.x,head.x), mean(tail.y,head.y), "Edges", obj_edge);
 e.tail = tail;
 e.head = head;
 
