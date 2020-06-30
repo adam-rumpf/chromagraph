@@ -17,5 +17,5 @@
 	eo = scr_partitioned_spanning_tree(part, vo);
 }*/
 
-if (room == rm_puzzle_coloring)
-	g = instance_create_layer(0, 0, "Instances", obj_graph);
+//if (room == rm_coloring_dart)
+	//g = instance_create_layer(0, 0, "Instances", obj_graph);
