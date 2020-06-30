@@ -1,5 +1,8 @@
 /// @desc Draw vertex coloring.
 
+if (v.label < 0)
+	exit;
+
 //###
 var col = c_black;
 switch v.label
