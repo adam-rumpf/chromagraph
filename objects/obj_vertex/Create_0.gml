@@ -10,8 +10,9 @@ in_arcs = [];
 // Label (interpretation depends on puzzle type)
 label = -1;
 
-// Whether vertex is currently selected by cursor
+// Whether vertex is currently selected or activated by cursor
 selected = false;
+activated = false;
 
 // Vertex coloring object
 vc = instance_create_layer(x, y, "Vertex_Effects", obj_vertex_color);

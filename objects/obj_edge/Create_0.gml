@@ -10,8 +10,9 @@ label = -1;
 // Weight (interpretation depends on puzzle type)
 weight = 1;
 
-// Whether edge is currently selected by cursor
+// Whether vertex is currently selected or activated by cursor
 selected = false;
+activated = false;
 
 // Edge coloring object
 ec = instance_create_layer(x, y, "Edge_Effects", obj_edge_color);

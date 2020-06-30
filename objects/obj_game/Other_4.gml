@@ -6,19 +6,26 @@ switch room
 	// Title screen
 	case rm_title:
 		//###
+		global.puzzle = 0;
 		break;
 	
 	/*============================================================
-		Coloring Puzzles
+		Coloring Puzzles (Type 0)
 		1 Graph
 		Selectable: Buttons, Vertices
+		Parameters: color_limit (number of available colors)
 	============================================================*/
 	
 	// Coloring (P2)
 	case rm_coloring_p2:
+		
+		global.puzzle = 1;
 	
 		// Define path graph
 		g[0] = scr_graph_p2();
+		
+		// Set color limit
+		global.color_limit = 2;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -32,9 +39,14 @@ switch room
 	
 	// Coloring (Dart)
 	case rm_coloring_dart:
+		
+		global.puzzle = 1;
 	
 		// Define dart graph
 		g[0] = scr_graph_dart();
+		
+		// Set color limit
+		global.color_limit = 3;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -43,10 +55,6 @@ switch room
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
 			global.selectable[m+i] = g[0].v[i];
-		
-		//###
-		for (var i = 0; i < array_length_1d(g[0].e); i++)
-			global.selectable[m+n+i] = g[0].e[i];
 		
 		break;
 }

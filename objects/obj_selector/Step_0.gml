@@ -25,3 +25,11 @@ for (var i = 0; i < array_length_1d(global.selectable); i++)
 	else
 		global.selectable[i].selected = false;
 }
+
+// Continue only if an object is selected
+if (nearest < 0)
+	exit;
+
+// On mouse click, activate the selected object
+if (mouse_check_button_pressed(mb_left))
+	global.selectable[nearest].activated = true;

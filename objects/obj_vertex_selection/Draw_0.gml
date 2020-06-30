@@ -1,6 +1,5 @@
 /// @desc Draw outline around vertex if selected.
 
-//### Refine later, and have opacity fade in and out.
+//### Refine later.
 
-if (v.selected == true)
-	scr_highlight_vertex(v, 1);
+scr_highlight_vertex(v, alpha);
