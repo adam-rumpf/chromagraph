@@ -44,5 +44,9 @@ switch room
 		for (var i = 0; i < n; i++)
 			global.selectable[m+i] = g[0].v[i];
 		
+		//###
+		for (var i = 0; i < array_length_1d(g[0].e); i++)
+			global.selectable[m+n+i] = g[0].e[i];
+		
 		break;
 }

@@ -32,3 +32,9 @@ draw_line(0, 0, vec[0], vec[1]);
 vec = scr_rotate_vector(scr_resize_vector(vec, 40), 20);
 draw_line(room_width/2, room_height/2, room_width/2 + vec[0], room_height/2 + vec[1]);
 draw_line(0, 0, vec[0], vec[1]);*/
+
+if (room == rm_coloring_p2)
+{
+	var dist = scr_distance_to_cursor(obj_game.g[0].e[0]);
+	draw_text_color(50, 300, "Distance to edge 0: " + string(dist), c_white, c_white, c_white, c_white, 1);
+}
