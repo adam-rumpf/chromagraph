@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "371da745-8cc0-46e1-841b-a1be5ee9b9a6",
+            "Value": {
+                "id": "bc3f5ebd-0354-45b1-8c27-ad969f8ba2ea",
+                "resourcePath": "scripts\\scr_graph_s5\\scr_graph_s5.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "379f8df3-5893-4d83-b244-44e26b61491b",
             "Value": {
                 "id": "88e819e9-9f40-4449-b573-4a76d961a2b1",
@@ -260,6 +268,14 @@
                 "id": "f58ef28b-ce8e-41bc-ba5c-2b96cbba157d",
                 "resourcePath": "views\\613cce4b-8a23-4461-810a-b16f1784fd10.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6445cadd-49e6-4d1e-b2be-1ee809ee5ab6",
+            "Value": {
+                "id": "7a39aaaf-6d2f-43c9-8ddd-927a9eaec7ac",
+                "resourcePath": "rooms\\rm_menu\\rm_menu.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -583,6 +599,14 @@
             }
         },
         {
+            "Key": "e7c329ed-2556-48d9-a366-d564e2c6432e",
+            "Value": {
+                "id": "4debd329-b8f4-4db8-9002-761b6c101ebd",
+                "resourcePath": "rooms\\rm_coloring_petersen\\rm_coloring_petersen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ecaccff7-9907-4f1b-aa6a-528583e24875",
             "Value": {
                 "id": "fc608bb0-78ae-4356-8be2-48805977ca35",
@@ -611,6 +635,14 @@
             "Value": {
                 "id": "1296055e-1f52-48db-bc9e-dcca1ded2e30",
                 "resourcePath": "scripts\\scr_rotate_vector\\scr_rotate_vector.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f30d1800-0cce-4ede-9782-f8c7cea2bc16",
+            "Value": {
+                "id": "4e2ef43d-53eb-4c9d-92d3-1c9e1837c84f",
+                "resourcePath": "scripts\\scr_properly_colored_vertex\\scr_properly_colored_vertex.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -655,6 +687,14 @@
             }
         },
         {
+            "Key": "ff7c22fb-2d1f-4b56-9623-783b7724d587",
+            "Value": {
+                "id": "07104d9d-7b0a-47a9-80e1-392e458017bf",
+                "resourcePath": "scripts\\scr_graph_petersen_star\\scr_graph_petersen_star.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ffb010ef-3cb3-4cc7-8bff-098f963c8306",
             "Value": {
                 "id": "a3ed67d8-0604-4734-ba0b-70d7d60112c8",
@@ -686,10 +726,13 @@
         "86f23bea-b7f3-40a8-a190-ec890523bded",
         "5978f53a-4695-4402-9a00-db9af21fc42f",
         "b1f88251-5686-41f5-beb1-8f56f6911d5a",
+        "f30d1800-0cce-4ede-9782-f8c7cea2bc16",
         "70123a51-541f-4ec7-94a6-9d8cb88bfc93",
         "4d9d04a3-c604-4f31-a451-4406b380243d",
         "b386dd82-1fc7-472e-9190-71a2ffa49462",
         "41af846a-14a7-48c8-bdc1-ae8c96f7e838",
+        "ff7c22fb-2d1f-4b56-9623-783b7724d587",
+        "371da745-8cc0-46e1-841b-a1be5ee9b9a6",
         "7a843869-489c-42e2-bcc7-dc167afd70ec",
         "8c61aaac-268a-4d0b-a3da-05a5804ac0a3"
     ],

@@ -10,7 +10,7 @@ alpha = argument[1];
 
 // Define parameters
 var col = c_yellow; // color
-var r = 12; // circle radius
+var r = 20; // circle radius
 var seg = 12; // number of segments in circle curves
 var err = [1, 1]; // offset to correct errors in primitive drawing
 

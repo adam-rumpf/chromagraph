@@ -9,10 +9,16 @@ switch global.puzzle
 {
 	// Coloring
 	case 1:	
+		
 		// Increment color, wrapping around if limit is reached
 		label++;
 		if (label >= global.color_limit)
 			label = -1;
+		
+		// Prompt a global solution test
+		for (var i = 0; i < array_length_1d(obj_game.g); i++)
+			scr_properly_colored(obj_game.g[i]);
+		
 		break;
 }
 

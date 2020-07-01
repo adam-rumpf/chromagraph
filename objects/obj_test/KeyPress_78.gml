@@ -1,6 +1,8 @@
 //###
 
-if (room != rm_coloring_dart)
-	room_goto(rm_coloring_dart);
+if (current < array_length_1d(rooms)-1)
+	current++;
 else
-	room_goto(rm_coloring_p2);
+	current = 0;
+
+room_goto(rooms[current]);

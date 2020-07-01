@@ -6,6 +6,9 @@ randomize();
 // Room graph objects
 g = [];
 
+// Whether or not to evaluate a solution
+evaluate = false;
+
 /*
 Global list of selectable objects.
 This includes all buttons and graph elements that can be clicked on within the current room.

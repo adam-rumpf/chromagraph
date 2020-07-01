@@ -24,4 +24,10 @@ switch v.label
 		break;
 }
 if (col != c_black)
-	draw_circle_color(v.x, v.y, 6, col, col, false);
+{
+	//###
+	if (v.angry == false)
+		draw_circle_color(v.x, v.y, 12, col, col, false);
+	else
+		draw_circle_color(v.x + irandom_range(-3, 3), v.y + irandom_range(-3, 3), 12, col, col, false);
+}

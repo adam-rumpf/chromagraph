@@ -14,6 +14,9 @@ weight = 1;
 selected = false;
 activated = false;
 
+// Whether the edge should visually indicate a problem
+angry = false;
+
 // Edge coloring object
 ec = instance_create_layer(x, y, "Edge_Effects", obj_edge_color);
 ec.e = id;

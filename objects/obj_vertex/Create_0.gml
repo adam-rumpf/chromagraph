@@ -14,6 +14,9 @@ label = -1;
 selected = false;
 activated = false;
 
+// Whether the vertex should visually indicate a problem
+angry = false;
+
 // Vertex coloring object
 vc = instance_create_layer(x, y, "Vertex_Effects", obj_vertex_color);
 vc.v = id;

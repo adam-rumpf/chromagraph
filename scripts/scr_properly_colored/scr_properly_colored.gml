@@ -6,25 +6,14 @@
 // Rename argument
 var g = argument[0];
 
-// Verify that all vertices have a nonnegative label
+// Verify that all vertices are free of color conflict
+var proper = true;
 for (var i = 0; i < array_length_1d(g.v); i++)
 {
-	// If any label is negative, immediately fail
-	if (g.v[i].label < 0)
-		return false;
-}
-
-// Verify that the colors of each edge's endpoints are distinct
-for (var i = 0; i < array_length_1d(g.e); i++)
-{
-	// Get labels of endpoints
-	var ch = g.e[i].head.label;
-	var ct = g.e[i].tail.label;
-	
-	// If any adjacent pair has the same label, immediately fail
-	if (ch == ct)
-		return false;
+	// If any vertex is improperly colored, the overall graph is improper
+	if (scr_properly_colored_vertex(g.v[i], true) == false)
+		proper = false;
 }
 
 // If all tests have been passed, the coloring is valid
-return true;
+return proper;
