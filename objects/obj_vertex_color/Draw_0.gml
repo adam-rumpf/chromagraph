@@ -11,7 +11,7 @@ switch v.label
 		col = c_red;
 		break;
 	case 1:
-		col = c_blue;
+		col = make_color_rgb(31, 31, 255);
 		break;
 	case 2:
 		col = c_green;
@@ -27,7 +27,7 @@ if (col != c_black)
 {
 	//###
 	if (v.angry == false)
-		draw_circle_color(v.x, v.y, 12, col, col, false);
+		draw_circle_color(v.x-1, v.y-1, 10, col, col, false);
 	else
 		draw_circle_color(v.x + irandom_range(-3, 3), v.y + irandom_range(-3, 3), 12, col, col, false);
 }

@@ -1,5 +1,9 @@
 /// @desc Define vertex-level attributes.
 
+// Resize sprite
+image_xscale = 2;
+image_yscale = 2;
+
 // Index within graph's vertex list
 index = -1;
 
