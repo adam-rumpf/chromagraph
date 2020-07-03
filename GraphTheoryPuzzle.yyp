@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "13ac474f-0fa0-4e9c-ae02-1b411fd6e7ef",
+            "Value": {
+                "id": "945b3941-bff1-4e30-a135-d89a9f3840ee",
+                "resourcePath": "rooms\\rm_coloring_petersen_circle\\rm_coloring_petersen_circle.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "191d87d2-8521-44e6-b308-3b50c9a082cf",
             "Value": {
                 "id": "85149d68-fa02-41e2-bda2-60a07a823e84",
@@ -76,6 +84,14 @@
                 "id": "b54521fd-f48b-4f68-b02f-c1b505107a2c",
                 "resourcePath": "rooms\\rm_title\\rm_title.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "1f0a6e4d-8536-4b44-8887-30cbb9c3f1f2",
+            "Value": {
+                "id": "c4ad3860-bf45-4234-a93b-466acc881171",
+                "resourcePath": "scripts\\scr_graph_petersen_claw\\scr_graph_petersen_claw.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -143,6 +159,14 @@
             }
         },
         {
+            "Key": "311fe430-56e4-4095-be5f-de0bfee94ec8",
+            "Value": {
+                "id": "f0c5bbee-d1e2-4171-95b3-5eed01d54652",
+                "resourcePath": "scripts\\scr_graph_kite\\scr_graph_kite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "33cc438d-55d0-4e07-938d-febd46ee45d1",
             "Value": {
                 "id": "3a0ebcb3-56e7-4ad3-a22c-72ea6f3ec66c",
@@ -172,6 +196,14 @@
                 "id": "88e819e9-9f40-4449-b573-4a76d961a2b1",
                 "resourcePath": "scripts\\scr_find_array_row\\scr_find_array_row.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3b894c53-dce9-4bcc-8478-12cb99507135",
+            "Value": {
+                "id": "0a5be628-4b2b-438c-94e3-71f109e4dc3d",
+                "resourcePath": "rooms\\rm_coloring_dodecahedron\\rm_coloring_dodecahedron.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -287,6 +319,14 @@
             }
         },
         {
+            "Key": "5dd08458-f8c7-4782-9440-300d76efc886",
+            "Value": {
+                "id": "71a184e2-d661-4c5d-aa9b-f04eb551a257",
+                "resourcePath": "rooms\\rm_coloring_kite\\rm_coloring_kite.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "5fd3ef71-fe6b-4ec7-bbc2-29ff08818d26",
             "Value": {
                 "id": "451c25b7-1cb6-4d72-99f7-134c77fde988",
@@ -351,6 +391,14 @@
             }
         },
         {
+            "Key": "716f5a06-848c-4d9d-8320-faf7ed1544cd",
+            "Value": {
+                "id": "b1f074e2-211b-4492-820a-913ea269a4bb",
+                "resourcePath": "sprites\\spr_background_stone_02\\spr_background_stone_02.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7942c966-5ee8-4189-9379-29023c9bfbd2",
             "Value": {
                 "id": "beefb5a9-8db3-46e2-b27e-952e251c2ed1",
@@ -372,6 +420,22 @@
                 "id": "b1c3ca02-f20c-436d-b710-23d1bc5d004c",
                 "resourcePath": "sprites\\spr_background_stone_01\\spr_background_stone_01.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8015ccd5-ba74-4211-a31e-2314a59c7d21",
+            "Value": {
+                "id": "3080fa05-34f2-45c1-bf73-34a83f0c9a9a",
+                "resourcePath": "rooms\\rm_coloring_categorical_4\\rm_coloring_categorical_4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "8484c0f5-4339-44f4-9e37-b1fe90b9ceab",
+            "Value": {
+                "id": "1e8b44c2-4886-40f4-9653-67c2871c34b9",
+                "resourcePath": "scripts\\scr_graph_petersen_circle\\scr_graph_petersen_circle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -436,6 +500,22 @@
                 "id": "a0065464-b3b2-4c09-9127-bbbd9a0c0db5",
                 "resourcePath": "views\\a39e5a35-9c2a-42fc-836a-6374715fa3db.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a4d70d3d-c4e6-46e4-9ed1-dd02d624db4f",
+            "Value": {
+                "id": "56964748-be83-4b71-8641-8c9268af4efd",
+                "resourcePath": "rooms\\rm_coloring_petersen_claw\\rm_coloring_petersen_claw.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a6836ad2-a4da-4a9d-8936-241084abbd47",
+            "Value": {
+                "id": "d8c2c7eb-5326-4638-82c0-92c98a8f1242",
+                "resourcePath": "scripts\\scr_graph_categorical_4\\scr_graph_categorical_4.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -639,6 +719,14 @@
             }
         },
         {
+            "Key": "e2c4ade3-03cc-4a07-aae3-e4f870befb57",
+            "Value": {
+                "id": "59079dec-3a74-4d36-90f1-15bfdcf65443",
+                "resourcePath": "scripts\\scr_graph_dodecahedron\\scr_graph_dodecahedron.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e325f5de-d903-4619-b98e-a0c3d9021692",
             "Value": {
                 "id": "b092393f-6c7a-4ef0-9068-cfe7d3cd1e6b",
@@ -658,7 +746,7 @@
             "Key": "e7c329ed-2556-48d9-a366-d564e2c6432e",
             "Value": {
                 "id": "4debd329-b8f4-4db8-9002-761b6c101ebd",
-                "resourcePath": "rooms\\rm_coloring_petersen\\rm_coloring_petersen.yy",
+                "resourcePath": "rooms\\rm_coloring_petersen_star\\rm_coloring_petersen_star.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -790,7 +878,12 @@
         "25b64920-2c4d-4ec6-a9be-59dde8ef69f1",
         "b386dd82-1fc7-472e-9190-71a2ffa49462",
         "41af846a-14a7-48c8-bdc1-ae8c96f7e838",
+        "311fe430-56e4-4095-be5f-de0bfee94ec8",
         "ff7c22fb-2d1f-4b56-9623-783b7724d587",
+        "1f0a6e4d-8536-4b44-8887-30cbb9c3f1f2",
+        "8484c0f5-4339-44f4-9e37-b1fe90b9ceab",
+        "e2c4ade3-03cc-4a07-aae3-e4f870befb57",
+        "a6836ad2-a4da-4a9d-8936-241084abbd47",
         "371da745-8cc0-46e1-841b-a1be5ee9b9a6",
         "7a843869-489c-42e2-bcc7-dc167afd70ec",
         "8c61aaac-268a-4d0b-a3da-05a5804ac0a3"

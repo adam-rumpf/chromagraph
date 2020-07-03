@@ -1,2 +1,9 @@
-rooms = [rm_coloring_dart, rm_coloring_p2, rm_coloring_petersen];
+rooms = [rm_coloring_dart,
+rm_coloring_p2,
+rm_coloring_petersen_star,
+rm_coloring_kite,
+rm_coloring_petersen_claw,
+rm_coloring_petersen_circle,
+rm_coloring_dodecahedron,
+rm_coloring_categorical_4];
 current = 0;
