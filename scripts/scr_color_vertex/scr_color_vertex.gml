@@ -44,13 +44,13 @@ switch v.label
 		col = make_color_rgb(121, 0, 121);
 		break;
 	case 9:
-		col = make_color_rgb(127, 0, 0);
+		col = make_color_rgb(0, 127, 0);
 		break;
 	case 10:
 		col = make_color_rgb(0, 31, 127);
 		break;
 	case 11:
-		col = make_color_rgb(0, 127, 0);
+		col = make_color_rgb(127, 0, 0);
 		break;
 	case 12:
 		col = make_color_rgb(91, 7, 91);

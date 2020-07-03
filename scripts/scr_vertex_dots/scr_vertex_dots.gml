@@ -12,7 +12,15 @@ yy = argument[1];
 col = argument[2];
 n = argument[3];
 
-// Define a number of rotating dots equal to the label number
+// For the first label, just draw a single dot
+if (n == 0)
+{
+	var angle = 0.002*(60/room_speed)*current_time;
+	draw_circle_color(xx+2*cos(angle)-1, yy-2*sin(angle)-1, 2, col, col, false);
+	exit;
+}
+
+// Otherwise define a number of rotating dots equal to the label number
 var dotx = [];
 var doty = [];
 var r = 6 + 6*floor(n/10);
@@ -25,7 +33,7 @@ for (var i = 0; i < (n%10)+1; i++)
 	
 // Draw the dots
 if (n+1 > 10)
-	draw_circle_color(xx-1, yy-1, 8*floor(n/10), col, col, false);
+	draw_circle_color(xx-1, yy-1, 6*floor(n/10), col, col, false);
 for (var i = 0; i < (n%10)+1; i++)
 	draw_circle_color(dotx[i], doty[i], 2, col, col, false);
 	
