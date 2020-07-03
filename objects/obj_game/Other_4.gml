@@ -183,4 +183,30 @@ switch room
 			global.selectable[m+i] = g[0].v[i];
 		
 		break;
+	
+	// Coloring (Test Grid)
+	case rm_coloring_grid_4x5:
+		
+		global.puzzle = 1;
+	
+		// Define grid graph
+		g[0] = scr_graph_grid_4x5();
+		
+		// Set color limit
+		global.color_limit = 20;
+		
+		// Get numbers of vertices and selectable objects
+		var n = array_length_1d(g[0].v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].v[i];
+		
+		//###
+		// Give all vertices a separate color
+		for (var i = 0; i < n; i++)
+			g[0].v[i].label = i;
+		
+		break;
 }
