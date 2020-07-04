@@ -1,6 +1,4 @@
 /// @desc Draw edge coloring.
 
-if (e.label < 0)
-	exit;
-
-//###
+if (e != id)
+	scr_color_edge(e, 0.5);//###

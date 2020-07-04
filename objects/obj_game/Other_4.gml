@@ -10,7 +10,7 @@ switch room
 		break;
 	
 	/*============================================================
-		Coloring Puzzles (Type 0)
+		Coloring Puzzles (Type 1)
 		1 Graph
 		Selectable: Buttons, Vertices
 		Parameters: color_limit (number of available colors)
@@ -207,6 +207,34 @@ switch room
 		// Give all vertices a separate color
 		for (var i = 0; i < n; i++)
 			g[0].v[i].label = i;
+		
+		break;
+	
+	/*============================================================
+		Edge Coloring Puzzles (Type 2)
+		1 Graph
+		Selectable: Buttons, Edges
+		Parameters: color_limit (number of available colors)
+	============================================================*/
+	
+	// Coloring (Petersen Star)
+	case rm_edge_coloring_petersen_star:
+		
+		global.puzzle = 2;
+	
+		// Define Petersen graph
+		g[0] = scr_graph_petersen_star();
+		
+		// Set color limit
+		global.color_limit = 4;
+		
+		// Get numbers of edges and selectable objects
+		var n = array_length_1d(g[0].e);
+		var m = array_length_1d(global.selectable);
+		
+		// Add edges to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].e[i];
 		
 		break;
 }

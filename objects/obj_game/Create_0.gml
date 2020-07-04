@@ -20,6 +20,7 @@ global.selectable = [];
 Global puzzle type ID. Includes:
 	0 -- None
 	1 -- Coloring
+	2 -- Edge Coloring
 */
 global.puzzle = 0;
 
