@@ -47,16 +47,13 @@ switch v.label
 		col = make_color_rgb(0, 127, 0);
 		break;
 	case 10:
-		col = make_color_rgb(0, 31, 127);
+		col = make_color_rgb(127, 0, 0);
 		break;
 	case 11:
-		col = make_color_rgb(127, 0, 0);
+		col = make_color_rgb(127, 63, 0);
 		break;
 	case 12:
 		col = make_color_rgb(0, 127, 127);
-		break;
-	case 13:
-		col = make_color_rgb(127, 63, 0);
 		break;
 	default:
 		col = make_color_hsv((173*v.label) % 255, 255, 255);

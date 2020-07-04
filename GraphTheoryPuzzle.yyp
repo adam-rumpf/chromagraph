@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "83400194-7b26-462a-96dc-818df1263848",
+            "Value": {
+                "id": "82fa1cfe-ca35-4d00-8f4b-d6e626565832",
+                "resourcePath": "scripts\\scr_graceful_edge_update\\scr_graceful_edge_update.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8484c0f5-4339-44f4-9e37-b1fe90b9ceab",
             "Value": {
                 "id": "1e8b44c2-4886-40f4-9653-67c2871c34b9",
@@ -735,6 +743,14 @@
             }
         },
         {
+            "Key": "ab9939f7-5138-423c-9882-1dcd1b0d866d",
+            "Value": {
+                "id": "2d2d144b-7145-4b1a-8215-3a143314db7a",
+                "resourcePath": "rooms\\rm_graceful\\rm_graceful.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ad82de7b-f627-4ff2-bfbe-f73bc9341b5e",
             "Value": {
                 "id": "e37383b5-3558-4008-b00a-72bbc6909ef7",
@@ -844,6 +860,14 @@
                 "id": "2d40616d-1d13-41fa-8988-7a17e7d4383e",
                 "resourcePath": "views\\c4cf0024-a034-4d0d-a717-d356490f08d4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c5baa19a-26b5-4b76-b558-0f307421263e",
+            "Value": {
+                "id": "36dad6a5-0342-4ecd-af96-a5b6110362ee",
+                "resourcePath": "rooms\\rm_graceful_s5\\rm_graceful_s5.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1119,6 +1143,14 @@
             }
         },
         {
+            "Key": "fba8c1cb-5f38-423c-b548-c5cfe45b69bc",
+            "Value": {
+                "id": "bff03797-51c2-4fa4-a933-0b6bc0efc6e8",
+                "resourcePath": "views\\ab9939f7-5138-423c-9882-1dcd1b0d866d-room.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ff7c22fb-2d1f-4b56-9623-783b7724d587",
             "Value": {
                 "id": "07104d9d-7b0a-47a9-80e1-392e458017bf",
@@ -1167,6 +1199,7 @@
         "bc34ea7d-3015-426f-a230-a7e567cdf190",
         "e63a294f-fe75-4521-b1de-203d4639339d",
         "1717894d-c034-4a9d-a5c4-091886d5be43",
+        "83400194-7b26-462a-96dc-818df1263848",
         "70123a51-541f-4ec7-94a6-9d8cb88bfc93",
         "4d9d04a3-c604-4f31-a451-4406b380243d",
         "25b64920-2c4d-4ec6-a9be-59dde8ef69f1",

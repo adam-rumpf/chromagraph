@@ -10,7 +10,8 @@
         "5b7849e7-58ff-4c56-a3e6-75522f252f61",
         "bc34ea7d-3015-426f-a230-a7e567cdf190",
         "e63a294f-fe75-4521-b1de-203d4639339d",
-        "1717894d-c034-4a9d-a5c4-091886d5be43"
+        "1717894d-c034-4a9d-a5c4-091886d5be43",
+        "83400194-7b26-462a-96dc-818df1263848"
     ],
     "filterType": "GMScript",
     "folderName": "verification",

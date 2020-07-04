@@ -22,6 +22,7 @@ Global puzzle type ID. Includes:
 	1 -- Coloring
 	2 -- Edge Coloring
 	3 -- Total Coloring
+	4 -- Graceful Trees
 */
 global.puzzle = 0;
 
