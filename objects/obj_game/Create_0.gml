@@ -21,6 +21,7 @@ Global puzzle type ID. Includes:
 	0 -- None
 	1 -- Coloring
 	2 -- Edge Coloring
+	3 -- Total Coloring
 */
 global.puzzle = 0;
 

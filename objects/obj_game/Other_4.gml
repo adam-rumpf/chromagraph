@@ -237,4 +237,35 @@ switch room
 			global.selectable[m+i] = g[0].e[i];
 		
 		break;
+	
+	/*============================================================
+		Total Coloring Puzzles (Type 3)
+		1 Graph
+		Selectable: Buttons, Vertices, Edges
+		Parameters: color_limit (number of available colors)
+	============================================================*/
+	
+	// Total Coloring (Dart)
+	case rm_total_coloring_dart:
+		
+		global.puzzle = 3;
+	
+		// Define dart graph
+		g[0] = scr_graph_dart();
+		
+		// Set color limit
+		global.color_limit = 5;
+		
+		// Get numbers of vertices, edges, and selectable objects
+		var l = array_length_1d(g[0].e);
+		var n = array_length_1d(g[0].v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices and edges to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].v[i];
+		for (var i = 0; i < l; i++)
+			global.selectable[m+n+i] = g[0].e[i];
+		
+		break;
 }
