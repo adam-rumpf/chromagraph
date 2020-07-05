@@ -28,3 +28,5 @@ global.puzzle = 0;
 
 // Global puzzle parameters
 global.color_limit = 0;
+
+scr_pallette(0, 1);//###

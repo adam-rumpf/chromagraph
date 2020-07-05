@@ -282,7 +282,7 @@ switch room
 		global.puzzle = 4;
 	
 		// Define 5-star graph
-		g[0] = scr_graph_s5();
+		g[0] = scr_graph_star(5);
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);

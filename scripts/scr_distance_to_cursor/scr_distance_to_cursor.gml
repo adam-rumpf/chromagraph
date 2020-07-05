@@ -10,11 +10,6 @@ var obj = argument[0];
 var dist = 0;
 switch obj.object_index
 {
-	// Button
-	case obj_button:
-		//###
-		break;
-	
 	// Edge
 	case obj_edge:
 		
