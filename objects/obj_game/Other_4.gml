@@ -1,5 +1,8 @@
 /// @desc Initialize objects within room.
 
+// Reset color class counts
+class = [];
+
 // Main case structure for each room
 switch room
 {
@@ -276,7 +279,7 @@ switch room
 		Parameters: none
 	============================================================*/
 	
-	// Total Coloring (Dart)
+	// Graceful Trees (5-Star)
 	case rm_graceful_s5:
 		
 		global.puzzle = 4;
@@ -291,6 +294,113 @@ switch room
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
 			global.selectable[m+i] = g[0].v[i];
+		
+		break;
+	
+	/*============================================================
+		Decomposition Puzzles (Type 5)
+		1 Graph
+		Selectable: Buttons, Edges
+		Parameters: color_limit (number of colors/partitions)
+	============================================================*/
+	
+	// Decomposition (Triangle)
+	case rm_decomp_triangle:
+		
+		global.puzzle = 5;
+	
+		// Define triangle graph
+		g[0] = scr_graph_cycle(3);
+		
+		// Set number of partitions
+		global.color_limit = 2;
+		
+		// Set color class size list
+		for (var i = 0; i < global.color_limit; i++)
+			class[i] = 0;
+		
+		// Get numbers of edges and selectable objects
+		var n = array_length_1d(g[0].e);
+		var m = array_length_1d(global.selectable);
+		
+		// Add edges to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].e[i];
+		
+		break;
+	
+	// Decomposition (Bowtie)
+	case rm_decomp_bowtie:
+		
+		global.puzzle = 5;
+	
+		// Define bowtie graph
+		g[0] = scr_graph_bowtie();
+		
+		// Set number of partitions
+		global.color_limit = 2;
+		
+		// Set color class size list
+		for (var i = 0; i < global.color_limit; i++)
+			class[i] = 0;
+		
+		// Get numbers of edges and selectable objects
+		var n = array_length_1d(g[0].e);
+		var m = array_length_1d(global.selectable);
+		
+		// Add edges to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].e[i];
+		
+		break;
+	
+	// Decomposition (Triforce)
+	case rm_decomp_triforce:
+		
+		global.puzzle = 5;
+	
+		// Define Triforce graph
+		g[0] = scr_graph_triforce();
+		
+		// Set number of partitions
+		global.color_limit = 3;
+		
+		// Set color class size list
+		for (var i = 0; i < global.color_limit; i++)
+			class[i] = 0;
+		
+		// Get numbers of edges and selectable objects
+		var n = array_length_1d(g[0].e);
+		var m = array_length_1d(global.selectable);
+		
+		// Add edges to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].e[i];
+		
+		break;
+	
+	// Decomposition (K7)
+	case rm_decomp_k7:
+		
+		global.puzzle = 5;
+	
+		// Define Triforce graph
+		g[0] = scr_graph_complete(7);
+		
+		// Set number of partitions
+		global.color_limit = 7;
+		
+		// Set color class size list
+		for (var i = 0; i < global.color_limit; i++)
+			class[i] = 0;
+		
+		// Get numbers of edges and selectable objects
+		var n = array_length_1d(g[0].e);
+		var m = array_length_1d(global.selectable);
+		
+		// Add edges to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].e[i];
 		
 		break;
 }

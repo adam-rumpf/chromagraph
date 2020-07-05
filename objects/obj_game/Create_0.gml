@@ -6,6 +6,9 @@ randomize();
 // Room graph objects
 g = [];
 
+// Room color class sizes
+class = [];
+
 // Whether or not to evaluate a solution
 evaluate = false;
 
@@ -23,6 +26,7 @@ Global puzzle type ID. Includes:
 	2 -- Edge Coloring
 	3 -- Total Coloring
 	4 -- Graceful Trees
+	5 -- Decomposition
 */
 global.puzzle = 0;
 

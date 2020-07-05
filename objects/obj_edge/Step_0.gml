@@ -34,6 +34,23 @@ switch global.puzzle
 			scr_properly_totally_colored(obj_game.g[i]);
 		
 		break;
+	
+	// Decomposition
+	case 5:
+	
+		// Increment color, wrapping around if limit is reached (also update global totals)
+		if (label >= 0)
+			obj_game.class[label]--;
+		label++;
+		if (label >= global.color_limit)
+			label = -1;
+		else
+			obj_game.class[label]++;
+		
+		//###
+		// Test for triangle decomposition
+		
+		break;
 }
 
 // Deactivate self

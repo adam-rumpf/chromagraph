@@ -1,5 +1,10 @@
 //###
 
+if (room == rm_decomp_bowtie)
+{
+	draw_text_color(50, 50, string(obj_game.class[0]) + ", " + string(obj_game.class[1]), c_white, c_white, c_white, c_white, 1);
+}
+
 /*draw_text_color(50, 50, "Press [N] to toggle test rooms.", c_white, c_white, c_white, c_white, 1);
 draw_text_color(50, 100, "Press [G] to spawn a test graph.", c_white, c_white, c_white, c_white, 1);
 draw_text_color(50, 150, "Press [R] to spawn a random coloring graph.", c_white, c_white, c_white, c_white, 1);
