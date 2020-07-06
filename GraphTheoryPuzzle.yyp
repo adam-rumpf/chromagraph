@@ -247,14 +247,6 @@
             }
         },
         {
-            "Key": "37412d57-2f2c-4029-b709-49fe457e3f15",
-            "Value": {
-                "id": "5c52d65d-dcc0-4ec5-b6b5-dfa3169f0f13",
-                "resourcePath": "scripts\\scr_vertex_dots\\scr_vertex_dots.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "379f8df3-5893-4d83-b244-44e26b61491b",
             "Value": {
                 "id": "88e819e9-9f40-4449-b573-4a76d961a2b1",
@@ -919,6 +911,14 @@
             }
         },
         {
+            "Key": "c6c98651-496f-45b0-8eff-bda9a31e6572",
+            "Value": {
+                "id": "34428ae2-71e1-4b73-853d-82fd898dbdb4",
+                "resourcePath": "sprites\\spr_vertex_dots\\spr_vertex_dots.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c7c4dde3-2677-44cd-aff9-d1c60a6c0601",
             "Value": {
                 "id": "2f47ef54-a8a1-4e51-9dc6-1d3c504825fe",
@@ -1271,7 +1271,6 @@
         "25b64920-2c4d-4ec6-a9be-59dde8ef69f1",
         "100b559f-74a6-4475-b17f-fe9bbbbe7a75",
         "349cb453-40ec-4fb3-860e-0692446fa31c",
-        "37412d57-2f2c-4029-b709-49fe457e3f15",
         "bc1d92c8-cb5e-4329-9126-8fa4d5d7129c",
         "b386dd82-1fc7-472e-9190-71a2ffa49462",
         "41af846a-14a7-48c8-bdc1-ae8c96f7e838",
