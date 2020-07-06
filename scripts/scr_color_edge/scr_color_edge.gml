@@ -29,6 +29,28 @@ else
 //###
 var vec = scr_resize_vector([e.head.x-e.tail.x, e.head.y-e.tail.y], 20);
 if (e.angry == false)
-	draw_line_width_color(e.tail.x+vec[0]-1, e.tail.y+vec[1]-1, e.head.x-vec[0]-1, e.head.y-vec[1]-1, 4, col, col);
+{
+	// Normal overlay
+	var tc = [e.tail.x + vec[0] - 1, e.tail.y + vec[1] - 1]; // tail drawing coordinates
+	var hc = [e.head.x - vec[0] - 1, e.head.y - vec[1] - 1]; // head drawing coordinates
+	draw_line_width_color(tc[0], tc[1], hc[0], hc[1], 2, col, col);
+	for (var i = 0; i < e.label+1; i++)
+	{
+		var xx = ((i+1)/(e.label+2))*tc[0] + (1 - (i+1)/(e.label+2))*hc[0];
+		var yy = ((i+1)/(e.label+2))*tc[1] + (1 - (i+1)/(e.label+2))*hc[1];
+		draw_circle_color(xx, yy, 4, col, col, false);
+	}
+}
 else
-	draw_line_width_color(e.tail.x+vec[0]-1+irandom_range(-3,3), e.tail.y+vec[1]-1+irandom_range(-3,3), e.head.x-vec[0]-1+irandom_range(-3,3), e.head.y-vec[1]-1+irandom_range(-3,3), 2, col, col);
+{
+	// Angry overlay
+	var tc = [e.tail.x + vec[0] - 1 + irandom_range(-2,2), e.tail.y + vec[1] - 1 + irandom_range(-2,2)]; // tail drawing coordinates
+	var hc = [e.head.x - vec[0] - 1 + irandom_range(-2,2), e.head.y - vec[1] - 1 + irandom_range(-2,2)]; // head drawing coordinates
+	draw_line_width_color(tc[0], tc[1], hc[0], hc[1], 2, col, col);
+	for (var i = 0; i < e.label+1; i++)
+	{
+		var xx = ((i+1)/(e.label+2))*tc[0] + (1 - (i+1)/(e.label+2))*hc[0];
+		var yy = ((i+1)/(e.label+2))*tc[1] + (1 - (i+1)/(e.label+2))*hc[1];
+		draw_circle_color(xx, yy, 4, col, col, false);
+	}
+}

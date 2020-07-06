@@ -14,7 +14,7 @@ if (v.label < 0)
 
 // Define parameters
 var scale = 24/sprite_get_width(spr_vertex_dots); // image scale
-var angle = 0.04*(60/room_speed)*(1+(20-v.label)/40)*current_time; // image angle
+var angle = 0.04*(60/room_speed)*(1+(20-v.label)/40)*current_time + (v.x*v.y % 360); // image angle
 
 //###
 // Draw particle effects
