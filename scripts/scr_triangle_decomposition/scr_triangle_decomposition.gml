@@ -37,7 +37,7 @@ for (var i = 0; i < global.color_limit; i++)
 	// If class has not been ruled out due to its size, test its shape
 	if (obj_game.class[i] == 3)
 	{
-		if (scr_color_class_triangle(i) == false)
+		if (scr_color_class_triangle(g, i) == false)
 		{
 			proper = false;
 			triangular[i] = false;

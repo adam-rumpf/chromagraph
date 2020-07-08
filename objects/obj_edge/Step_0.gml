@@ -47,8 +47,9 @@ switch global.puzzle
 		else
 			obj_game.class[label]++;
 		
-		//###
 		// Test for triangle decomposition
+		for (var i = 0; i < array_length_1d(obj_game.g); i++)
+			scr_triangle_decomposition(obj_game.g[i]);
 		
 		break;
 }
