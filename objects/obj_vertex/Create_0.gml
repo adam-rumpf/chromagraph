@@ -28,3 +28,6 @@ vc.v = id;
 // Vertex highlighting object
 vh = instance_create_layer(x, y, "Overlays", obj_vertex_selection);
 vh.v = id;
+
+// Initial color
+image_blend = c_black;

@@ -17,40 +17,27 @@ if (e.label < 0)
 //###
 // Draw particle effects
 
-/*
-// Draw normal overlay
-if (v.angry == false)
-	scr_vertex_dots(v.x, v.y, col, v.label);
-// Draw angry overlay
-else
-	scr_vertex_dots(v.x+irandom_range(-3,3), v.y+irandom_range(-3,3), col, v.label);
-*/
-
-//###
-var vec = scr_resize_vector([e.head.x-e.tail.x, e.head.y-e.tail.y], 20);
-if (e.angry == false)
+// Define coordinates of endpoints
+var vec = scr_resize_vector([e.head.x-e.tail.x, e.head.y-e.tail.y], 20); // vector used to bound dot locations
+var tc = [e.tail.x - 1, e.tail.y - 1]; // tail coordinates
+var hc = [e.head.x - 1, e.head.y - 1]; // head coordinates
+if (e.angry == true)
 {
-	// Normal overlay
-	var tc = [e.tail.x + vec[0] - 1, e.tail.y + vec[1] - 1]; // tail drawing coordinates
-	var hc = [e.head.x - vec[0] - 1, e.head.y - vec[1] - 1]; // head drawing coordinates
-	draw_line_width_color(tc[0], tc[1], hc[0], hc[1], 2, col, col);
-	for (var i = 0; i < e.label+1; i++)
-	{
-		var xx = ((i+1)/(e.label+2))*tc[0] + (1 - (i+1)/(e.label+2))*hc[0];
-		var yy = ((i+1)/(e.label+2))*tc[1] + (1 - (i+1)/(e.label+2))*hc[1];
-		draw_circle_color(xx, yy, 4, col, col, false);
-	}
+	// Jostle coordinates if angry
+	tc[0] += irandom_range(-2,2);
+	tc[1] += irandom_range(-2,2);
+	hc[0] += irandom_range(-2,2);
+	hc[1] += irandom_range(-2,2);
 }
-else
+var tic = [tc[0] + vec[0], tc[1] + vec[1]]; // tail dot coordinates
+var hic = [hc[0] - vec[0], hc[1] - vec[1]]; // head dot coordinates
+
+// Draw line and dots
+draw_line_width_color(tc[0], tc[1], hc[0], hc[1], 2, col, col);
+for (var i = 0; i < e.label+1; i++)
 {
-	// Angry overlay
-	var tc = [e.tail.x + vec[0] - 1 + irandom_range(-2,2), e.tail.y + vec[1] - 1 + irandom_range(-2,2)]; // tail drawing coordinates
-	var hc = [e.head.x - vec[0] - 1 + irandom_range(-2,2), e.head.y - vec[1] - 1 + irandom_range(-2,2)]; // head drawing coordinates
-	draw_line_width_color(tc[0], tc[1], hc[0], hc[1], 2, col, col);
-	for (var i = 0; i < e.label+1; i++)
-	{
-		var xx = ((i+1)/(e.label+2))*tc[0] + (1 - (i+1)/(e.label+2))*hc[0];
-		var yy = ((i+1)/(e.label+2))*tc[1] + (1 - (i+1)/(e.label+2))*hc[1];
-		draw_circle_color(xx, yy, 4, col, col, false);
-	}
+	var xx = ((i+1)/(e.label+2))*tic[0] + (1 - (i+1)/(e.label+2))*hic[0];
+	var yy = ((i+1)/(e.label+2))*tic[1] + (1 - (i+1)/(e.label+2))*hic[1];
+	var r = 4 + 1.5*cos(0.002*(60/room_speed)*(1+(20-e.label)/40)*current_time);
+	draw_circle_color(xx, yy, r, col, col, false);
 }

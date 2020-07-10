@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "1e1636c5-f44b-438c-871a-5d9a288a2588",
+            "Value": {
+                "id": "981125e8-207d-46a2-91a8-897a0cbb418a",
+                "resourcePath": "sprites\\spr_vertex_ring\\spr_vertex_ring.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f0a6e4d-8536-4b44-8887-30cbb9c3f1f2",
             "Value": {
                 "id": "c4ad3860-bf45-4234-a93b-466acc881171",
@@ -823,6 +831,14 @@
             }
         },
         {
+            "Key": "b3406cd8-81d2-4e40-97c2-9f0af14acb41",
+            "Value": {
+                "id": "b5bb5120-9820-42a4-8945-46c45961d311",
+                "resourcePath": "sprites\\spr_vertex_shine\\spr_vertex_shine.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b3586cc3-b322-496a-a1b7-91c25fce85ed",
             "Value": {
                 "id": "30e4c220-9de6-439a-a908-dc903833f3fc",
@@ -996,6 +1012,14 @@
                 "id": "a6111250-0a0a-4420-a264-8db96be96961",
                 "resourcePath": "rooms\\rm_coloring_dart\\rm_coloring_dart.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d777b4a8-8779-4a50-94d5-9355e1cbd81a",
+            "Value": {
+                "id": "098c66e6-ab20-4162-aa82-a8072be6d0be",
+                "resourcePath": "sprites\\spr_vertex_orb\\spr_vertex_orb.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1279,8 +1303,8 @@
         "4d9d04a3-c604-4f31-a451-4406b380243d",
         "25b64920-2c4d-4ec6-a9be-59dde8ef69f1",
         "100b559f-74a6-4475-b17f-fe9bbbbe7a75",
-        "349cb453-40ec-4fb3-860e-0692446fa31c",
         "bc1d92c8-cb5e-4329-9126-8fa4d5d7129c",
+        "349cb453-40ec-4fb3-860e-0692446fa31c",
         "b386dd82-1fc7-472e-9190-71a2ffa49462",
         "41af846a-14a7-48c8-bdc1-ae8c96f7e838",
         "f29cb946-9569-453f-9819-916c77edab56",

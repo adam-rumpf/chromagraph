@@ -209,7 +209,10 @@ switch room
 		//###
 		// Give all vertices a separate color
 		for (var i = 0; i < n; i++)
+		{
 			g[0].v[i].label = i;
+			g[0].v[i].image_blend = scr_pallette(i, 0.5);
+		}
 		
 		break;
 	

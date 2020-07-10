@@ -15,6 +15,9 @@ switch global.puzzle
 		if (label >= global.color_limit)
 			label = -1;
 		
+		// Set color
+		image_blend = scr_pallette(label, 0.5);
+		
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
 			scr_properly_colored(obj_game.g[i]);
@@ -28,6 +31,9 @@ switch global.puzzle
 		label++;
 		if (label >= global.color_limit)
 			label = -1;
+		
+		// Set color
+		image_blend = scr_pallette(label, 0.5);
 		
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
@@ -45,6 +51,9 @@ switch global.puzzle
 			label += 2;
 		else
 			label = -1;
+		
+		// Set color (constant)
+		image_blend = scr_pallette(0, 0.5);
 		
 		// Prompt edge label updates and solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
