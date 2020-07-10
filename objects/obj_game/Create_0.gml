@@ -9,9 +9,6 @@ g = [];
 // Room color class sizes
 class = [];
 
-// Whether or not to evaluate a solution
-evaluate = false;
-
 /*
 Global list of selectable objects.
 This includes all buttons and graph elements that can be clicked on within the current room.
@@ -27,10 +24,9 @@ Global puzzle type ID. Includes:
 	3 -- Total Coloring
 	4 -- Graceful Trees
 	5 -- Decomposition
+	6 -- Dominating Set
 */
 global.puzzle = 0;
 
 // Global puzzle parameters
-global.color_limit = 0;
-
-scr_pallette(0, 1);//###
+global.puzzle_limit = 0;

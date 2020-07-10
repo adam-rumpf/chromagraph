@@ -29,6 +29,5 @@ for (var i = 0; i < array_length_1d(g.e); i++)
 		proper = false;
 }
 
-
 // If all tests have been passed, the coloring is valid
 return proper;

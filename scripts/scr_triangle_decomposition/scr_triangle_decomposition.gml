@@ -9,7 +9,7 @@ var g = argument[0];
 // Initially assume that decomposition is proper and all color classes are correct
 var proper = true;
 var triangular = []; // whether each color class is a triangle
-for (var i = 0; i < global.color_limit; i++)
+for (var i = 0; i < global.puzzle_limit; i++)
 	triangular[i] = true;
 for (var i = 0; i < array_length_1d(g.e); i++)
 	g.e[i].angry = false;
@@ -22,7 +22,7 @@ for (var i = 0; i < array_length_1d(g.e); i++)
 }
 
 // Verify that all color classes are size 0 or 3
-for (var i = 0; i < global.color_limit; i++)
+for (var i = 0; i < global.puzzle_limit; i++)
 {
 	if (obj_game.class[i] != 0 && obj_game.class[i] != 3)
 	{
@@ -32,7 +32,7 @@ for (var i = 0; i < global.color_limit; i++)
 }
 
 // Verify that each color class constitutes a triangle
-for (var i = 0; i < global.color_limit; i++)
+for (var i = 0; i < global.puzzle_limit; i++)
 {
 	// If class has not been ruled out due to its size, test its shape
 	if (obj_game.class[i] == 3)

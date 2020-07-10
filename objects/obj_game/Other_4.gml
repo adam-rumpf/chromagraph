@@ -16,7 +16,7 @@ switch room
 		Coloring Puzzles (Type 1)
 		1 Graph
 		Selectable: Buttons, Vertices
-		Parameters: color_limit (number of available colors)
+		Parameters: puzzle_limit (number of available colors)
 	============================================================*/
 	
 	// Coloring (P2)
@@ -28,7 +28,7 @@ switch room
 		g[0] = scr_graph_p2();
 		
 		// Set color limit
-		global.color_limit = 2;
+		global.puzzle_limit = 2;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -49,7 +49,7 @@ switch room
 		g[0] = scr_graph_dart();
 		
 		// Set color limit
-		global.color_limit = 3;
+		global.puzzle_limit = 3;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -70,7 +70,7 @@ switch room
 		g[0] = scr_graph_kite();
 		
 		// Set color limit
-		global.color_limit = 3;
+		global.puzzle_limit = 3;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -91,7 +91,7 @@ switch room
 		g[0] = scr_graph_petersen_star();
 		
 		// Set color limit
-		global.color_limit = 3;
+		global.puzzle_limit = 3;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -112,7 +112,7 @@ switch room
 		g[0] = scr_graph_petersen_claw();
 		
 		// Set color limit
-		global.color_limit = 3;
+		global.puzzle_limit = 3;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -133,7 +133,7 @@ switch room
 		g[0] = scr_graph_petersen_circle();
 		
 		// Set color limit
-		global.color_limit = 3;
+		global.puzzle_limit = 3;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -154,7 +154,7 @@ switch room
 		g[0] = scr_graph_dodecahedron();
 		
 		// Set color limit
-		global.color_limit = 3;
+		global.puzzle_limit = 3;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -175,7 +175,7 @@ switch room
 		g[0] = scr_graph_categorical_4();
 		
 		// Set color limit
-		global.color_limit = 4;
+		global.puzzle_limit = 4;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -196,7 +196,7 @@ switch room
 		g[0] = scr_graph_grid_4x5();
 		
 		// Set color limit
-		global.color_limit = 20;
+		global.puzzle_limit = 20;
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -220,7 +220,7 @@ switch room
 		Edge Coloring Puzzles (Type 2)
 		1 Graph
 		Selectable: Buttons, Edges
-		Parameters: color_limit (number of available colors)
+		Parameters: puzzle_limit (number of available colors)
 	============================================================*/
 	
 	// Coloring (Petersen Star)
@@ -232,7 +232,7 @@ switch room
 		g[0] = scr_graph_petersen_star();
 		
 		// Set color limit
-		global.color_limit = 4;
+		global.puzzle_limit = 4;
 		
 		// Get numbers of edges and selectable objects
 		var n = array_length_1d(g[0].e);
@@ -248,7 +248,7 @@ switch room
 		Total Coloring Puzzles (Type 3)
 		1 Graph
 		Selectable: Buttons, Vertices, Edges
-		Parameters: color_limit (number of available colors)
+		Parameters: puzzle_limit (number of available colors)
 	============================================================*/
 	
 	// Total Coloring (Dart)
@@ -260,7 +260,7 @@ switch room
 		g[0] = scr_graph_dart();
 		
 		// Set color limit
-		global.color_limit = 5;
+		global.puzzle_limit = 5;
 		
 		// Get numbers of vertices, edges, and selectable objects
 		var l = array_length_1d(g[0].e);
@@ -304,7 +304,7 @@ switch room
 		Decomposition Puzzles (Type 5)
 		1 Graph
 		Selectable: Buttons, Edges
-		Parameters: color_limit (number of colors/partitions)
+		Parameters: puzzle_limit (number of colors/partitions)
 	============================================================*/
 	
 	// Decomposition (Triangle)
@@ -316,10 +316,10 @@ switch room
 		g[0] = scr_graph_cycle(3);
 		
 		// Set number of partitions
-		global.color_limit = 2;
+		global.puzzle_limit = 2;
 		
 		// Set color class size list
-		for (var i = 0; i < global.color_limit; i++)
+		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of edges and selectable objects
@@ -341,10 +341,10 @@ switch room
 		g[0] = scr_graph_bowtie();
 		
 		// Set number of partitions
-		global.color_limit = 2;
+		global.puzzle_limit = 2;
 		
 		// Set color class size list
-		for (var i = 0; i < global.color_limit; i++)
+		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of edges and selectable objects
@@ -366,10 +366,10 @@ switch room
 		g[0] = scr_graph_triforce();
 		
 		// Set number of partitions
-		global.color_limit = 3;
+		global.puzzle_limit = 3;
 		
 		// Set color class size list
-		for (var i = 0; i < global.color_limit; i++)
+		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of edges and selectable objects
@@ -391,10 +391,10 @@ switch room
 		g[0] = scr_graph_complete(7);
 		
 		// Set number of partitions
-		global.color_limit = 7;
+		global.puzzle_limit = 7;
 		
 		// Set color class size list
-		for (var i = 0; i < global.color_limit; i++)
+		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of edges and selectable objects
@@ -404,6 +404,37 @@ switch room
 		// Add edges to selectable object list
 		for (var i = 0; i < n; i++)
 			global.selectable[m+i] = g[0].e[i];
+		
+		break;
+	
+	/*============================================================
+		Dominating Set Puzzles (Type 6)
+		1 Graph
+		Selectable: Buttons, Vertices
+		Parameters: puzzle_limit (number of selectable vertices)
+	============================================================*/
+	
+	// Dominating Set (3-Spider)
+	case rm_dominating_spider3:
+	
+		global.puzzle = 6;
+	
+		// Define spider graph
+		g[0] = scr_graph_spider(3);
+		
+		// Set vertex limit
+		global.puzzle_limit = 3;
+		
+		// Set current set size
+		class[0] = 0;
+		
+		// Get numbers of vertices and selectable objects
+		var n = array_length_1d(g[0].v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].v[i];
 		
 		break;
 }

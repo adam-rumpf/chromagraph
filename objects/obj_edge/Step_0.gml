@@ -12,7 +12,7 @@ switch global.puzzle
 		
 		// Increment color, wrapping around if limit is reached
 		label++;
-		if (label >= global.color_limit)
+		if (label >= global.puzzle_limit)
 			label = -1;
 		
 		// Prompt a global solution test
@@ -26,7 +26,7 @@ switch global.puzzle
 		
 		// Increment color, wrapping around if limit is reached
 		label++;
-		if (label >= global.color_limit)
+		if (label >= global.puzzle_limit)
 			label = -1;
 		
 		// Prompt a global solution test
@@ -42,7 +42,7 @@ switch global.puzzle
 		if (label >= 0)
 			obj_game.class[label]--;
 		label++;
-		if (label >= global.color_limit)
+		if (label >= global.puzzle_limit)
 			label = -1;
 		else
 			obj_game.class[label]++;

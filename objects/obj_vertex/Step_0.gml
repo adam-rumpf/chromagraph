@@ -12,7 +12,7 @@ switch global.puzzle
 		
 		// Increment color, wrapping around if limit is reached
 		label++;
-		if (label >= global.color_limit)
+		if (label >= global.puzzle_limit)
 			label = -1;
 		
 		// Set color
@@ -29,7 +29,7 @@ switch global.puzzle
 		
 		// Increment color, wrapping around if limit is reached
 		label++;
-		if (label >= global.color_limit)
+		if (label >= global.puzzle_limit)
 			label = -1;
 		
 		// Set color
@@ -58,6 +58,36 @@ switch global.puzzle
 		// Prompt edge label updates and solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
 			scr_graceful_edge_update(obj_game.g[i]);
+		
+		break;
+	
+	// Dominating Set
+	case 6:	
+		
+		// Toggle color and increment global total
+		if (label < 0)
+		{
+			// Toggle only if under the allowed limit
+			if (obj_game.class[0] >= global.puzzle_limit)
+				instance_create_layer(x, y, "Vertex_Effects", obj_vertex_color_temp);
+			else
+			{
+				label = 0;
+				obj_game.class[0]++;
+			}
+		}
+		else
+		{
+			label = -1;
+			obj_game.class[0]--;
+		}
+		
+		// Set color
+		image_blend = scr_pallette(label, 0.5);
+		
+		// Prompt a global solution test
+		for (var i = 0; i < array_length_1d(obj_game.g); i++)
+			scr_set_dominating(obj_game.g[i], 0);
 		
 		break;
 }
