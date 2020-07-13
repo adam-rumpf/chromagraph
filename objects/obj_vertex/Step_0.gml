@@ -90,6 +90,23 @@ switch global.puzzle
 			scr_set_dominating(obj_game.g[i], 0);
 		
 		break;
+	
+	// Fall Coloring
+	case 7:	
+		
+		// Increment color, wrapping around if limit is reached
+		label++;
+		if (label >= global.puzzle_limit)
+			label = -1;
+		
+		// Set color
+		image_blend = scr_pallette(label, 0.5);
+		
+		// Prompt a global solution test
+		for (var i = 0; i < array_length_1d(obj_game.g); i++)
+			scr_properly_fall_colored(obj_game.g[i]);
+		
+		break;
 }
 
 // Deactivate self

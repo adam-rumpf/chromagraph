@@ -16,19 +16,19 @@ switch room
 		Coloring Puzzles (Type 1)
 		1 Graph
 		Selectable: Buttons, Vertices
-		Parameters: puzzle_limit (number of available colors)
+		Parameters: puzzle_limit (number of color classes)
 	============================================================*/
 	
 	// Coloring (P2)
 	case rm_coloring_p2:
 		
 		global.puzzle = 1;
-	
-		// Define path graph
-		g[0] = scr_graph_p2();
 		
 		// Set color limit
 		global.puzzle_limit = 2;
+	
+		// Define path graph
+		g[0] = scr_graph_p2();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -44,12 +44,12 @@ switch room
 	case rm_coloring_dart:
 		
 		global.puzzle = 1;
-	
-		// Define dart graph
-		g[0] = scr_graph_dart();
 		
 		// Set color limit
 		global.puzzle_limit = 3;
+	
+		// Define dart graph
+		g[0] = scr_graph_dart();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -65,12 +65,12 @@ switch room
 	case rm_coloring_kite:
 		
 		global.puzzle = 1;
-	
-		// Define dart graph
-		g[0] = scr_graph_kite();
 		
 		// Set color limit
 		global.puzzle_limit = 3;
+	
+		// Define dart graph
+		g[0] = scr_graph_kite();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -86,12 +86,12 @@ switch room
 	case rm_coloring_petersen_star:
 		
 		global.puzzle = 1;
-	
-		// Define Petersen graph
-		g[0] = scr_graph_petersen_star();
 		
 		// Set color limit
 		global.puzzle_limit = 3;
+	
+		// Define Petersen graph
+		g[0] = scr_graph_petersen_star();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -107,12 +107,12 @@ switch room
 	case rm_coloring_petersen_claw:
 		
 		global.puzzle = 1;
-	
-		// Define Petersen graph
-		g[0] = scr_graph_petersen_claw();
 		
 		// Set color limit
 		global.puzzle_limit = 3;
+	
+		// Define Petersen graph
+		g[0] = scr_graph_petersen_claw();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -128,12 +128,12 @@ switch room
 	case rm_coloring_petersen_circle:
 		
 		global.puzzle = 1;
-	
-		// Define Petersen graph
-		g[0] = scr_graph_petersen_circle();
 		
 		// Set color limit
 		global.puzzle_limit = 3;
+	
+		// Define Petersen graph
+		g[0] = scr_graph_petersen_circle();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -149,12 +149,12 @@ switch room
 	case rm_coloring_dodecahedron:
 		
 		global.puzzle = 1;
-	
-		// Define Petersen graph
-		g[0] = scr_graph_dodecahedron();
 		
 		// Set color limit
 		global.puzzle_limit = 3;
+	
+		// Define Petersen graph
+		g[0] = scr_graph_dodecahedron();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -170,12 +170,12 @@ switch room
 	case rm_coloring_categorical_4:
 		
 		global.puzzle = 1;
-	
-		// Define Petersen graph
-		g[0] = scr_graph_categorical_4();
 		
 		// Set color limit
 		global.puzzle_limit = 4;
+	
+		// Define K2 x K4 graph
+		g[0] = scr_graph_categorical_4();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -191,12 +191,12 @@ switch room
 	case rm_coloring_grid_4x5:
 		
 		global.puzzle = 1;
-	
-		// Define grid graph
-		g[0] = scr_graph_grid_4x5();
 		
 		// Set color limit
 		global.puzzle_limit = 20;
+	
+		// Define grid graph
+		g[0] = scr_graph_grid_4x5();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);
@@ -220,19 +220,19 @@ switch room
 		Edge Coloring Puzzles (Type 2)
 		1 Graph
 		Selectable: Buttons, Edges
-		Parameters: puzzle_limit (number of available colors)
+		Parameters: puzzle_limit (number of color classes)
 	============================================================*/
 	
 	// Coloring (Petersen Star)
 	case rm_edge_coloring_petersen_star:
 		
 		global.puzzle = 2;
-	
-		// Define Petersen graph
-		g[0] = scr_graph_petersen_star();
 		
 		// Set color limit
 		global.puzzle_limit = 4;
+	
+		// Define Petersen graph
+		g[0] = scr_graph_petersen_star();
 		
 		// Get numbers of edges and selectable objects
 		var n = array_length_1d(g[0].e);
@@ -248,19 +248,19 @@ switch room
 		Total Coloring Puzzles (Type 3)
 		1 Graph
 		Selectable: Buttons, Vertices, Edges
-		Parameters: puzzle_limit (number of available colors)
+		Parameters: puzzle_limit (number of color classes)
 	============================================================*/
 	
 	// Total Coloring (Dart)
 	case rm_total_coloring_dart:
 		
 		global.puzzle = 3;
-	
-		// Define dart graph
-		g[0] = scr_graph_dart();
 		
 		// Set color limit
 		global.puzzle_limit = 5;
+	
+		// Define dart graph
+		g[0] = scr_graph_dart();
 		
 		// Get numbers of vertices, edges, and selectable objects
 		var l = array_length_1d(g[0].e);
@@ -311,12 +311,12 @@ switch room
 	case rm_decomp_triangle:
 		
 		global.puzzle = 5;
-	
-		// Define triangle graph
-		g[0] = scr_graph_cycle(3);
 		
 		// Set number of partitions
 		global.puzzle_limit = 2;
+	
+		// Define triangle graph
+		g[0] = scr_graph_cycle(3);
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
@@ -336,12 +336,12 @@ switch room
 	case rm_decomp_bowtie:
 		
 		global.puzzle = 5;
-	
-		// Define bowtie graph
-		g[0] = scr_graph_bowtie();
 		
 		// Set number of partitions
 		global.puzzle_limit = 2;
+	
+		// Define bowtie graph
+		g[0] = scr_graph_bowtie();
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
@@ -361,12 +361,12 @@ switch room
 	case rm_decomp_triforce:
 		
 		global.puzzle = 5;
-	
-		// Define Triforce graph
-		g[0] = scr_graph_triforce();
 		
 		// Set number of partitions
 		global.puzzle_limit = 3;
+	
+		// Define Triforce graph
+		g[0] = scr_graph_triforce();
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
@@ -386,12 +386,12 @@ switch room
 	case rm_decomp_k7:
 		
 		global.puzzle = 5;
-	
-		// Define Triforce graph
-		g[0] = scr_graph_complete(7);
 		
 		// Set number of partitions
 		global.puzzle_limit = 7;
+	
+		// Define Triforce graph
+		g[0] = scr_graph_complete(7);
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
@@ -418,15 +418,64 @@ switch room
 	case rm_dominating_spider3:
 	
 		global.puzzle = 6;
+		
+		// Set vertex limit
+		global.puzzle_limit = 3;
 	
 		// Define spider graph
 		g[0] = scr_graph_spider(3);
 		
-		// Set vertex limit
-		global.puzzle_limit = 3;
-		
 		// Set current set size
 		class[0] = 0;
+		
+		// Get numbers of vertices and selectable objects
+		var n = array_length_1d(g[0].v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].v[i];
+		
+		break;
+	
+	/*============================================================
+		Fall Colring Puzzles (Type 7)
+		1 Graph
+		Selectable: Buttons, Vertices
+		Parameters: puzzle_limit (number of color classes)
+	============================================================*/
+	
+	// Fall Coloring (K2 x K4, 2 colors)
+	case rm_fall_categorical_4_2:
+	
+		global.puzzle = 7;
+		
+		// Set color limit
+		global.puzzle_limit = 2;
+	
+		// Define K2 x K4 graph
+		g[0] = scr_graph_categorical_4();
+		
+		// Get numbers of vertices and selectable objects
+		var n = array_length_1d(g[0].v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].v[i];
+		
+		break;
+	
+	// Fall Coloring (K2 x K4, 4 colors)
+	case rm_fall_categorical_4_4:
+	
+		global.puzzle = 7
+		
+		// Set color limit
+		global.puzzle_limit = 4;
+	
+		// Define K2 x K4 graph
+		g[0] = scr_graph_categorical_4();
 		
 		// Get numbers of vertices and selectable objects
 		var n = array_length_1d(g[0].v);

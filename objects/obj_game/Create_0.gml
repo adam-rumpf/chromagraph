@@ -25,6 +25,7 @@ Global puzzle type ID. Includes:
 	4 -- Graceful Trees
 	5 -- Decomposition
 	6 -- Dominating Set
+	7 -- Fall Coloring
 */
 global.puzzle = 0;
 

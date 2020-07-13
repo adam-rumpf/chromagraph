@@ -19,6 +19,6 @@ switch global.puzzle
 	
 	// Graceful trees
 	case 4:
-		scr_draw_edge(id, scr_pallette(1, 0.5));
+		scr_draw_edge(id, scr_pallette(0, 0.5));
 		break;
 }

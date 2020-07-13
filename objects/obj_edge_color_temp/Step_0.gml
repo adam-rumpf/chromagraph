@@ -1,7 +1,7 @@
 /// @desc Fade in or out.
 
 // If no edge has been linked, do nothing
-if (e == id)
+if (e == id || label < 0)
 	exit;
 
 // Fade in or out depending on whether endpoint has the correct label
