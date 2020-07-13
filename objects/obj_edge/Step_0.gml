@@ -4,7 +4,7 @@
 if (activated == false)
 	exit;
 
-// Otherwise decide action based on puzzle type
+// Decide action based on puzzle type
 switch global.puzzle
 {
 	// Edge Coloring
