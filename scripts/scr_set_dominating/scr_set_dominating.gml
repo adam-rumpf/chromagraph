@@ -19,21 +19,35 @@ if (global.puzzle == 6)
 // Verify that each vertex is either in or adjacent to the set
 for (var i = 0; i < array_length_1d(g.v); i++)
 {
+	var check = false; // whether the current vertex has already been validated
+	
 	// Selected vertices are fine
-	if (g.v[i].label > 0)
+	if (g.v[i].label == label)
 		continue;
 	
-	// Otherwise check the vertex's neighborhood to find a selected vertex
+	// Check the vertex's out-neighborhood to find a selected vertex
 	for (var j = 0; j < array_length_1d(g.v[i].out_arcs); j++)
 	{
-		if (g.v[i].out_arcs[j].head.label > 0)
-			continue;
+		if (g.v[i].out_arcs[j].head.label == label)
+		{
+			check = true;
+			break;
+		}
 	}
+	if (check == true)
+		continue;
+	
+	// Check the vertex's in-neighborhood to find a selected vertex
 	for (var j = 0; j < array_length_1d(g.v[i].in_arcs); j++)
 	{
-		if (g.v[i].in_arcs[j].tail.label > 0)
-			continue;
+		if (g.v[i].in_arcs[j].tail.label == label)
+		{
+			check = true;
+			break;
+		}
 	}
+	if (check == true)
+		continue;
 	
 	// If no selected neighbor was found, the set is not dominating
 	return false;
