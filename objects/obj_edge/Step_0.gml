@@ -17,7 +17,7 @@ switch global.puzzle
 		
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			scr_properly_edge_colored(obj_game.g[i]);
+			global.puzzle_solved = scr_properly_edge_colored(obj_game.g[i]);
 		
 		break;
 	
@@ -31,7 +31,7 @@ switch global.puzzle
 		
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			scr_properly_totally_colored(obj_game.g[i]);
+			global.puzzle_solved = scr_properly_totally_colored(obj_game.g[i]);
 		
 		break;
 	
@@ -49,7 +49,7 @@ switch global.puzzle
 		
 		// Test for triangle decomposition
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			scr_triangle_decomposition(obj_game.g[i]);
+			global.puzzle_solved = scr_triangle_decomposition(obj_game.g[i]);
 		
 		break;
 }

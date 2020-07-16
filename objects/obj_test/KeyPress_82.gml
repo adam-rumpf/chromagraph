@@ -1,5 +1,7 @@
 //###
 
+room_restart();
+
 // Delete existing graph and generate a new one
 //if (room == rm_coloring_dart)
 //{

@@ -20,7 +20,7 @@ switch global.puzzle
 		
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			scr_properly_colored(obj_game.g[i]);
+			global.puzzle_solved = scr_properly_colored(obj_game.g[i]);
 		
 		break;
 	
@@ -37,7 +37,7 @@ switch global.puzzle
 		
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			scr_properly_totally_colored(obj_game.g[i]);
+			global.puzzle_solved = scr_properly_totally_colored(obj_game.g[i]);
 		
 		break;
 	
@@ -53,11 +53,11 @@ switch global.puzzle
 			label = -1;
 		
 		// Set color (constant)
-		image_blend = scr_pallette(0, 0.5);
+		image_blend = scr_pallette(min(0,label), 0.5);
 		
 		// Prompt edge label updates and solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			scr_graceful_edge_update(obj_game.g[i]);
+			global.puzzle_solved = scr_graceful_edge_update(obj_game.g[i]);
 		
 		break;
 	
@@ -87,7 +87,7 @@ switch global.puzzle
 		
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			scr_set_dominating(obj_game.g[i], 0);
+			global.puzzle_solved = scr_set_dominating(obj_game.g[i], 0);
 		
 		break;
 	
@@ -104,7 +104,7 @@ switch global.puzzle
 		
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			scr_properly_fall_colored(obj_game.g[i]);
+			global.puzzle_solved = scr_properly_fall_colored(obj_game.g[i]);
 		
 		break;
 }

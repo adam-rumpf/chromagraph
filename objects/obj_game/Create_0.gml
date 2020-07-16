@@ -31,3 +31,6 @@ global.puzzle = 0;
 
 // Global puzzle parameters
 global.puzzle_limit = 0;
+
+// Global indicator of whether current puzzle is solved
+global.puzzle_solved = false;

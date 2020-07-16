@@ -5,6 +5,11 @@ if (room == rm_decomp_bowtie)
 	draw_text_color(50, 50, string(obj_game.class[0]) + ", " + string(obj_game.class[1]), c_white, c_white, c_white, c_white, 1);
 }
 
+if (global.puzzle_solved == true)
+	draw_circle_color(room_width-50, 50, 20, c_green, c_green, false);
+else
+	draw_circle_color(room_width-50, 50, 20, c_red, c_red, false);
+
 /*draw_text_color(50, 50, "Press [N] to toggle test rooms.", c_white, c_white, c_white, c_white, 1);
 draw_text_color(50, 100, "Press [G] to spawn a test graph.", c_white, c_white, c_white, c_white, 1);
 draw_text_color(50, 150, "Press [R] to spawn a random coloring graph.", c_white, c_white, c_white, c_white, 1);

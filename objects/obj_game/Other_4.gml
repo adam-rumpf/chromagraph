@@ -3,6 +3,9 @@
 // Reset color class counts
 class = [];
 
+// Reset solve status
+global.puzzle_solved = false;
+
 // Main case structure for each room
 switch room
 {
@@ -487,3 +490,7 @@ switch room
 		
 		break;
 }
+
+// Reposition vertices
+for (var i = 0; i < array_length_1d(g); i++)
+	scr_vertex_reframe(g[i], 180, 180, 100, 100);

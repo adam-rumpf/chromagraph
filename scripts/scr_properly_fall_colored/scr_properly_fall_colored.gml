@@ -6,7 +6,7 @@
 // Rename argument
 var g = argument[0];
 
-var proper = true;;
+var proper = true;
 
 // Verify proper coloring
 if (scr_properly_colored(g) == false)

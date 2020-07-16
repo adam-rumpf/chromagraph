@@ -20,3 +20,6 @@ for (var i = 0; i < array_length_1d(g.v); i++)
 	g.v[i].x += rr*cos(theta);
 	g.v[i].y += rr*sin(theta);
 }
+
+// Rebase overlay objects
+scr_vertex_rebase(g);
