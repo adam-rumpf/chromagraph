@@ -63,16 +63,5 @@ for (var i = 0; i < array_length_1d(g.v); i++)
 	g.v[i].y += (room_height - ymax)/2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 // Rebase overlay objects
 scr_vertex_rebase(g);

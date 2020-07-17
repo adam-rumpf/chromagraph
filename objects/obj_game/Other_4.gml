@@ -17,7 +17,6 @@ switch room
 	
 	/*============================================================
 		Coloring Puzzles (Type 1)
-		1 Graph
 		Selectable: Buttons, Vertices
 		Parameters: puzzle_limit (number of color classes)
 	============================================================*/
@@ -31,15 +30,15 @@ switch room
 		global.puzzle_limit = 2;
 	
 		// Define path graph
-		g[0] = scr_graph_p2();
+		g = scr_graph_p2();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -52,15 +51,15 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define dart graph
-		g[0] = scr_graph_dart();
+		g = scr_graph_dart();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -73,15 +72,15 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define dart graph
-		g[0] = scr_graph_kite();
+		g = scr_graph_kite();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -94,15 +93,15 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define Petersen graph
-		g[0] = scr_graph_petersen_star();
+		g = scr_graph_petersen_star();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -115,15 +114,15 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define Petersen graph
-		g[0] = scr_graph_petersen_claw();
+		g = scr_graph_petersen_claw();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -136,15 +135,15 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define Petersen graph
-		g[0] = scr_graph_petersen_circle();
+		g = scr_graph_petersen_circle();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -157,15 +156,15 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define Petersen graph
-		g[0] = scr_graph_dodecahedron();
+		g = scr_graph_dodecahedron();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -178,15 +177,15 @@ switch room
 		global.puzzle_limit = 4;
 	
 		// Define K2 x K4 graph
-		g[0] = scr_graph_categorical_4();
+		g = scr_graph_categorical_4();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -199,22 +198,22 @@ switch room
 		global.puzzle_limit = 20;
 	
 		// Define grid graph
-		g[0] = scr_graph_grid_4x5();
+		g = scr_graph_grid_4x5();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		//###
 		// Give all vertices a separate color
 		for (var i = 0; i < n; i++)
 		{
-			g[0].v[i].label = i;
-			g[0].v[i].image_blend = scr_pallette(i, 0.5);
+			g.v[i].label = i;
+			g.v[i].image_blend = scr_pallette(i, 0.5);
 		}
 		
 		break;
@@ -235,15 +234,15 @@ switch room
 		global.puzzle_limit = 4;
 	
 		// Define Petersen graph
-		g[0] = scr_graph_petersen_star();
+		g = scr_graph_petersen_star();
 		
 		// Get numbers of edges and selectable objects
-		var n = array_length_1d(g[0].e);
+		var n = array_length_1d(g.e);
 		var m = array_length_1d(global.selectable);
 		
 		// Add edges to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].e[i];
+			global.selectable[m+i] = g.e[i];
 		
 		break;
 	
@@ -263,18 +262,18 @@ switch room
 		global.puzzle_limit = 5;
 	
 		// Define dart graph
-		g[0] = scr_graph_dart();
+		g = scr_graph_dart();
 		
 		// Get numbers of vertices, edges, and selectable objects
-		var l = array_length_1d(g[0].e);
-		var n = array_length_1d(g[0].v);
+		var l = array_length_1d(g.e);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices and edges to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		for (var i = 0; i < l; i++)
-			global.selectable[m+n+i] = g[0].e[i];
+			global.selectable[m+n+i] = g.e[i];
 		
 		break;
 	
@@ -291,15 +290,15 @@ switch room
 		global.puzzle = 4;
 	
 		// Define 5-star graph
-		g[0] = scr_graph_star(5);
+		g = scr_graph_star(5);
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -319,19 +318,19 @@ switch room
 		global.puzzle_limit = 2;
 	
 		// Define triangle graph
-		g[0] = scr_graph_cycle(3);
+		g = scr_graph_cycle(3);
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of edges and selectable objects
-		var n = array_length_1d(g[0].e);
+		var n = array_length_1d(g.e);
 		var m = array_length_1d(global.selectable);
 		
 		// Add edges to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].e[i];
+			global.selectable[m+i] = g.e[i];
 		
 		break;
 	
@@ -344,19 +343,19 @@ switch room
 		global.puzzle_limit = 2;
 	
 		// Define bowtie graph
-		g[0] = scr_graph_bowtie();
+		g = scr_graph_bowtie();
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of edges and selectable objects
-		var n = array_length_1d(g[0].e);
+		var n = array_length_1d(g.e);
 		var m = array_length_1d(global.selectable);
 		
 		// Add edges to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].e[i];
+			global.selectable[m+i] = g.e[i];
 		
 		break;
 	
@@ -369,19 +368,19 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define Triforce graph
-		g[0] = scr_graph_triforce();
+		g = scr_graph_triforce();
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of edges and selectable objects
-		var n = array_length_1d(g[0].e);
+		var n = array_length_1d(g.e);
 		var m = array_length_1d(global.selectable);
 		
 		// Add edges to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].e[i];
+			global.selectable[m+i] = g.e[i];
 		
 		break;
 	
@@ -394,19 +393,19 @@ switch room
 		global.puzzle_limit = 7;
 	
 		// Define Triforce graph
-		g[0] = scr_graph_complete(7);
+		g = scr_graph_complete(7);
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of edges and selectable objects
-		var n = array_length_1d(g[0].e);
+		var n = array_length_1d(g.e);
 		var m = array_length_1d(global.selectable);
 		
 		// Add edges to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].e[i];
+			global.selectable[m+i] = g.e[i];
 		
 		break;
 	
@@ -426,18 +425,18 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define spider graph
-		g[0] = scr_graph_spider(3);
+		g = scr_graph_spider(3);
 		
 		// Set current set size
 		class[0] = 0;
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -457,15 +456,15 @@ switch room
 		global.puzzle_limit = 2;
 	
 		// Define K2 x K4 graph
-		g[0] = scr_graph_categorical_4();
+		g = scr_graph_categorical_4();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -478,15 +477,15 @@ switch room
 		global.puzzle_limit = 4;
 	
 		// Define K2 x K4 graph
-		g[0] = scr_graph_categorical_4();
+		g = scr_graph_categorical_4();
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 	
@@ -506,24 +505,24 @@ switch room
 		global.puzzle_limit = 3;
 	
 		// Define cycle graph
-		g[0] = scr_graph_cycle(6);
+		g = scr_graph_cycle(6);
 		
 		// Set color class size list
 		for (var i = 0; i < global.puzzle_limit; i++)
 			class[i] = 0;
 		
 		// Get numbers of vertices and selectable objects
-		var n = array_length_1d(g[0].v);
+		var n = array_length_1d(g.v);
 		var m = array_length_1d(global.selectable);
 		
 		// Add vertices to selectable object list
 		for (var i = 0; i < n; i++)
-			global.selectable[m+i] = g[0].v[i];
+			global.selectable[m+i] = g.v[i];
 		
 		break;
 
 }
 
 // Reposition vertices
-for (var i = 0; i < array_length_1d(g); i++)
-	scr_vertex_reframe(g[i], 180, 180, 100, 100);
+if (g != id)
+	scr_vertex_reframe(g, 180, 180, 100, 100);

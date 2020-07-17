@@ -3,8 +3,8 @@
 // Randomize seed
 randomize();
 
-// Room graph objects
-g = [];
+// Room graph object
+g = id;
 
 // Room color class sizes
 class = [];

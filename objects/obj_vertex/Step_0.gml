@@ -19,8 +19,7 @@ switch global.puzzle
 		image_blend = scr_pallette(label, 0.5);
 		
 		// Prompt a global solution test
-		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			global.puzzle_solved = scr_properly_colored(obj_game.g[i]);
+		global.puzzle_solved = scr_properly_colored(obj_game.g);
 		
 		break;
 	
@@ -36,8 +35,7 @@ switch global.puzzle
 		image_blend = scr_pallette(label, 0.5);
 		
 		// Prompt a global solution test
-		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			global.puzzle_solved = scr_properly_totally_colored(obj_game.g[i]);
+		global.puzzle_solved = scr_properly_totally_colored(obj_game.g);
 		
 		break;
 	
@@ -47,7 +45,7 @@ switch global.puzzle
 		// Choose how to increment color
 		if (label < 0)
 			label = 0;
-		else if (label < 2*array_length_1d(obj_game.g[0].v)-2)
+		else if (label < 2*array_length_1d(obj_game.g.v)-2)
 			label += 2;
 		else
 			label = -1;
@@ -56,8 +54,7 @@ switch global.puzzle
 		image_blend = scr_pallette(min(0,label), 0.5);
 		
 		// Prompt edge label updates and solution test
-		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			global.puzzle_solved = scr_graceful_edge_update(obj_game.g[i]);
+		global.puzzle_solved = scr_graceful_edge_update(obj_game.g);
 		
 		break;
 	
@@ -86,8 +83,7 @@ switch global.puzzle
 		image_blend = scr_pallette(label, 0.5);
 		
 		// Prompt a global solution test
-		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			global.puzzle_solved = scr_set_dominating(obj_game.g[i], 0);
+		global.puzzle_solved = scr_set_dominating(obj_game.g, 0);
 		
 		break;
 	
@@ -103,8 +99,7 @@ switch global.puzzle
 		image_blend = scr_pallette(label, 0.5);
 		
 		// Prompt a global solution test
-		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			global.puzzle_solved = scr_properly_fall_colored(obj_game.g[i]);
+		global.puzzle_solved = scr_properly_fall_colored(obj_game.g);
 		
 		break;
 	
@@ -124,8 +119,7 @@ switch global.puzzle
 		image_blend = scr_pallette(label, 0.5);
 		
 		// Prompt a global solution test
-		for (var i = 0; i < array_length_1d(obj_game.g); i++)
-			global.puzzle_solved = scr_equitably_colored(obj_game.g[i], 0);
+		global.puzzle_solved = scr_equitably_colored(obj_game.g, 0);
 		
 		break;
 }
