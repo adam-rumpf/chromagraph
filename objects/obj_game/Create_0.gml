@@ -26,6 +26,7 @@ Global puzzle type ID. Includes:
 	5 -- Decomposition
 	6 -- Dominating Set
 	7 -- Fall Coloring
+	8 -- Equitable Coloring
 */
 global.puzzle = 0;
 

@@ -1,6 +1,6 @@
 
 {
-    "name": "rm_total_coloring",
+    "name": "rm_total",
     "id": "795ab580-9799-4a5c-ace5-a0cdc326f3a4",
     "creationCodeFile": "",
     "inheritCode": true,

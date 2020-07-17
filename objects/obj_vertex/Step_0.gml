@@ -8,7 +8,7 @@ if (activated == false)
 switch global.puzzle
 {
 	// Coloring
-	case 1:	
+	case 1:
 		
 		// Increment color, wrapping around if limit is reached
 		label++;
@@ -25,7 +25,7 @@ switch global.puzzle
 		break;
 	
 	// Total Coloring
-	case 3:	
+	case 3:
 		
 		// Increment color, wrapping around if limit is reached
 		label++;
@@ -42,7 +42,7 @@ switch global.puzzle
 		break;
 	
 	// Graceful Trees
-	case 4:	
+	case 4:
 		
 		// Choose how to increment color
 		if (label < 0)
@@ -62,7 +62,7 @@ switch global.puzzle
 		break;
 	
 	// Dominating Set
-	case 6:	
+	case 6:
 		
 		// Toggle color and increment global total
 		if (label < 0)
@@ -92,7 +92,7 @@ switch global.puzzle
 		break;
 	
 	// Fall Coloring
-	case 7:	
+	case 7:
 		
 		// Increment color, wrapping around if limit is reached
 		label++;
@@ -105,6 +105,27 @@ switch global.puzzle
 		// Prompt a global solution test
 		for (var i = 0; i < array_length_1d(obj_game.g); i++)
 			global.puzzle_solved = scr_properly_fall_colored(obj_game.g[i]);
+		
+		break;
+	
+	// Equitable Coloring
+	case 8:
+		
+		// Increment color, wrapping around if limit is reached (also update global totals)
+		if (label >= 0)
+			obj_game.class[label]--;
+		label++;
+		if (label >= global.puzzle_limit)
+			label = -1;
+		else
+			obj_game.class[label]++;
+		
+		// Set color
+		image_blend = scr_pallette(label, 0.5);
+		
+		// Prompt a global solution test
+		for (var i = 0; i < array_length_1d(obj_game.g); i++)
+			global.puzzle_solved = scr_equitably_colored(obj_game.g[i], 0);
 		
 		break;
 }

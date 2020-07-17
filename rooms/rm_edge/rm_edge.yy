@@ -1,6 +1,6 @@
 
 {
-    "name": "rm_edge_coloring",
+    "name": "rm_edge",
     "id": "f2eacef2-04cd-4522-9b7a-69fac598d260",
     "creationCodeFile": "",
     "inheritCode": true,

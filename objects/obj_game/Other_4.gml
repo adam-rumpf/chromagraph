@@ -227,7 +227,7 @@ switch room
 	============================================================*/
 	
 	// Coloring (Petersen Star)
-	case rm_edge_coloring_petersen_star:
+	case rm_edge_petersen_star:
 		
 		global.puzzle = 2;
 		
@@ -255,7 +255,7 @@ switch room
 	============================================================*/
 	
 	// Total Coloring (Dart)
-	case rm_total_coloring_dart:
+	case rm_total_dart:
 		
 		global.puzzle = 3;
 		
@@ -489,6 +489,39 @@ switch room
 			global.selectable[m+i] = g[0].v[i];
 		
 		break;
+	
+	/*============================================================
+		Equitable Coloring Puzzles (Type 8)
+		1 Graph
+		Selectable: Buttons, Vertices
+		Parameters: puzzle_limit (number of color classes)
+	============================================================*/
+	
+	// Equitable Coloring (C6)
+	case rm_equitable_c6:
+		
+		global.puzzle = 8;
+		
+		// Set color limit
+		global.puzzle_limit = 3;
+	
+		// Define cycle graph
+		g[0] = scr_graph_cycle(6);
+		
+		// Set color class size list
+		for (var i = 0; i < global.puzzle_limit; i++)
+			class[i] = 0;
+		
+		// Get numbers of vertices and selectable objects
+		var n = array_length_1d(g[0].v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g[0].v[i];
+		
+		break;
+
 }
 
 // Reposition vertices
