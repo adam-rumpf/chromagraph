@@ -1,14 +1,26 @@
 //###
 
-if (room == rm_decomp_bowtie)
+/*if (room == rm_decomp_bowtie)
 {
 	draw_text_color(50, 50, string(obj_game.class[0]) + ", " + string(obj_game.class[1]), c_white, c_white, c_white, c_white, 1);
-}
+}*/
 
 if (global.puzzle_solved == true)
 	draw_circle_color(room_width-50, 50, 20, c_green, c_green, false);
 else
 	draw_circle_color(room_width-50, 50, 20, c_red, c_red, false);
+
+/*if (obj_game.g != obj_game.id)
+{
+	var f = scr_spring_iteration(obj_game.g, 1);
+	
+	for (var i = 0; i < array_length_1d(obj_game.g.v); i++)
+	{
+		var v = obj_game.g.v[i];
+		var temp = f[i];
+		draw_line(v.x, v.y, v.x+temp[0], v.y+temp[1]);
+	}
+}*/
 
 /*draw_text_color(50, 50, "Press [N] to toggle test rooms.", c_white, c_white, c_white, c_white, 1);
 draw_text_color(50, 100, "Press [G] to spawn a test graph.", c_white, c_white, c_white, c_white, 1);
