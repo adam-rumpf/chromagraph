@@ -1,3 +1,3 @@
 //###
 
-game_restart();
+game_end();
