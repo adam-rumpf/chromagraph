@@ -19,3 +19,5 @@ rm_coloring_petersen_circle,
 rm_coloring_dodecahedron,
 rm_coloring_categorical_4];
 current = 0;
+
+room_goto(rm_menu);
