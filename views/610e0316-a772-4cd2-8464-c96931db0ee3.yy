@@ -8,7 +8,7 @@
         "0850c7ed-ee5d-4166-9378-0a02107c3b27"
     ],
     "filterType": "GMObject",
-    "folderName": "buttons",
+    "folderName": "menu",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -35,3 +35,13 @@ global.puzzle_limit = 0;
 
 // Global indicator of whether current puzzle is solved
 global.puzzle_solved = false;
+
+// Global sound settings
+global.sound_on = true;
+global.music_on = true;
+
+//###
+// Check whether save file exists
+
+//###
+// Check whether settings file exists
