@@ -4,9 +4,10 @@
 if (selected == false)
 	exit;
 
-// If selected, listen for mouse click to reset room
+// If selected, listen for mouse click to go to credits room
 if (mouse_check_button_pressed(mb_left))
-	scr_reset_puzzle();
+	//### Screen transition
+	room_goto(rm_credits);
 
 // Deselect self
 selected = false;

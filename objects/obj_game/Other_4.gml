@@ -9,17 +9,53 @@ global.puzzle_solved = false;
 // Main case structure for each room
 switch room
 {
-	// Title screen
-	case rm_title:
-		//###
-		global.puzzle = 0;
-		break;
-	
 	/*============================================================
 		Coloring Puzzles (Type 1)
 		Selectable: Buttons, Vertices
 		Parameters: puzzle_limit (number of color classes)
 	============================================================*/
+	
+	// Coloring (Triangle, New Game Screen)
+	case rm_coloring_triangle_new:
+		
+		global.puzzle = 1;
+		
+		// Set color limit
+		global.puzzle_limit = 3;
+	
+		// Define path graph
+		g = scr_graph_cycle(3);
+		
+		// Get numbers of vertices and selectable objects
+		var n = array_length_1d(g.v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g.v[i];
+		
+		break;
+	
+	// Coloring (Triangle)
+	case rm_coloring_triangle:
+		
+		global.puzzle = 1;
+		
+		// Set color limit
+		global.puzzle_limit = 3;
+	
+		// Define path graph
+		g = scr_graph_cycle(3);
+		
+		// Get numbers of vertices and selectable objects
+		var n = array_length_1d(g.v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g.v[i];
+		
+		break;
 	
 	// Coloring (P2)
 	case rm_coloring_p2:
@@ -520,7 +556,12 @@ switch room
 			global.selectable[m+i] = g.v[i];
 		
 		break;
-
+	
+	// Non-puzzle rooms
+	default:
+		
+		global.puzzle = 0;
+		g = id;
 }
 
 // Reposition vertices

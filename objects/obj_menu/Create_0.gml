@@ -15,6 +15,7 @@
 //###
 var coloring =
 [
+	rm_coloring_triangle,
 	rm_coloring_dart,
 	rm_coloring_p2,
 	rm_coloring_petersen_star,
