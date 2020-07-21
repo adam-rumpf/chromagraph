@@ -36,6 +36,32 @@ switch room
 		
 		break;
 	
+	// Coloring (Random Graph)
+	case rm_coloring_random:
+		
+		global.puzzle = 1;
+		
+		// Randomly choose a color limit
+		global.puzzle_limit = irandom_range(3, 5);
+		
+		// Generate a random graph
+		var n = irandom_range(5+global.puzzle_limit, 10+global.puzzle_limit);
+		var m = irandom_range(n, floor(2.5*n));
+		g = scr_random_coloring_puzzle(n, m, global.puzzle_limit, 2, true);
+		
+		// Embed the graph
+		scr_spring_embedding(g, 250, true, true, 90);
+		
+		// Get final vertex and selectable object counts
+		n = array_length_1d(g.v);
+		m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g.v[i];
+		
+		break;
+	
 	// Coloring (Triangle)
 	case rm_coloring_triangle:
 		

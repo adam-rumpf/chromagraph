@@ -68,6 +68,9 @@ for (var i = 0; i < array_length_1d(coloring); i++)
 	obj.puzzle = coloring[i];
 	obj.image = i;
 }
+var vortex = instance_create_layer(room_height/9 + 80*array_length_1d(coloring), room_height/9, "Buttons", obj_menu_button_vortex);
+vortex.type = 1;
+vortex.puzzle = rm_coloring_random;
 for (var i = 0; i < array_length_1d(edge); i++)
 {
 	var xx, yy, obj;
