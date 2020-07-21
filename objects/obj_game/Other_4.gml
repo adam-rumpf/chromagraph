@@ -583,6 +583,36 @@ switch room
 		
 		break;
 	
+	// Equitable Coloring (Random Graph)
+	case rm_equitable_random:
+		
+		global.puzzle = 8;
+		
+		// Randomly choose a color limit
+		global.puzzle_limit = irandom_range(3, 5);
+		
+		// Generate a random graph
+		var n = global.puzzle_limit*irandom_range(3, 5);
+		var m = irandom_range(n, floor(2.5*n));
+		g = scr_random_coloring_puzzle(n, m, global.puzzle_limit, 0, true);
+		
+		// Embed the graph
+		scr_spring_embedding(g, 250, true, true, 90);
+		
+		// Set color class size list
+		for (var i = 0; i < global.puzzle_limit; i++)
+			class[i] = 0;
+		
+		// Get final vertex and selectable object counts
+		n = array_length_1d(g.v);
+		m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g.v[i];
+		
+		break;
+	
 	// Non-puzzle rooms
 	default:
 		

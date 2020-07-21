@@ -141,3 +141,6 @@ for (var i = 0; i < array_length_1d(equitable); i++)
 	obj.puzzle = equitable[i];
 	obj.image = i;
 }
+vortex = instance_create_layer(room_height/9 + 80*array_length_1d(equitable), 8*room_height/9, "Buttons", obj_menu_button_vortex);
+vortex.type = 8;
+vortex.puzzle = rm_equitable_random;

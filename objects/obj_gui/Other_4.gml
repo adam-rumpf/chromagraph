@@ -4,9 +4,6 @@
 if (room == rm_title)
 	exit;
 
-// Get GUI width
-var width = display_get_gui_width();
-
 // Constant buttons
 
 // Sound button
@@ -24,6 +21,9 @@ switch room
 {
 	// Menu screen
 	case rm_menu:
+		
+		// Get GUI width
+		var width = display_get_gui_width();
 		
 		// Save clear button
 		var save = instance_create_layer(hspace+3*hspace, vspace, "Overlays", obj_gui_save_clear);
@@ -47,6 +47,9 @@ switch room
 	case rm_save_clear:
 	case rm_ending:
 		
+		// Get room width
+		var width = room_width;
+		
 		// Menu return button
 		var menu = instance_create_layer(width-hspace, vspace, "Overlays", obj_gui_back);
 		menu.xx = width-hspace;
@@ -57,6 +60,9 @@ switch room
 	// Puzzle screens
 	
 	default:
+		
+		// Get room width
+		var width = room_width;
 		
 		// Menu return button
 		var menu = instance_create_layer(width-hspace, vspace, "Overlays", obj_gui_back);

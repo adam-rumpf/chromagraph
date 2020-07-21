@@ -943,6 +943,14 @@
             }
         },
         {
+            "Key": "91203a7d-caaa-463f-8574-60e01c940144",
+            "Value": {
+                "id": "c12dafea-c03a-4d20-a237-ad2cd7a02bd1",
+                "resourcePath": "rooms\\rm_equitable_random\\rm_equitable_random.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "91b65274-50b6-4aaf-87d5-f43421ac101e",
             "Value": {
                 "id": "8ccab1d1-d407-4da6-82cf-d34f4661e423",
