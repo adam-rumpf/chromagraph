@@ -4,13 +4,20 @@
 if (room == rm_title)
 	exit;
 
+// Get GUI width
+var width = display_get_gui_width();
+
 // Constant buttons
 
 // Sound button
-instance_create_layer(hspace, vspace, "Overlays", obj_gui_sound);
+var sound = instance_create_layer(hspace, vspace, "Overlays", obj_gui_sound);
+sound.xx = hspace;
+sound.yy = vspace;
 
 // Music button
-instance_create_layer(hspace+1.5*hspace, vspace, "Overlays", obj_gui_music);
+var music = instance_create_layer(hspace+1.5*hspace, vspace, "Overlays", obj_gui_music);
+music.xx = hspace+1.5*hspace;
+music.yy = vspace;
 
 // Room-specific buttons
 switch room
@@ -19,13 +26,19 @@ switch room
 	case rm_menu:
 		
 		// Save clear button
-		instance_create_layer(hspace+3*hspace, vspace, "Overlays", obj_gui_save_clear);
+		var save = instance_create_layer(hspace+3*hspace, vspace, "Overlays", obj_gui_save_clear);
+		save.xx = hspace+3*hspace;
+		save.yy = vspace;
 	
 		// Credits button
-		instance_create_layer(room_width-hspace-1.5*hspace, vspace, "Overlays", obj_gui_credits);
+		var credits = instance_create_layer(width-hspace-1.5*hspace, vspace, "Overlays", obj_gui_credits);
+		credits.xx = width-hspace-1.5*hspace;
+		credits.yy = vspace;
 	
 		// Quit button
-		instance_create_layer(room_width-hspace, vspace, "Overlays", obj_gui_quit);
+		var quit = instance_create_layer(width-hspace, vspace, "Overlays", obj_gui_quit);
+		quit.xx = width-hspace;
+		quit.yy = vspace;
 		
 		break;
 	
@@ -35,7 +48,9 @@ switch room
 	case rm_ending:
 		
 		// Menu return button
-		instance_create_layer(room_width-hspace, vspace, "Overlays", obj_gui_back);
+		var menu = instance_create_layer(width-hspace, vspace, "Overlays", obj_gui_back);
+		menu.xx = width-hspace;
+		menu.yy = vspace;
 		
 		break;
 	
@@ -44,8 +59,12 @@ switch room
 	default:
 		
 		// Menu return button
-		instance_create_layer(room_width-hspace, vspace, "Overlays", obj_gui_back);
+		var menu = instance_create_layer(width-hspace, vspace, "Overlays", obj_gui_back);
+		menu.xx = width-hspace;
+		menu.yy = vspace;
 
 		// Room reset button
-		instance_create_layer(room_width-hspace-1.5*hspace, vspace, "Overlays", obj_gui_reset);
+		var reset = instance_create_layer(width-hspace-1.5*hspace, vspace, "Overlays", obj_gui_reset);
+		reset.xx = width-hspace-1.5*hspace;
+		reset.yy = vspace;
 }

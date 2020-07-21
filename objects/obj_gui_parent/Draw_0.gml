@@ -1,3 +1,3 @@
-/// @desc Placeholder to prevent default sprite drawing.
+/// @desc Placeholder to prevent sprite drawing.
 
 exit;

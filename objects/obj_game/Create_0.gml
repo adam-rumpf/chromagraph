@@ -44,4 +44,4 @@ global.music_on = true;
 // Check whether save file exists
 
 //###
-// Check whether settings file exists
+// Check whether settings file exists. If it does, go to the menu. If not, run new game code and go to new game room.

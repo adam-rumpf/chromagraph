@@ -7,6 +7,6 @@ if (global.sound_on == false)
 
 // Choose image attributes based on selection
 if (selected == true)
-	draw_sprite_ext(spr_button_sound, index, x, y, 0.5, 0.5, 0, c_white, 1);
+	draw_sprite_ext(spr_button_sound, index, xx, yy, 0.5, 0.5, 0, c_white, 1);
 else
-	draw_sprite_ext(spr_button_sound, index, x, y, 0.5, 0.5, 0, c_white, 0.6);
+	draw_sprite_ext(spr_button_sound, index, xx, yy, 0.5, 0.5, 0, c_white, 0.6);

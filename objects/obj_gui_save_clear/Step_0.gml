@@ -6,7 +6,8 @@ if (selected == false)
 
 // If selected, listen for mouse click to reset save file
 if (mouse_check_button_pressed(mb_left))
-	scr_save_clear();
+	//### Screen transition
+	room_goto(rm_save_clear);
 
 // Deselect self
 selected = false;
