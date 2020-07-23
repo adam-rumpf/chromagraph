@@ -1,44 +1,44 @@
 {
-    "id": "e1d5dcec-f657-4a76-9a25-4e7aad9d7596",
+    "id": "eb9903cc-eae9-44fd-9e67-3259ce762956",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_gui_credits",
+    "name": "obj_screen_fade",
     "eventList": [
         {
-            "id": "6f595fbe-76f8-46f9-afb8-5dd46b6018ff",
+            "id": "3ca08461-6cff-4598-aa0c-edda697458b7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "eb9903cc-eae9-44fd-9e67-3259ce762956"
+        },
+        {
+            "id": "69f2d808-a411-4fce-8543-0f11d2e17e81",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 64,
             "eventtype": 8,
-            "m_owner": "e1d5dcec-f657-4a76-9a25-4e7aad9d7596"
+            "m_owner": "eb9903cc-eae9-44fd-9e67-3259ce762956"
         },
         {
-            "id": "00b75cc5-6768-4c41-ae17-6071cfc5d89b",
+            "id": "8cae9fba-1b09-4ab3-bde5-4a06661bcb08",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "e1d5dcec-f657-4a76-9a25-4e7aad9d7596"
-        },
-        {
-            "id": "d020c96e-668c-4a86-9b33-30d75e6cb453",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "e1d5dcec-f657-4a76-9a25-4e7aad9d7596"
+            "m_owner": "eb9903cc-eae9-44fd-9e67-3259ce762956"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "8fd89f23-393e-47c8-90a3-b0c3be466f26",
-    "persistent": false,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -53,6 +53,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "19f207f9-3393-459e-acbd-2d03ec3bea6e",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

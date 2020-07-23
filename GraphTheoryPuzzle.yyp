@@ -1567,6 +1567,14 @@
             }
         },
         {
+            "Key": "eb9903cc-eae9-44fd-9e67-3259ce762956",
+            "Value": {
+                "id": "47095db4-f735-433f-a15a-9b18a6ed932f",
+                "resourcePath": "objects\\obj_screen_fade\\obj_screen_fade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ebca2712-dce0-4d7e-98f1-85a9ed7423f4",
             "Value": {
                 "id": "f00c6846-5845-430a-aaa9-972e221eeb77",

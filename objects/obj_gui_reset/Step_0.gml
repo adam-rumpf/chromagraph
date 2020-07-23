@@ -6,7 +6,11 @@ if (selected == false)
 
 // If selected, listen for mouse click to reset room
 if (mouse_check_button_pressed(mb_left))
-	scr_reset_puzzle();
+{
+	// Begin sreen fade and set alarm for puzzle reset
+	obj_screen_fade.fading = true;
+	alarm[0] = room_speed*obj_screen_fade.fade_time;
+}
 
 // Deselect self
 selected = false;

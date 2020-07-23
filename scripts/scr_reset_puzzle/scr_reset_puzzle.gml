@@ -1,8 +1,6 @@
 /// @func scr_reset_puzzle()
 /// @desc Resets all attributes of the current room's puzzle.
 
-//### Fade screen out and in.
-
 // Get graph object
 var g = obj_game.g;
 
