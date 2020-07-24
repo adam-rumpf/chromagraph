@@ -6,7 +6,10 @@ if (selected == false)
 
 // If selected, listen for mouse click to toggle music setting
 if (mouse_check_button_pressed(mb_left))
+{
 	global.music_on = !global.music_on;
+	scr_save_settings();
+}
 
 // Deselect self
 selected = false;

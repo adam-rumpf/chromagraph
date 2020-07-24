@@ -40,8 +40,8 @@ global.puzzle_solved = false;
 global.sound_on = true;
 global.music_on = true;
 
-//###
-// Check whether save file exists
+// Attempt to read settings file
+scr_load_settings();
 
 //###
-// Check whether settings file exists. If it does, go to the menu. If not, run new game code and go to new game room.
+// Check whether save file exists. If it does, go to the menu. If not, run new game code and go to new game room.

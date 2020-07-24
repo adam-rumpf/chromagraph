@@ -3,6 +3,8 @@ options/
 *.exe
 *.win
 *.ini
+*.cfg
+*.dat
 *.zip
 *.lnk
 *.mp3
