@@ -9,8 +9,10 @@ g = id;
 // Room color class sizes
 class = [];
 
-// Keeps track of whether current puzzle has been solved yet
-solved = false;
+// Define global puzzle lists
+scr_puzzle_list();
+
+//### Initialize a set of internal variables indicating which puzzles have been solved.
 
 /*
 Global list of selectable objects.
@@ -38,6 +40,7 @@ global.puzzle_limit = 0;
 
 // Global indicator of whether current puzzle is solved
 global.puzzle_solved = false;
+solved = false; // local variable to determine when puzzle has *just* been solved
 
 // Global sound settings
 global.sound_on = true;
