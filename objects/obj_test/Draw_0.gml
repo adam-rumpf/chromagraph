@@ -5,13 +5,13 @@
 	draw_text_color(50, 50, string(obj_game.class[0]) + ", " + string(obj_game.class[1]), c_white, c_white, c_white, c_white, 1);
 }*/
 
-if (room == rm_title || room == rm_menu)
+/*if (room == rm_title || room == rm_menu)
 	exit;
 
 if (global.puzzle_solved == true)
 	draw_circle_color(room_width-50, 50, 20, c_green, c_green, false);
 else
-	draw_circle_color(room_width-50, 50, 20, c_red, c_red, false);
+	draw_circle_color(room_width-50, 50, 20, c_red, c_red, false);*/
 
 /*if (obj_game.g != obj_game.id)
 {

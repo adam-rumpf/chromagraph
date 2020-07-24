@@ -5,6 +5,7 @@ class = [];
 
 // Reset solve status
 global.puzzle_solved = false;
+solved = false;
 
 // Main case structure for each room
 switch room

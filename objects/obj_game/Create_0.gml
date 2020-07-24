@@ -9,6 +9,9 @@ g = id;
 // Room color class sizes
 class = [];
 
+// Keeps track of whether current puzzle has been solved yet
+solved = false;
+
 /*
 Global list of selectable objects.
 This includes all buttons and graph elements that can be clicked on within the current room.
