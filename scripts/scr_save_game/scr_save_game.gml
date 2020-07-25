@@ -8,8 +8,8 @@ var save = "save.dat";
 if (file_exists(save))
 	file_delete(save);
 
-// Save level progress (which consists of writing the boolean save states within each global puzzle array)
-/*var map = ds_map_create();
+// Save level progress (which consists of writing the save states within each global puzzle array)
+var map = ds_map_create();
 for (var i = 0; i < array_length_1d(global.coloring_save); i++)
 {
 	var elem = global.coloring_puzzles[i];
@@ -50,13 +50,4 @@ for (var i = 0; i < array_length_1d(global.equitable_save); i++)
 	var elem = global.equitable_puzzles[i];
 	ds_map_add(map, string(elem[0]), global.equitable_save[i]);
 }
-ds_map_secure_save(map, save);*/
-
-//###
-ini_open(save);
-for (var i = 0; i < array_length_1d(global.coloring_save); i++)
-{
-	var elem = global.coloring_puzzles[i];
-	ini_write_real("coloring", string(elem[0]), global.coloring_save[i]);
-}
-ini_close();
+ds_map_secure_save(map, save);

@@ -10,7 +10,7 @@ if (file_exists(save))
 	global.new_game = false;
 	
 	// Load progress
-	/*var map = ds_map_secure_load(save);
+	var map = ds_map_secure_load(save);
 	for (var i = 0; i < array_length_1d(global.coloring_save); i++)
 	{
 		var elem = global.coloring_puzzles[i];
@@ -58,16 +58,7 @@ if (file_exists(save))
 		var elem = global.equitable_puzzles[i];
 		if (ds_map_exists(map, string(elem[0])) == true)
 			global.equitable_save[i] = round(ds_map_find_value(map, string(elem[0])));
-	}*/
-	
-	ini_open(save);
-	for (var i = 0; i < array_length_1d(global.coloring_save); i++)
-	{
-		var elem = global.coloring_puzzles[i];
-		global.coloring_save[i] = ini_read_real("coloring", elem[0], 0);
 	}
-	ini_close();
-
 }
 
 //###
