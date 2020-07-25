@@ -5,6 +5,7 @@ options/
 *.ini
 *.cfg
 *.dat
+*.sav
 *.zip
 *.lnk
 *.mp3

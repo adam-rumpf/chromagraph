@@ -1,5 +1,5 @@
 /// @desc Go to next puzzle room.
 
 // Go to room and begin fading back in
-room_goto(rm_menu);//### Placeholder to return to menu
+room_goto(scr_puzzle_next(room));
 obj_screen_fade.fading = false;

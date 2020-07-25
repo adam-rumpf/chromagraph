@@ -1,7 +1,23 @@
 /// @desc Update appearance and listen for mouse clicks.
 
 image_index = type;
-image_blend = scr_menu_pallette(type, 0.8);
+//### Eventually decide on styles.
+switch state
+{
+	// Locked
+	case 0:
+		image_blend = scr_menu_pallette(type, 0.4);
+		exit; // no actions for locked buttons
+	
+	// Unlocked
+	case 1:
+		image_blend = scr_menu_pallette(type, 0.8+0.1*cos(0.005*current_time));
+		break;
+	
+	// Solved
+	case 2:
+		image_blend = scr_menu_pallette(type, 0.7);
+}
 
 // If selected, change color and listen for mouse click
 if (selected == true)

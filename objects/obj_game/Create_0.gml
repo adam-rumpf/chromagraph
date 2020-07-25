@@ -12,8 +12,6 @@ class = [];
 // Define global puzzle lists
 scr_puzzle_list();
 
-//### Initialize a set of internal variables indicating which puzzles have been solved.
-
 /*
 Global list of selectable objects.
 This includes all buttons and graph elements that can be clicked on within the current room.
@@ -45,9 +43,11 @@ solved = false; // local variable to determine when puzzle has *just* been solve
 // Global sound settings
 global.sound_on = true;
 global.music_on = true;
+scr_load_settings(); // load saved settings
 
-// Attempt to read settings file
-scr_load_settings();
+// Game progress
+global.new_game = true;
+scr_load_game(); // load saved game
 
 //###
 // Check whether save file exists. If it does, go to the menu. If not, run new game code and go to new game room.

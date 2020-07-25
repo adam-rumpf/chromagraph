@@ -16,5 +16,14 @@ if (global.puzzle_solved == true && solved == false)
 	// Set solve state
 	solved = true;
 	
-	//### Update internal puzzle progress variables and save game.
+	// Update internal puzzle progress variables
+	scr_puzzle_save(room, 2);
+	
+	// Update next room (if there is one)
+	var next = scr_puzzle_next(room);
+	if (next != rm_menu)
+		scr_puzzle_save(next, 1);
+	
+	// Save game
+	scr_save_game();
 }
