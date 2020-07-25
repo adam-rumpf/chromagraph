@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "4e5b8ff4-64ce-41e2-a219-cfd25837a423",
+            "Value": {
+                "id": "c322c2cf-bdaa-44d8-acdb-00c7d02bf33e",
+                "resourcePath": "sounds\\mus_babylon\\mus_babylon.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4ed85eab-94ae-46f8-ac02-a0e0c61909cb",
             "Value": {
                 "id": "a262444f-25e5-482d-876f-1364086ca71f",
