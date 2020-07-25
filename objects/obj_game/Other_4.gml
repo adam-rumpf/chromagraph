@@ -147,7 +147,7 @@ switch room
 		
 		break;
 	
-	// Coloring (Petersen)
+	// Coloring (Petersen Star)
 	case rm_coloring_petersen_star:
 		
 		global.puzzle = 1;
@@ -168,7 +168,7 @@ switch room
 		
 		break;
 	
-	// Coloring (Petersen)
+	// Coloring (Petersen Claw)
 	case rm_coloring_petersen_claw:
 		
 		global.puzzle = 1;
@@ -189,7 +189,7 @@ switch room
 		
 		break;
 	
-	// Coloring (Petersen)
+	// Coloring (Petersen Circle)
 	case rm_coloring_petersen_circle:
 		
 		global.puzzle = 1;
@@ -281,6 +281,27 @@ switch room
 		
 		break;
 	
+	// Coloring (Grotzsch)
+	case rm_coloring_grotzsch_pentagon:
+		
+		global.puzzle = 1;
+		
+		// Set color limit
+		global.puzzle_limit = 4;
+	
+		// Define Petersen graph
+		g = scr_graph_grotzsch_pentagon();
+		
+		// Get numbers of vertices and selectable objects
+		var n = array_length_1d(g.v);
+		var m = array_length_1d(global.selectable);
+		
+		// Add vertices to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g.v[i];
+		
+		break;
+	
 	/*============================================================
 		Edge Coloring Puzzles (Type 2)
 		1 Graph
@@ -298,6 +319,27 @@ switch room
 	
 		// Define Petersen graph
 		g = scr_graph_petersen_star();
+		
+		// Get numbers of edges and selectable objects
+		var n = array_length_1d(g.e);
+		var m = array_length_1d(global.selectable);
+		
+		// Add edges to selectable object list
+		for (var i = 0; i < n; i++)
+			global.selectable[m+i] = g.e[i];
+		
+		break;
+	
+	// Coloring (Grotzsch)
+	case rm_edge_grotzsch_pentagon:
+		
+		global.puzzle = 2;
+		
+		// Set color limit
+		global.puzzle_limit = 5;
+	
+		// Define Petersen graph
+		g = scr_graph_grotzsch_pentagon();
 		
 		// Get numbers of edges and selectable objects
 		var n = array_length_1d(g.e);

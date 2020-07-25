@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "6ce1f22a-afef-40c9-9c78-a51e44a3b7e8",
+            "Value": {
+                "id": "2c692c30-1fb0-4a4a-a236-60e6404610ea",
+                "resourcePath": "rooms\\rm_coloring_grotzsch_pentagon\\rm_coloring_grotzsch_pentagon.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6d55b53a-4e6b-4424-a663-68a25bf0c260",
             "Value": {
                 "id": "abcd0233-0df3-4206-88e6-60fe723819f3",
@@ -1055,6 +1063,14 @@
             }
         },
         {
+            "Key": "9e2a267b-9017-47b9-997b-612477c55db6",
+            "Value": {
+                "id": "83962cdb-05d1-40ca-ae41-cc7c0bbae03f",
+                "resourcePath": "rooms\\rm_edge_grotzsch_pentagon\\rm_edge_grotzsch_pentagon.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9ead4868-ec1e-4ba8-bdb8-8ff360686d5b",
             "Value": {
                 "id": "6d4018de-8448-4390-894c-fa634e1e034e",
@@ -1068,6 +1084,14 @@
                 "id": "3edb194b-a701-4528-8c6f-1e0d99957b73",
                 "resourcePath": "views\\a110da21-d852-49f4-aead-77584d48992a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a30aad99-1926-4ddb-bddb-4d7ccaf7ebec",
+            "Value": {
+                "id": "3bd21791-ff79-4569-a830-ef4b902fec7b",
+                "resourcePath": "scripts\\scr_graph_grotzsch_pentagon\\scr_graph_grotzsch_pentagon.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1869,6 +1893,7 @@
         "724ab03a-c422-4323-89ea-85e4bf1e0e98",
         "f370d90b-a783-4d7d-a4ae-a3906d6a79d9",
         "aade177b-6144-4689-a547-c33166835a97",
+        "a30aad99-1926-4ddb-bddb-4d7ccaf7ebec",
         "7a843869-489c-42e2-bcc7-dc167afd70ec",
         "c413b92a-8fb0-4d93-8f8d-3b3638381d9f",
         "1c1dbae9-6b22-4c2b-9e9c-48a72abc8800",
