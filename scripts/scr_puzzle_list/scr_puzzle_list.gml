@@ -8,6 +8,8 @@ The second element is the room corresponding to that puzzle.
 The third element is the puzzle limit associated with the puzzle (e.g. number of colors).
 
 Each puzzle type also has a 1D array to store the state of the puzzle (0 if locked, 1 if unlocked, 2 if solved).
+
+The random puzzle rooms are listed as a separate array containing only their rooms.
 */
 
 //### Edit as puzzle sequence is sorted out.
@@ -97,5 +99,18 @@ global.equitable_puzzles =
 global.equitable_save = [];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
 	global.equitable_save[i] = 0;
+
+// Random puzzles
+global.random_puzzles =
+[
+	rm_coloring_random,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	rm_equitable_random
+];
 
 //### Figure out a way to encode prerequisites and branches. This should affect the "next" button to return to main menu whenever a branch is unlocked.

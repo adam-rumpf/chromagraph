@@ -7,6 +7,39 @@ class = [];
 global.puzzle_solved = false;
 solved = false;
 
+// Set global puzzle type
+global.puzzle = scr_puzzle_type(room);
+
+// Set global puzzle limit
+global.puzzle_limit = scr_puzzle_limit(room);
+
+// Main case structure depending on puzzle type
+switch global.puzzle
+{
+	// Coloring Puzzles
+	case 1:
+		g = scr_graph_make_coloring(room);
+		break;
+}
+
+// Reposition vertices
+if (g != id)
+	scr_vertex_reframe(g, 180, 180, 100, 100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+exit;//###
+
 // Main case structure for each room
 switch room
 {
