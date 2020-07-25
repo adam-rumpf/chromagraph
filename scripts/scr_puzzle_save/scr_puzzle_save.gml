@@ -18,7 +18,7 @@ if (found == false)
 		if (rm == elem[1])
 		{
 			found = true;
-			global.coloring_save[i] = state;
+			global.coloring_save[i] = max(global.coloring_save[i], state);
 			break;
 		}
 	}
@@ -31,7 +31,7 @@ if (found == false)
 		if (rm == elem[1])
 		{
 			found = true;
-			global.edge_save[i] = state;
+			global.edge_save[i] = max(global.edge_save[i], state);
 			break;
 		}
 	}
@@ -44,7 +44,7 @@ if (found == false)
 		if (rm == elem[1])
 		{
 			found = true;
-			global.total_save[i] = state;
+			global.total_save[i] = max(global.total_save[i], state);
 			break;
 		}
 	}
@@ -57,7 +57,7 @@ if (found == false)
 		if (rm == elem[1])
 		{
 			found = true;
-			global.graceful_save[i] = state;
+			global.graceful_save[i] = max(global.graceful_save[i], state);
 			break;
 		}
 	}
@@ -70,7 +70,7 @@ if (found == false)
 		if (rm == elem[1])
 		{
 			found = true;
-			global.decomp_save[i] = state;
+			global.decomp_save[i] = max(global.decomp_save[i], state);
 			break;
 		}
 	}
@@ -83,7 +83,7 @@ if (found == false)
 		if (rm == elem[1])
 		{
 			found = true;
-			global.dominating_save[i] = state;
+			global.dominating_save[i] = max(global.dominating_save[i], state);
 			break;
 		}
 	}
@@ -96,7 +96,7 @@ if (found == false)
 		if (rm == elem[1])
 		{
 			found = true;
-			global.fall_save[i] = state;
+			global.fall_save[i] = max(global.fall_save[i], state);
 			break;
 		}
 	}
@@ -109,7 +109,7 @@ if (found == false)
 		if (rm == elem[1])
 		{
 			found = true;
-			global.equitable_save[i] = state;
+			global.equitable_save[i] = max(global.equitable_save[i], state);
 			break;
 		}
 	}

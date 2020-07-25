@@ -122,5 +122,17 @@ if (found == false)
 		}
 	}
 }
+if (found == false)
+{
+	for (var i = 0; i < array_length_1d(global.random_puzzles); i++)
+	{
+		if (rm == global.random_puzzles[i])
+		{
+			found = true;
+			next = rm;
+			break;
+		}
+	}
+}
 
 return next;

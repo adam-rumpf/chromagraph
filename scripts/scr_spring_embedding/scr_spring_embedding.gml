@@ -21,7 +21,7 @@ fv = 10000; // vertex electrical force multiplier
 fc = 10000; // edge electrical force multiplier
 fb = 0; // border force multiplier
 fm = 10; // overall force multiplier
-el = 100; // target edge length
+el = 120; // target edge length
 fmax = 200; // maximum allowed force from any single source
 
 // Random start (if specified)
