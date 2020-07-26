@@ -1,4 +1,4 @@
-/// @func scr_graph_k3xp4()
+/// @func scr_graph_k3_cart_p4()
 /// @desc Generates the Cartesian product of K3 and P4.
 /// @return {obj_graph} Graph object.
 

@@ -1,4 +1,4 @@
-/// @func scr_graph_tablet()
+/// @func scr_graph_tablet2()
 /// @desc Generates a tablet-shaped graph.
 /// @return {obj_graph} Graph object.
 
@@ -6,8 +6,8 @@
 var unit = room_height/5;
 var coords =
 [
+	[room_width/2, room_height/2],
 	[room_width/2 - unit, room_height/2 - unit],
-	[room_width/2, room_height/2 - unit],
 	[room_width/2 + unit, room_height/2 - unit],
 	[room_width/2 - 2*unit, room_height/2],
 	[room_width/2 + 2*unit, room_height/2],
@@ -19,19 +19,21 @@ var coords =
 var adj =
 [
 	[0, 1],
-	[1, 2],
-	[0, 3],
-	[2, 4],
-	[1, 3],
-	[1, 4],
-	[3, 4],
-	[5, 6],
+	[0, 2],
 	[0, 5],
-	[2, 6],
+	[0, 6],
+	[3, 1],
 	[3, 5],
+	[3, 2],
+	[3, 6],
+	[4, 2],
 	[4, 6],
+	[4, 1],
+	[4, 5],
+	[1, 2],
+	[5, 6],
 	[1, 5],
-	[1, 6]
+	[2, 6]
 ];
 
 // Define graph

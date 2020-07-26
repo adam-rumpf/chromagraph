@@ -16,6 +16,21 @@ switch rm
 		g = scr_graph_cube();
 		break;
 	
+	// Tablet
+	case rm_fall_tablet:
+		g = scr_graph_tablet2();
+		break;
+	
+	// C5 [] C5
+	case rm_fall_c5_cart_c5:
+		g = scr_graph_c5_cart_c5();
+		break;
+	
+	// K3 x House
+	case rm_fall_k3xhouse:
+		g = scr_graph_k3xhouse();
+		break;
+	
 	// Random
 	default:
 		

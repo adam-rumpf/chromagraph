@@ -31,7 +31,7 @@ global.coloring_puzzles =
 	[111, rm_coloring_w5, 4], // training
 	[112, rm_coloring_cube, 2], // training
 	[113, rm_coloring_hypercube, 2], // trivial
-	[114, rm_coloring_k3xp4, 3], // training
+	[114, rm_coloring_k3_cart_p4, 3], // training
 	[115, rm_coloring_triangle_star, 5], // challenging
 	[116, rm_coloring_tablet, 4], // easy
 	[117, rm_coloring_fullerene26, 3] // moderate
@@ -110,7 +110,10 @@ for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 global.fall_puzzles =
 [
 	[700, rm_fall_cube_2, 2], // training
-	[701, rm_fall_cube_4, 4] // moderate
+	[701, rm_fall_cube_4, 4], // easy
+	[702, rm_fall_tablet, 3], // easy
+	[703, rm_fall_c5_cart_c5, 3], // challenging (haven't solved yet, but solution supposedly exists)
+	[704, rm_fall_k3xhouse, 3] // looks challenging but easy symmetry solution
 ];
 global.fall_save = [];
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)

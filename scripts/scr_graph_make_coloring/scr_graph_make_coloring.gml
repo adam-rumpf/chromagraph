@@ -82,8 +82,8 @@ switch rm
 		break;
 	
 	// K3 [] P4
-	case rm_coloring_k3xp4:
-		g = scr_graph_k3xp4();
+	case rm_coloring_k3_cart_p4:
+		g = scr_graph_k3_cart_p4();
 		break;
 	
 	// Triangle Star
