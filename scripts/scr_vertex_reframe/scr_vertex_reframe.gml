@@ -14,6 +14,10 @@ rb = argument[2];
 ub = argument[3];
 db = argument[4];
 
+// Verify that graph is nonempty
+if (array_length_1d(g.v) < 1)
+	exit;
+
 // Define new total width and height
 var w, h;
 w = room_width - rb - lb;

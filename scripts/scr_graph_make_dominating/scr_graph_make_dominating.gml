@@ -29,6 +29,8 @@ switch rm
 	default:
 		
 		//###
+		room_goto(rm_menu);
+		return obj_game.id;
 		
 		break;
 }

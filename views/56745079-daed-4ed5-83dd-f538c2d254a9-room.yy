@@ -4,6 +4,7 @@
     "mvc": "1.1",
     "name": "56745079-daed-4ed5-83dd-f538c2d254a9-room",
     "children": [
+        "2129188b-88de-4e1a-880a-36d97ed23a08",
         "9ead4868-ec1e-4ba8-bdb8-8ff360686d5b",
         "fdac1872-8c45-4a8a-9d76-54a4cb05d518",
         "6077e061-4fe7-486b-9ce3-3b59b3ea4275",

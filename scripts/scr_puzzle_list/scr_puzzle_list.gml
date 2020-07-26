@@ -130,12 +130,12 @@ for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
 global.random_puzzles =
 [
 	rm_coloring_random,
-	-1,
-	-1,
-	-1,
-	-1,
-	-1,
-	-1,
+	rm_edge_random,
+	rm_total_random,
+	rm_graceful_random,
+	rm_decomp_random,
+	rm_dominating_random,
+	rm_fall_random,
 	rm_equitable_random
 ];
 
