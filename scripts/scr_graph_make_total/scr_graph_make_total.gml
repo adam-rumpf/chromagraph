@@ -15,6 +15,21 @@ switch rm
 		g = scr_graph_dart();
 		break;
 	
+	// K4
+	case rm_total_k4:
+		g = scr_graph_wheel(3);
+		break;
+	
+	// K5
+	case rm_total_k5:
+		g = scr_graph_complete(5);
+		break;
+	
+	// K4 o P3
+	case rm_total_k4op3:
+		g = scr_graph_k4op3();
+		break;
+	
 	// Random
 	default:
 		

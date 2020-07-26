@@ -15,6 +15,16 @@ switch rm
 		g = scr_graph_spider(3);
 		break;
 	
+	// P5
+	case rm_dominating_p5:
+		g = scr_graph_p5();
+		break;
+	
+	// P5
+	case rm_dominating_double_hexagon:
+		g = scr_graph_double_hexagon();
+		break;
+	
 	// Random
 	default:
 		

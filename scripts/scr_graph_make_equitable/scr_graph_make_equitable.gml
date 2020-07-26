@@ -1,4 +1,4 @@
-/// @func scr_graph_make_dominating(room)
+/// @func scr_graph_make_equitable(room)
 /// @desc Creates the graph associated with a particular room's equitable coloring puzzle.
 /// @param {int} room Room to create a graph for.
 /// @return {obj_graph} Graph object for room.
@@ -13,6 +13,11 @@ switch rm
 	// C6
 	case rm_equitable_c6:
 		g = scr_graph_cycle(6);
+		break;
+	
+	// Hypercube (4 colors)
+	case rm_equitable_hypercube_4:
+		g = scr_graph_hypercube();
 		break;
 	
 	// Random

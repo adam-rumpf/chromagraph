@@ -61,6 +61,46 @@ switch rm
 		g = scr_graph_grotzsch_pentagon();
 		break;
 	
+	// Necklace (3 Pendants)
+	case rm_coloring_necklace_3:
+		g = scr_graph_necklace_3();
+		break;
+	
+	// W5
+	case rm_coloring_w5:
+		g = scr_graph_wheel(5);
+		break;
+	
+	// Cube
+	case rm_coloring_cube:
+		g = scr_graph_cube();
+		break;
+	
+	// Hypercube
+	case rm_coloring_hypercube:
+		g = scr_graph_hypercube();
+		break;
+	
+	// K3 [] P4
+	case rm_coloring_k3xp4:
+		g = scr_graph_k3xp4();
+		break;
+	
+	// Triangle Star
+	case rm_coloring_triangle_star:
+		g = scr_graph_triangle_star();
+		break;
+	
+	// Tablet
+	case rm_coloring_tablet:
+		g = scr_graph_tablet();
+		break;
+	
+	// 26-Fullerene
+	case rm_coloring_fullerene26:
+		g = scr_graph_fullerene26();
+		break;
+	
 	// Random
 	default:
 		

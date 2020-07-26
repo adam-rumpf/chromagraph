@@ -17,16 +17,24 @@ The random puzzle rooms are listed as a separate array containing only their roo
 // Coloring Puzzles
 global.coloring_puzzles =
 [
-	[100, rm_coloring_triangle, 3],
-	[101, rm_coloring_dart, 3],
+	[100, rm_coloring_triangle, 3], // first
+	[101, rm_coloring_dart, 3], // training
 	[102, rm_coloring_p2, 2],
-	[103, rm_coloring_petersen_star, 3],
+	[103, rm_coloring_petersen_star, 3], // moderate (repeat)
 	[104, rm_coloring_kite, 3],
-	[105, rm_coloring_petersen_claw, 3],
-	[106, rm_coloring_petersen_circle, 3],
-	[107, rm_coloring_dodecahedron, 3],
+	[105, rm_coloring_petersen_claw, 3], // moderate (repeat)
+	[106, rm_coloring_petersen_circle, 3], // moderate (repeat)
+	[107, rm_coloring_dodecahedron, 3], // moderate
 	[108, rm_coloring_categorical_4, 2],
-	[109, rm_coloring_grotzsch_pentagon, 4]
+	[109, rm_coloring_grotzsch_pentagon, 4], // moderate
+	[110, rm_coloring_necklace_3, 4], // moderate
+	[111, rm_coloring_w5, 4], // training
+	[112, rm_coloring_cube, 2], // training
+	[113, rm_coloring_hypercube, 2], // trivial
+	[114, rm_coloring_k3xp4, 3], // training
+	[115, rm_coloring_triangle_star, 5], // challenging
+	[116, rm_coloring_tablet, 4], // easy
+	[117, rm_coloring_fullerene26, 3] // moderate
 ];
 global.coloring_save = [];
 for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
@@ -35,8 +43,12 @@ for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 // Edge Coloring Puzzles
 global.edge_puzzles =
 [
-	[200, rm_edge_petersen_star, 4],
-	[201, rm_edge_grotzsch_pentagon, 5]
+	[200, rm_edge_petersen_star, 4], // moderate
+	[201, rm_edge_grotzsch_pentagon, 5], // moderate
+	[202, rm_edge_cube, 3], // moderate
+	[203, rm_edge_k33, 3], // training
+	[204, rm_edge_fullerene26, 3], // moderate
+	[205, rm_edge_chord, 3] // training
 ];
 global.edge_save = [];
 for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
@@ -45,7 +57,10 @@ for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
 // Total Coloring Puzzles
 global.total_puzzles =
 [
-	[300, rm_total_dart, 5]
+	[300, rm_total_dart, 5], // training
+	[301, rm_total_k4, 5], // moderate
+	[302, rm_total_k5, 5], // training
+	[303, rm_total_k4op3, 7] // challenging
 ];
 global.total_save = [];
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
@@ -54,7 +69,13 @@ for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
 // Graceful Tree Puzzles
 global.graceful_puzzles =
 [
-	[400, rm_graceful_s5, 0]
+	[400, rm_graceful_s5, 0], // training
+	[401, rm_graceful_p5, 0], // training
+	[402, rm_graceful_dragonfly, 0], // challenging
+	[403, rm_graceful_crab_2, 0], // challenging
+	[404, rm_graceful_butterfly, 0], // challenging
+	[405, rm_graceful_spider3, 0], // challenging
+	[406, rm_graceful_caterpillar_3_2, 0] // challenging
 ];
 global.graceful_save = [];
 for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
@@ -63,10 +84,12 @@ for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
 // Decomposition Puzzles
 global.decomp_puzzles =
 [
-	[500, rm_decomp_triangle, 2],
-	[501, rm_decomp_bowtie, 2],
-	[502, rm_decomp_triforce, 3],
-	[503, rm_decomp_k7, 7]
+	[500, rm_decomp_triangle, 2], // first
+	[501, rm_decomp_bowtie, 2], // second
+	[502, rm_decomp_triforce, 3], // third
+	[503, rm_decomp_k7, 7], // moderate
+	[504, rm_decomp_k33_box, 4], // easy
+	[505, rm_decomp_k8_subset, 8] // challenging
 ];
 global.decomp_save = [];
 for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
@@ -75,7 +98,9 @@ for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
 // Dominating Set Puzzles
 global.dominating_puzzles =
 [
-	[600, rm_dominating_spider3, 3]
+	[600, rm_dominating_spider3, 3], // training
+	[601, rm_dominating_p5, 2], // training
+	[602, rm_dominating_double_hexagon, 3] // easy
 ];
 global.dominating_save = [];
 for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
@@ -84,8 +109,8 @@ for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 // Fall Coloring Puzzles
 global.fall_puzzles =
 [
-	[700, rm_fall_categorical_4_2, 2],
-	[701, rm_fall_categorical_4_4, 4]
+	[700, rm_fall_cube_2, 2], // training
+	[701, rm_fall_cube_4, 4] // moderate
 ];
 global.fall_save = [];
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
@@ -94,7 +119,8 @@ for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
 // Equitable Coloring Puzzles
 global.equitable_puzzles =
 [
-	[800, rm_equitable_c6, 3]
+	[800, rm_equitable_c6, 3], // training
+	[801, rm_equitable_hypercube_4, 4] // moderate
 ];
 global.equitable_save = [];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)

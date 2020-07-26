@@ -20,6 +20,26 @@ switch rm
 		g = scr_graph_grotzsch_pentagon();
 		break;
 	
+	// Cube
+	case rm_edge_cube:
+		g = scr_graph_cube();
+		break;
+	
+	// K3,3 (Hexagon)
+	case rm_edge_k33:
+		g = scr_graph_k_3_3_hexagon();
+		break;
+	
+	// 26-Fullerene
+	case rm_edge_fullerene26:
+		g = scr_graph_fullerene26();
+		break;
+	
+	// Chord
+	case rm_edge_chord:
+		g = scr_graph_chord();
+		break;
+	
 	// Random
 	default:
 		

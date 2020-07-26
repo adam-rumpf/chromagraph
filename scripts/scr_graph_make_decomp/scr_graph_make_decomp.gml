@@ -1,4 +1,4 @@
-/// @func scr_graph_make_graceful(room)
+/// @func scr_graph_make_decomp(room)
 /// @desc Creates the graph associated with a particular room's decomposition puzzle.
 /// @param {int} room Room to create a graph for.
 /// @return {obj_graph} Graph object for room.
@@ -28,6 +28,16 @@ switch rm
 	// K7
 	case rm_decomp_k7:
 		g = scr_graph_complete(7);
+		break;
+	
+	// K3,3 in a Box
+	case rm_decomp_k33_box:
+		g = scr_graph_k33_box();
+		break;
+	
+	// K8 Subset
+	case rm_decomp_k8_subset:
+		g = scr_graph_k8_subset_deformed();
 		break;
 	
 	// Random
