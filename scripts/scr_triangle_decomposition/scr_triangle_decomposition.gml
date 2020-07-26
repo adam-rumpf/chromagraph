@@ -44,8 +44,8 @@ for (var i = 0; i < global.puzzle_limit; i++)
 		}
 	}
 	
-	// If the class is in error, mark its members as wrong
-	if (triangular[i] == false)
+	// If the class is in error (and at least 3 edges), mark its members as wrong
+	if (triangular[i] == false && obj_game.class[i] >= 3)
 	{
 		for (var j = 0; j < array_length_1d(g.e); j++)
 		{
