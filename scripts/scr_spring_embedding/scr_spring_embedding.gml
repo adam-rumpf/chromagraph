@@ -1,28 +1,34 @@
-/// @func scr_spring_embedding(g, iter, rand, ref, mdist)
+/// @func scr_spring_embedding(g, iter, rand, ref, ecent, mdist)
 /// @desc Applies a spring force-driven graph drawing algorithm to a graph.
 /// @param {obj_graph} g Graph to redraw.
 /// @param {int} iter Number of iterations of the force-driven algorithm.
 /// @param {bool} rand If true, begins by randomizing vertex positions.
 /// @param {bool} ref If true, ends by reframing graph.
+/// @param {bool} ecent If true, edge centroids repel vertices.
 /// @param {int} mdist Minimum required distance between vertices (embedding retried if not achieved)
 
 // Rename arguments
-var g, iter, rand, ref, mdist;
+var g, iter, rand, ref, ecent, mdist;
 g = argument[0];
 iter = argument[1];
 rand = argument[2];
 ref = argument[3];
-mdist = argument[4];
+ecent = argument[4];
+mdist = argument[5];
 
 // Define force parameters
 var fe, fv, fc, fb, fm, el, fmax;
-fe = 0.5; // edge spring force multiplier
+fe = 0.6; // edge spring force multiplier
 fv = 10000; // vertex electrical force multiplier
 fc = 10000; // edge electrical force multiplier
-fb = 0; // border force multiplier
+fb = 0.5; // border force multiplier
 fm = 10; // overall force multiplier
 el = 120; // target edge length
 fmax = 200; // maximum allowed force from any single source
+
+// Eliminate edge centroid force (if specified)
+if (ecent == true)
+	fc = 0;
 
 // Random start (if specified)
 if (rand == true)

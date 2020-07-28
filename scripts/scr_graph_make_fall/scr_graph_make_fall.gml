@@ -36,6 +36,11 @@ switch rm
 		g = scr_graph_c6_cart_p4();
 		break;
 	
+	// Hypercube
+	case rm_fall_hypercube:
+		g = scr_graph_hypercube();
+		break;
+	
 	// Random
 	default:
 		

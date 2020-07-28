@@ -37,7 +37,7 @@ switch rm
 		g = scr_random_coloring_puzzle(n, m, global.puzzle_limit, 0, true);
 		
 		// Embed graph
-		scr_spring_embedding(g, 100, true, true, 100);
+		scr_spring_embedding(g, 100, true, true, true, 100);
 		
 		break;
 }

@@ -49,11 +49,11 @@ switch rm
 	default:
 		
 		// Create random graph
-		var n = irandom_range(6, 10);
+		var n = irandom_range(6, 9);
 		g = scr_random_tree(n);
 		
 		// Embed graph
-		scr_spring_embedding(g, 100, true, true, 100);
+		scr_spring_embedding(g, 200, true, true, false, 120);
 		
 		break;
 }

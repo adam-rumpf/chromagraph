@@ -10,4 +10,4 @@ if (global.puzzle == 6)
 	scr_edge_line(e, scr_pallette(0, 1), 2, 3, 0, 1, alpha)
 else
 	// Class color otherwise
-	scr_edge_line(e, scr_pallette(label, 1), 1, 4, label, global.puzzle_limit, alpha);
+	scr_edge_line(e, scr_pallette(label, 1), 2, 4, label, global.puzzle_limit, alpha);

@@ -45,6 +45,11 @@ switch rm
 		g = scr_graph_bowtie_cart_triangle();
 		break;
 	
+	// Triangle Capsule
+	case rm_decomp_triangle_capsule:
+		g = scr_graph_triangle_capsule();
+		break;
+	
 	// Random
 	default:
 		

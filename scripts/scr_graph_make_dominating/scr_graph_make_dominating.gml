@@ -50,6 +50,16 @@ switch rm
 		g = scr_graph_knight_grid(6, 6);
 		break;
 	
+	// Cube
+	case rm_dominating_cube:
+		g = scr_graph_cube();
+		break;
+	
+	// Hypercube
+	case rm_dominating_hypercube:
+		g = scr_graph_hypercube();
+		break;
+	
 	// Random
 	default:
 		
