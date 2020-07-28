@@ -31,6 +31,11 @@ switch rm
 		g = scr_graph_k3xhouse();
 		break;
 	
+	// C6 [] P4
+	case rm_fall_c6_cart_p4:
+		g = scr_graph_c6_cart_p4();
+		break;
+	
 	// Random
 	default:
 		

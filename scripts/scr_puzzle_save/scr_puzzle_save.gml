@@ -3,7 +3,7 @@
 /// @param {int} room Room ID of the puzzle to update.
 /// @param {int} state New value for save variable.
 
-// Rename parameters
+// Rename arguments
 var rm, state;
 rm = argument[0];
 state = argument[1];

@@ -3,7 +3,7 @@
 /// @param {int} k Number of spokes.
 /// @return {obj_graph} Graph object.
 
-// Rename parameter
+// Rename argument
 var k = argument[0];
 
 // Define vertex positions

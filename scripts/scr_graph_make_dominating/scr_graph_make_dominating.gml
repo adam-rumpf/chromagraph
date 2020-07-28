@@ -25,6 +25,31 @@ switch rm
 		g = scr_graph_double_hexagon();
 		break;
 	
+	// 5x5 Grid
+	case rm_dominating_grid_5x5:
+		g = scr_graph_grid(5, 5);
+		break;
+	
+	// 6x6 Grid
+	case rm_dominating_grid_6x6:
+		g = scr_graph_grid(6, 6);
+		break;
+	
+	// 7x7 King Grid
+	case rm_dominating_king_grid_6x6:
+		g = scr_graph_king_grid(6, 6);
+		break;
+	
+	// 5x5 Knight Grid
+	case rm_dominating_knight_grid_5x5:
+		g = scr_graph_knight_grid(5, 5);
+		break;
+	
+	// 6x6 Knight Grid
+	case rm_dominating_knight_grid_6x6:
+		g = scr_graph_knight_grid(6, 6);
+		break;
+	
 	// Random
 	default:
 		

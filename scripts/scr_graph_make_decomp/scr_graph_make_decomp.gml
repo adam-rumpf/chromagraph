@@ -15,7 +15,7 @@ switch rm
 		g = scr_graph_cycle(3);
 		break;
 	
-	// Bow Tie
+	// Bowtie
 	case rm_decomp_bowtie:
 		g = scr_graph_bowtie();
 		break;
@@ -38,6 +38,11 @@ switch rm
 	// K8 Subset
 	case rm_decomp_k8_subset:
 		g = scr_graph_k8_subset_deformed();
+		break;
+	
+	// Bowtie [] Triangle
+	case rm_decomp_bowtie_cart_triangle:
+		g = scr_graph_bowtie_cart_triangle();
 		break;
 	
 	// Random

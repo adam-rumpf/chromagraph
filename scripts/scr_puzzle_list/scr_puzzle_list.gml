@@ -22,8 +22,8 @@ global.coloring_puzzles =
 	[102, rm_coloring_p2, 2],
 	[103, rm_coloring_petersen_star, 3], // moderate (repeat)
 	[104, rm_coloring_kite, 3],
-	[105, rm_coloring_petersen_claw, 3], // moderate (repeat)
-	[106, rm_coloring_petersen_circle, 3], // moderate (repeat)
+	//[105, rm_coloring_petersen_claw, 3], // moderate (easier than star embedding due to symmetry)
+	//[106, rm_coloring_petersen_circle, 3], // moderate (easier than star embedding due to symmetry)
 	[107, rm_coloring_dodecahedron, 3], // moderate
 	[108, rm_coloring_categorical_4, 2],
 	[109, rm_coloring_grotzsch_pentagon, 4], // moderate
@@ -60,7 +60,7 @@ global.total_puzzles =
 	[300, rm_total_dart, 5], // training
 	[301, rm_total_k4, 5], // moderate
 	[302, rm_total_k5, 5], // training
-	[303, rm_total_k4op3, 7] // moderate
+	[303, rm_total_k4op3, 7] // challenging
 ];
 global.total_save = [];
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
@@ -69,7 +69,7 @@ for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
 // Graceful Tree Puzzles
 global.graceful_puzzles =
 [
-	[400, rm_graceful_s5, 0], // training
+	[400, rm_graceful_s5, 0], // first
 	[401, rm_graceful_p5, 0], // training
 	[402, rm_graceful_dragonfly, 0], // challenging
 	[403, rm_graceful_crab_2, 0], // challenging
@@ -89,7 +89,8 @@ global.decomp_puzzles =
 	[502, rm_decomp_triforce, 3], // third
 	[503, rm_decomp_k7, 7], // moderate
 	[504, rm_decomp_k33_box, 4], // easy
-	[505, rm_decomp_k8_subset, 8] // challenging
+	[505, rm_decomp_k8_subset, 8], // challenging
+	[506, rm_decomp_bowtie_cart_triangle, 11] // moderate/challenging
 ];
 global.decomp_save = [];
 for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
@@ -100,7 +101,12 @@ global.dominating_puzzles =
 [
 	[600, rm_dominating_spider3, 3], // training
 	[601, rm_dominating_p5, 2], // training
-	[602, rm_dominating_double_hexagon, 3] // easy
+	[602, rm_dominating_double_hexagon, 3], // easy
+	[603, rm_dominating_grid_5x5, 7], // moderate/easy
+	[604, rm_dominating_grid_6x6, 10], // challenging (haven't solved yet, but should be possible)
+	[605, rm_dominating_king_grid_6x6, 4], // easy
+	[606, rm_dominating_knight_grid_5x5, 5], // moderate/easy
+	[607, rm_dominating_knight_grid_6x6, 8] // moderate
 ];
 global.dominating_save = [];
 for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
@@ -113,7 +119,8 @@ global.fall_puzzles =
 	[701, rm_fall_cube_4, 4], // training
 	[702, rm_fall_tablet, 3], // easy
 	[703, rm_fall_c5_cart_c5, 3], // challenging (haven't solved yet, but solution supposedly exists)
-	[704, rm_fall_k3xhouse, 3] // looks challenging but easy symmetry solution
+	[704, rm_fall_k3xhouse, 3], // looks challenging but easy symmetry solution
+	[705, rm_fall_c6_cart_p4, 3] // easy
 ];
 global.fall_save = [];
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)

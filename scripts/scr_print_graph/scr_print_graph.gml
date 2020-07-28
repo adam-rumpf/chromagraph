@@ -2,7 +2,7 @@
 /// @desc Prints a message containing the vertex and edge list for a graph. For use in debugging.
 /// @param {obj_graph} g Graph to print.
 
-// Rename parameter
+// Rename argument
 var g = argument[0];
 
 // Get graph parameters
