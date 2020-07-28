@@ -15,6 +15,7 @@ for (var i = 0; i < array_length_1d(coords); i++)
 {
 	var elem = coords[i]; // used to retrieve 1D array element from 1D array of coordinates
 	v[i] = instance_create_layer(elem[0], elem[1], "Vertices", obj_vertex);
+	v[i].index = i;
 }
 
 // Generate edges

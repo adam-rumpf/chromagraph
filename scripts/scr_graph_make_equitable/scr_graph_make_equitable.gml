@@ -20,6 +20,11 @@ switch rm
 		g = scr_graph_hypercube();
 		break;
 	
+	// Dodecahedron
+	case rm_equitable_dodecahedron:
+		g = scr_graph_dodecahedron();
+		break;
+	
 	// Random
 	default:
 		

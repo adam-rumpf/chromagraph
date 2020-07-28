@@ -60,7 +60,7 @@ global.total_puzzles =
 	[300, rm_total_dart, 5], // training
 	[301, rm_total_k4, 5], // moderate
 	[302, rm_total_k5, 5], // training
-	[303, rm_total_k4op3, 7] // challenging
+	[303, rm_total_k4op3, 7] // moderate
 ];
 global.total_save = [];
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
@@ -109,8 +109,8 @@ for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 // Fall Coloring Puzzles
 global.fall_puzzles =
 [
-	[700, rm_fall_cube_2, 2], // training
-	[701, rm_fall_cube_4, 4], // easy
+	[700, rm_fall_cube_2, 2], // first (2 colors makes it trivial, but gives a chance to see the lines)
+	[701, rm_fall_cube_4, 4], // training
 	[702, rm_fall_tablet, 3], // easy
 	[703, rm_fall_c5_cart_c5, 3], // challenging (haven't solved yet, but solution supposedly exists)
 	[704, rm_fall_k3xhouse, 3] // looks challenging but easy symmetry solution
@@ -123,7 +123,8 @@ for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
 global.equitable_puzzles =
 [
 	[800, rm_equitable_c6, 3], // training
-	[801, rm_equitable_hypercube_4, 4] // moderate
+	[801, rm_equitable_hypercube_4, 4], // moderate
+	[802, rm_equitable_dodecahedron, 4] // easy/moderate
 ];
 global.equitable_save = [];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)

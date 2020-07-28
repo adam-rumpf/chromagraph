@@ -48,9 +48,12 @@ switch rm
 	// Random
 	default:
 		
-		//###
-		room_goto(rm_menu);
-		return obj_game.id;
+		// Create random graph
+		var n = irandom_range(6, 10);
+		g = scr_random_tree(n);
+		
+		// Embed graph
+		scr_spring_embedding(g, 100, true, true, 100);
 		
 		break;
 }
