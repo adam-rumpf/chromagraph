@@ -2,15 +2,15 @@
 /// @desc Display credits text.
 
 // Define text
-var credits = @"(Title)
-Copyright (c) 2020 Adam Rumpf  
+var credits = @"Chromagraph
+Copyright (c) 2020 Adam Rumpf
 adam-rumpf.github.io
 
-Made in GameMaker Studio 2  
+Made in GameMaker Studio 2
 2017 YoYo Games Ltd
 
-Source code released under MIT License  
-(GitHub Repo Link)
+Source code released under MIT License
+https://github.com/adam-rumpf/chromagraph
 
 Music:
 
@@ -20,7 +20,16 @@ License: http://creativecommons.org/licenses/by/4.0/
 
 Sound Effects:
 
-(sound effects)";
+(sound effects)
+
+Play Testers:
+
+(testers)
+
+Special Thanks:
+
+Hemanshu Kaul
+Douglas West";
 
 // Set text attributes
 draw_set_font(fnt_standard);
