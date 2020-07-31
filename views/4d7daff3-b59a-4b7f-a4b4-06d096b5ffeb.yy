@@ -50,7 +50,10 @@
         "8a520609-bbe9-45f7-817a-0004f4888b4f",
         "d4dc6274-0de8-4474-9f21-369f804b7927",
         "61b9400a-2f14-4645-80dc-2c5697e89c2d",
-        "0ffaf9a7-1507-46bb-a150-d181c8f920da"
+        "0ffaf9a7-1507-46bb-a150-d181c8f920da",
+        "bb2319f3-4f05-40fc-9caa-abf84c0a0cd8",
+        "a708fc6c-7ab8-407e-ba24-13a713c28fe1",
+        "f7d4013c-f979-4fa4-886d-2d91eb53a4ce"
     ],
     "filterType": "GMScript",
     "folderName": "specific_graph",

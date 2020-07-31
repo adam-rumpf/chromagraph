@@ -49,7 +49,10 @@ global.edge_puzzles =
 	[202, rm_edge_cube, 3], // moderate
 	[203, rm_edge_k33, 3], // training
 	[204, rm_edge_fullerene26, 3], // moderate
-	[205, rm_edge_chord, 3] // training
+	[205, rm_edge_chord, 3], // training
+	[206, rm_edge_hypercube, 4], // easy/moderate
+	[207, rm_edge_k4, 3], // training
+	[208, rm_edge_octahedron, 4] // easy/moderate
 ];
 global.edge_save = [];
 for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
@@ -61,7 +64,9 @@ global.total_puzzles =
 	[300, rm_total_dart, 5], // training
 	[301, rm_total_k4, 5], // moderate
 	[302, rm_total_k5, 5], // training and leads to a neat pattern
-	[303, rm_total_k4op3, 7] // challenging
+	[303, rm_total_k4op3, 7], // challenging
+	[304, rm_total_cube, 5], // easy (similar to edge version)
+	[305, rm_total_hypercube, 6] // easy (similar to edge version)
 ];
 global.total_save = [];
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
@@ -143,7 +148,10 @@ global.equitable_puzzles =
 	[801, rm_equitable_hypercube_4, 4], // moderate
 	[802, rm_equitable_dodecahedron, 4], // easy/moderate
 	[803, rm_equitable_cube_4, 4], // training, could branch from standard coloring cube
-	[804, rm_equitable_crab, 3] // training
+	[804, rm_equitable_crab, 3], // training
+	[805, rm_equitable_snowflake_5_3, 3], // easy
+	[806, rm_equitable_flower_6_3, 3], // easy
+	[807, rm_equitable_flower_6_4, 4] // easy
 ];
 global.equitable_save = [];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)

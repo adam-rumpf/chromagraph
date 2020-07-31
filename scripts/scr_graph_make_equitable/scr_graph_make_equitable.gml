@@ -35,6 +35,17 @@ switch rm
 		g = scr_graph_crab_2();
 		break;
 	
+	// Snowflake
+	case rm_equitable_snowflake_5_3:
+		g = scr_graph_snowflake_5_3();
+		break;
+	
+	// Flower (6 petals)
+	case rm_equitable_flower_6_3:
+	case rm_equitable_flower_6_4:
+		g = scr_graph_flower_6();
+		break;
+	
 	// Random
 	default:
 		

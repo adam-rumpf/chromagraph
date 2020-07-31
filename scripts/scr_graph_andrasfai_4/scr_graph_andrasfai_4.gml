@@ -3,7 +3,7 @@
 /// @return {obj_graph} Graph object.
 
 // Define vertex positions
-var r = room_width/3;
+var r = room_height/3;
 var coords =
 [
 	[room_width/2 + r, room_height/2],

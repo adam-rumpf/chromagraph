@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "1b306dfd-c2b6-4aa6-b351-302ac6dbab3f",
+            "Value": {
+                "id": "073a0492-8523-4ab5-8920-1a059c3ef60f",
+                "resourcePath": "rooms\\rm_edge_octahedron\\rm_edge_octahedron.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1c1dbae9-6b22-4c2b-9e9c-48a72abc8800",
             "Value": {
                 "id": "2842a42d-26f8-4514-a366-a6712af60505",
@@ -407,6 +415,14 @@
             }
         },
         {
+            "Key": "2906f165-3c93-4c3a-aac4-5483a27a1527",
+            "Value": {
+                "id": "516e705a-cdc7-4b5e-ad82-a46882fede43",
+                "resourcePath": "rooms\\rm_equitable_flower_6_3\\rm_equitable_flower_6_3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "29f9663b-ca32-4064-a146-fb9a9cfc5f17",
             "Value": {
                 "id": "60e8e200-663b-4de0-8164-288363213d68",
@@ -420,6 +436,14 @@
                 "id": "80bab74e-9281-4239-b0d4-ac1c0b30fdbc",
                 "resourcePath": "scripts\\scr_puzzle_list\\scr_puzzle_list.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2a727089-27b5-46e4-8f76-aa842e08c07b",
+            "Value": {
+                "id": "c507e26e-421d-487b-9924-0b48f23bcb3f",
+                "resourcePath": "rooms\\rm_edge_hypercube\\rm_edge_hypercube.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1431,6 +1455,14 @@
             }
         },
         {
+            "Key": "8b4e00a0-2cf5-4bb7-bcdd-35708e8fa208",
+            "Value": {
+                "id": "10a7a7c8-7818-49e6-b595-04cf6381d989",
+                "resourcePath": "rooms\\rm_total_hypercube\\rm_total_hypercube.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "8bbaf1b9-2f9d-4a3e-b571-7c980042ca0d",
             "Value": {
                 "id": "6fb3f1b2-0e3b-4314-a6fe-18beeeb8ef83",
@@ -1695,6 +1727,14 @@
             }
         },
         {
+            "Key": "a708fc6c-7ab8-407e-ba24-13a713c28fe1",
+            "Value": {
+                "id": "7a9a3a96-c7f2-4c3a-88cd-d22b6d519808",
+                "resourcePath": "scripts\\scr_graph_flower_6\\scr_graph_flower_6.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a8dfff27-9c6d-40d3-b1dc-925b1bfca67c",
             "Value": {
                 "id": "242cd7bb-9109-4984-a69d-3bec60a3d564",
@@ -1863,6 +1903,14 @@
             }
         },
         {
+            "Key": "b48f4c91-7a45-4612-8b8e-a28a7b2962f6",
+            "Value": {
+                "id": "f4abd9f5-ac85-44c4-b0d2-7879e9b8763f",
+                "resourcePath": "rooms\\rm_equitable_snowflake_5_3\\rm_equitable_snowflake_5_3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "b51765a5-a985-43a2-9205-d6cbab547948",
             "Value": {
                 "id": "5c482125-f4dd-4077-a42c-7c36fdc2fdd2",
@@ -1948,6 +1996,22 @@
                 "id": "eba7b3bb-4716-4bb2-a33e-993f3690f813",
                 "resourcePath": "sprites\\spr_button_restart\\spr_button_restart.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bb2319f3-4f05-40fc-9caa-abf84c0a0cd8",
+            "Value": {
+                "id": "bcb414dc-2e49-41d1-8a03-df8864470ea1",
+                "resourcePath": "scripts\\scr_graph_snowflake_5_3\\scr_graph_snowflake_5_3.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bb609e4e-1808-4d54-9e67-375a9fdf22b5",
+            "Value": {
+                "id": "09fa02f2-ed35-4bc2-af8c-4b3c851d0c50",
+                "resourcePath": "rooms\\rm_edge_k4\\rm_edge_k4.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2311,6 +2375,14 @@
             }
         },
         {
+            "Key": "dedff950-49bb-40be-b49b-b8fef0a8e84e",
+            "Value": {
+                "id": "cedc71a1-d53f-416e-9771-3da0c1fa38b2",
+                "resourcePath": "rooms\\rm_equitable_flower_6_4\\rm_equitable_flower_6_4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "df099003-ebf8-411b-b642-0fb83c57d376",
             "Value": {
                 "id": "69859755-0b47-4a7c-8670-165a6f7bd066",
@@ -2324,6 +2396,14 @@
                 "id": "4a7df74e-f238-49ac-bd5e-ca897abf2fc0",
                 "resourcePath": "objects\\obj_vertex_color\\obj_vertex_color.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e1ad3e02-e3fd-4865-8203-8548deacec20",
+            "Value": {
+                "id": "566ab040-3785-4954-894e-ff475d64c9ef",
+                "resourcePath": "rooms\\rm_total_cube\\rm_total_cube.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2607,6 +2687,14 @@
             }
         },
         {
+            "Key": "f7d4013c-f979-4fa4-886d-2d91eb53a4ce",
+            "Value": {
+                "id": "ade4eeaf-7c83-4859-b069-8b96eb65c006",
+                "resourcePath": "scripts\\scr_graph_octahedron\\scr_graph_octahedron.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f84cb6e3-dcad-4ce1-acdc-f782a026f748",
             "Value": {
                 "id": "d3887225-1418-4a3d-8137-b0babff40535",
@@ -2777,6 +2865,9 @@
         "d4dc6274-0de8-4474-9f21-369f804b7927",
         "61b9400a-2f14-4645-80dc-2c5697e89c2d",
         "0ffaf9a7-1507-46bb-a150-d181c8f920da",
+        "bb2319f3-4f05-40fc-9caa-abf84c0a0cd8",
+        "a708fc6c-7ab8-407e-ba24-13a713c28fe1",
+        "f7d4013c-f979-4fa4-886d-2d91eb53a4ce",
         "7a843869-489c-42e2-bcc7-dc167afd70ec",
         "c413b92a-8fb0-4d93-8f8d-3b3638381d9f",
         "1c1dbae9-6b22-4c2b-9e9c-48a72abc8800",

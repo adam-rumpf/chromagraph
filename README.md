@@ -10,13 +10,13 @@ For downloads, please see this game's [itch.io page](https://adam-rumpf.itch.io/
 
 Chromagraph   
 Copyright (c) 2020 Adam Rumpf  
-adam-rumpf.github.io  
+[adam-rumpf.github.io](https://adam-rumpf.github.io/)
 
 Made in GameMaker Studio 2  
 2017 YoYo Games Ltd
 
 Source code released under MIT License  
-(Link.)
+[github.com/adam-rumpf/chromagraph](https://github.com/adam-rumpf/chromagraph)
 
 ### Music
 

@@ -40,6 +40,21 @@ switch rm
 		g = scr_graph_chord();
 		break;
 	
+	// Hypercube
+	case rm_edge_hypercube:
+		g = scr_graph_hypercube();
+		break;
+	
+	// K4
+	case rm_edge_k4:
+		g = scr_graph_wheel(3);
+		break;
+	
+	// Octahedron
+	case rm_edge_octahedron:
+		g = scr_graph_octahedron();
+		break;
+	
 	// Random
 	default:
 		

@@ -30,6 +30,16 @@ switch rm
 		g = scr_graph_k4op3();
 		break;
 	
+	// Cube
+	case rm_total_cube:
+		g = scr_graph_cube();
+		break;
+	
+	// Hypercube
+	case rm_total_hypercube:
+		g = scr_graph_hypercube();
+		break;
+	
 	// Random
 	default:
 		
