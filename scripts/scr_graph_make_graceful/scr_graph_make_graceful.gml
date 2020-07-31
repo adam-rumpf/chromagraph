@@ -15,9 +15,9 @@ switch rm
 		g = scr_graph_star(5);
 		break;
 	
-	// P5
-	case rm_graceful_p5:
-		g = scr_graph_p5();
+	// P4
+	case rm_graceful_p4:
+		g = scr_graph_p4();
 		break;
 	
 	// Dragonfly
@@ -43,6 +43,16 @@ switch rm
 	// Caterpillar (3 sets of 2 legs)
 	case rm_graceful_caterpillar_3_2:
 		g = scr_graph_caterpillar_3_2();
+		break;
+	
+	// Y
+	case rm_graceful_y:
+		g = scr_graph_y();
+		break;
+	
+	// P2
+	case rm_graceful_p2:
+		g = scr_graph_p2();
 		break;
 	
 	// Random

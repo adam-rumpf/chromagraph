@@ -5,9 +5,9 @@
 // Define vertex positions
 var coords =
 [
-	[room_width/3, 2*room_height/3],
-	[room_width/2, room_height/3],
-	[2*room_width/3, 2*room_height/3]
+	[room_width/3, room_height/2 + room_height/10],
+	[room_width/2, room_height/2 - room_height/10],
+	[2*room_width/3, room_height/2 + room_height/10]
 ];
 
 // Define pairs of adjacent vertices

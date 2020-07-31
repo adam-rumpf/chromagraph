@@ -6,22 +6,22 @@
 var r = room_height/3;
 var coords =
 [
-	[room_width/2 + r, room_height/2],
-	[room_width/2 + r*cos(pi/8), room_height/2 - r*sin(pi/7)],
-	[room_width/2 + r*cos(2*pi/8), room_height/2 - r*sin(2*pi/8)],
-	[room_width/2 + r*cos(3*pi/8), room_height/2 - r*sin(3*pi/8)],
-	[room_width/2 + r*cos(4*pi/8), room_height/2 - r*sin(4*pi/8)],
-	[room_width/2 + r*cos(5*pi/8), room_height/2 - r*sin(5*pi/8)],
-	[room_width/2 + r*cos(6*pi/8), room_height/2 - r*sin(6*pi/8)],
-	[room_width/2 + r*cos(7*pi/8), room_height/2 - r*sin(7*pi/8)],
-	[room_width/2 - r, room_height/2],
-	[room_width/2 + r*cos(9*pi/8), room_height/2 - r*sin(9*pi/8)],
-	[room_width/2 + r*cos(10*pi/8), room_height/2 - r*sin(10*pi/8)],
-	[room_width/2 + r*cos(11*pi/8), room_height/2 - r*sin(11*pi/8)],
-	[room_width/2 + r*cos(12*pi/8), room_height/2 - r*sin(12*pi/8)],
-	[room_width/2 + r*cos(13*pi/8), room_height/2 - r*sin(13*pi/8)],
-	[room_width/2 + r*cos(14*pi/8), room_height/2 - r*sin(14*pi/8)],
-	[room_width/2 + r*cos(15*pi/8), room_height/2 - r*sin(15*pi/8)]
+	[room_width/2 + r*cos(-pi/16), room_height/2 - r*sin(-pi/16)],
+	[room_width/2 + r*cos(pi/8 - pi/16), room_height/2 - r*sin(pi/8 - pi/16)],
+	[room_width/2 + r*cos(2*pi/8 - pi/16), room_height/2 - r*sin(2*pi/8 - pi/16)],
+	[room_width/2 + r*cos(3*pi/8 - pi/16), room_height/2 - r*sin(3*pi/8 - pi/16)],
+	[room_width/2 + r*cos(4*pi/8 - pi/16), room_height/2 - r*sin(4*pi/8 - pi/16)],
+	[room_width/2 + r*cos(5*pi/8 - pi/16), room_height/2 - r*sin(5*pi/8 - pi/16)],
+	[room_width/2 + r*cos(6*pi/8 - pi/16), room_height/2 - r*sin(6*pi/8 - pi/16)],
+	[room_width/2 + r*cos(7*pi/8 - pi/16), room_height/2 - r*sin(7*pi/8 - pi/16)],
+	[room_width/2 + r*cos(pi - pi/16), room_height/2 - r*sin(pi - pi/16)],
+	[room_width/2 + r*cos(9*pi/8 - pi/16), room_height/2 - r*sin(9*pi/8 - pi/16)],
+	[room_width/2 + r*cos(10*pi/8 - pi/16), room_height/2 - r*sin(10*pi/8 - pi/16)],
+	[room_width/2 + r*cos(11*pi/8 - pi/16), room_height/2 - r*sin(11*pi/8 - pi/16)],
+	[room_width/2 + r*cos(12*pi/8 - pi/16), room_height/2 - r*sin(12*pi/8 - pi/16)],
+	[room_width/2 + r*cos(13*pi/8 - pi/16), room_height/2 - r*sin(13*pi/8 - pi/16)],
+	[room_width/2 + r*cos(14*pi/8 - pi/16), room_height/2 - r*sin(14*pi/8 - pi/16)],
+	[room_width/2 + r*cos(15*pi/8 - pi/16), room_height/2 - r*sin(15*pi/8 - pi/16)]
 ];
 
 // Define pairs of adjacent vertices

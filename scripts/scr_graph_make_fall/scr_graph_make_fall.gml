@@ -41,6 +41,11 @@ switch rm
 		g = scr_graph_hypercube();
 		break;
 	
+	// Clebsch Graph
+	case rm_fall_clebsch:
+		g = scr_graph_clebsch_star();
+		break;
+	
 	// Random
 	default:
 		

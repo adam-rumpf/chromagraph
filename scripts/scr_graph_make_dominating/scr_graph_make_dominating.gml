@@ -17,7 +17,7 @@ switch rm
 	
 	// P5
 	case rm_dominating_p5:
-		g = scr_graph_p5();
+		g = scr_graph_p4();
 		break;
 	
 	// P5
@@ -58,6 +58,16 @@ switch rm
 	// Hypercube
 	case rm_dominating_hypercube:
 		g = scr_graph_hypercube();
+		break;
+	
+	// Clebsch Graph
+	case rm_dominating_clebsch:
+		g = scr_graph_clebsch_star();
+		break;
+	
+	// Clebsch Graph
+	case rm_dominating_andrasfai_4:
+		g = scr_graph_andrasfai_4();
 		break;
 	
 	// Random

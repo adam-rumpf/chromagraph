@@ -101,6 +101,11 @@ switch rm
 		g = scr_graph_fullerene26();
 		break;
 	
+	// Clebsch Graph
+	case rm_coloring_clebsch:
+		g = scr_graph_clebsch_star();
+		break;
+	
 	// Random
 	default:
 		

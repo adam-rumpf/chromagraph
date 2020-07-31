@@ -25,6 +25,16 @@ switch rm
 		g = scr_graph_dodecahedron();
 		break;
 	
+	// Cube (4 colors)
+	case rm_equitable_cube_4:
+		g = scr_graph_cube();
+		break;
+	
+	// Crab
+	case rm_equitable_crab:
+		g = scr_graph_crab_2();
+		break;
+	
 	// Random
 	default:
 		
