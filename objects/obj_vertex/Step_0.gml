@@ -15,6 +15,9 @@ switch global.puzzle
 		if (label >= global.puzzle_limit)
 			label = -1;
 		
+		// Play a sound
+		scr_play_sound_pitch(snd_breath, 50, label);
+		
 		// Set color
 		image_blend = scr_pallette(label, 0.5);
 		
@@ -30,6 +33,9 @@ switch global.puzzle
 		label++;
 		if (label >= global.puzzle_limit)
 			label = -1;
+		
+		// Play a sound
+		scr_play_sound_pitch(snd_breath, 50, label);
 		
 		// Set color
 		image_blend = scr_pallette(label, 0.5);
@@ -50,6 +56,9 @@ switch global.puzzle
 		else
 			label = -1;
 		
+		// Play a sound
+		scr_play_sound_pitch(snd_breath, 50, label);
+		
 		// Set color (constant)
 		image_blend = scr_pallette(min(0,label), 0.5);
 		
@@ -66,17 +75,22 @@ switch global.puzzle
 		{
 			// Toggle only if under the allowed limit
 			if (obj_game.class[0] >= global.puzzle_limit)
+			{
 				instance_create_layer(x, y, "Vertex_Effects", obj_vertex_color_temp);
+				scr_play_sound_pitch(snd_knock, 60, 0);
+			}
 			else
 			{
 				label = 0;
 				obj_game.class[0]++;
+				scr_play_sound_pitch(snd_breath, 50, label);
 			}
 		}
 		else
 		{
 			label = -1;
 			obj_game.class[0]--;
+			scr_play_sound_pitch(snd_breath, 50, label);
 		}
 		
 		// Set color
@@ -94,6 +108,9 @@ switch global.puzzle
 		label++;
 		if (label >= global.puzzle_limit)
 			label = -1;
+		
+		// Play a sound
+		scr_play_sound_pitch(snd_breath, 50, label);
 		
 		// Set color
 		image_blend = scr_pallette(label, 0.5);
@@ -114,6 +131,9 @@ switch global.puzzle
 			label = -1;
 		else
 			obj_game.class[label]++;
+		
+		// Play a sound
+		scr_play_sound_pitch(snd_breath, 50, label);
 		
 		// Set color
 		image_blend = scr_pallette(label, 0.5);

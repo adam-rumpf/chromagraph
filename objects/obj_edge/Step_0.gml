@@ -15,6 +15,9 @@ switch global.puzzle
 		if (label >= global.puzzle_limit)
 			label = -1;
 		
+		// Play a sound
+		scr_play_sound_pitch(snd_breath, 50, label);
+		
 		// Prompt a global solution test
 		global.puzzle_solved = scr_properly_edge_colored(obj_game.g);
 		
@@ -27,6 +30,9 @@ switch global.puzzle
 		label++;
 		if (label >= global.puzzle_limit)
 			label = -1;
+		
+		// Play a sound
+		scr_play_sound_pitch(snd_breath, 50, label);
 		
 		// Prompt a global solution test
 		global.puzzle_solved = scr_properly_totally_colored(obj_game.g);
@@ -44,6 +50,9 @@ switch global.puzzle
 			label = -1;
 		else
 			obj_game.class[label]++;
+		
+		// Play a sound
+		scr_play_sound_pitch(snd_breath, 50, label);
 		
 		// Test for triangle decomposition
 		global.puzzle_solved = scr_triangle_decomposition(obj_game.g);
