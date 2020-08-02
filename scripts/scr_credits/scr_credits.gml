@@ -2,7 +2,7 @@
 /// @desc Display credits text.
 
 // Define text
-var height = 300; // amount of vertical text movement allowed (increase for longer credits)
+var height = 320; // amount of vertical text movement allowed (increase for longer credits)
 var credits = @"Chromagraph
 Copyright (c) 2020 Adam Rumpf
 adam-rumpf.github.io
@@ -19,9 +19,14 @@ Babylon by Kevin MacLeod
 incompetech.filmmusic.io/song/3406-babylon
 creativecommons.org/licenses/by/4.0
 
---- Sound Effects ---
+Wet Riffs by Kevin MacLeod
+incompetech.filmmusic.io/song/4618-wet-riffs
+creativecommons.org/licenses/by/4.0
 
-freesound.org
+--- Sound ---
+
+This game uses these sounds from freesound:
+noise.deep.loop.ogg by xUMR (freesound.org/people/xUMR)
 
 --- Play Testers ---
 

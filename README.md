@@ -24,9 +24,18 @@ Babylon by Kevin MacLeod
 Link: https://incompetech.filmmusic.io/song/3406-babylon  
 License: http://creativecommons.org/licenses/by/4.0/
 
-### Sound Effects
+Wet Riffs by Kevin MacLeod
+Link: https://incompetech.filmmusic.io/song/4618-wet-riffs
+License: http://creativecommons.org/licenses/by/4.0/
 
-(sound effects)
+### Sound
+
+This game uses these sounds from [freesound](https://freesound.org/):  
+[noise.deep.loop.ogg](https://freesound.org/people/xUMR/sounds/478654/) by xUMR (https://freesound.org/people/xUMR/)
+
+### Play Testers
+
+(Testers)
 
 ### Special Thanks
 

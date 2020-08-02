@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "03d6b2f4-69e9-4686-b27d-03d926bbb02e",
+            "Value": {
+                "id": "2b9c8dd6-94e7-4ea7-b87a-580c4d49b8ef",
+                "resourcePath": "sounds\\mus_wet_riffs\\mus_wet_riffs.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "04790a6b-1b2b-40e7-9754-5130423e1736",
             "Value": {
                 "id": "a537547e-1981-40f0-ac9f-a928c1ee8c65",
@@ -148,6 +156,14 @@
                 "id": "3010fc44-08db-41e9-b2d0-34a299aaff7f",
                 "resourcePath": "rooms\\rm_coloring_cube\\rm_coloring_cube.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "0cb9646c-c60c-418f-a0b3-416bf35e8755",
+            "Value": {
+                "id": "82bfdc71-e74f-4d7f-8daf-1f9698299000",
+                "resourcePath": "sprites\\spr_button_outline\\spr_button_outline.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -967,6 +983,14 @@
             }
         },
         {
+            "Key": "5aab8995-8029-4608-97e1-3b3501823e3f",
+            "Value": {
+                "id": "7e2aa4d1-a229-40ca-916d-0cc74b1a5869",
+                "resourcePath": "objects\\obj_gui_cancel\\obj_gui_cancel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5aafe59b-8dcf-4a28-8c97-d3ac26dc05e8",
             "Value": {
                 "id": "d89fdb3e-572f-4a17-bb55-60a18fced50f",
@@ -1156,6 +1180,14 @@
                 "id": "6df1bdf3-ee48-401a-847a-3ae5225b09eb",
                 "resourcePath": "views\\688a2d4e-c27a-4b0b-b97a-0ece97cb2401.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "68dbe85d-84e2-4bf6-b286-00598d8fad0b",
+            "Value": {
+                "id": "a65e088e-79eb-4a69-a35c-5ac3462f1340",
+                "resourcePath": "sprites\\spr_background_stone_09\\spr_background_stone_09.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1860,6 +1892,14 @@
                 "id": "f4a26d85-596a-4481-b244-ff15f491a021",
                 "resourcePath": "scripts\\scr_save_clear\\scr_save_clear.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b0d131d7-aa3c-4721-b89e-7d090cb5dc85",
+            "Value": {
+                "id": "8cd17af6-c5ef-4e58-bc2f-b91ffb3f5f05",
+                "resourcePath": "views\\6445cadd-49e6-4d1e-b2be-1ee809ee5ab6-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2764,6 +2804,14 @@
                 "id": "1b2c3020-5fe3-4382-9e4a-9e952fdae522",
                 "resourcePath": "scripts\\scr_array_min\\scr_array_min.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fb9dcf82-7f12-4e8f-80a5-b2ed03bd528b",
+            "Value": {
+                "id": "7d12b2de-8a59-4b29-95ab-578e9b179aef",
+                "resourcePath": "rooms\\rm_menu_puzzle\\rm_menu_puzzle.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

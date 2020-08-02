@@ -1,8 +1,6 @@
 /// @func scr_save_clear()
 /// @desc Deletes save file and resets game.
 
-//### Call after confirming save clear in the save clear room, and after fading out screen.
-
 // File name
 var save = "save.dat";
 

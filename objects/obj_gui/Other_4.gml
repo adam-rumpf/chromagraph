@@ -4,6 +4,11 @@
 if (room == rm_title)
 	exit;
 
+// Reset opacity
+alpha = 1;
+fading = false;
+alarm[0] = 5*room_speed;
+
 // Constant buttons
 
 // Sound button
@@ -54,6 +59,10 @@ switch room
 		var menu = instance_create_layer(width-hspace, vspace, "Overlays", obj_gui_back);
 		menu.xx = width-hspace;
 		menu.yy = vspace;
+		
+		// On save delete screen, also spawn a cancel button
+		if (room == rm_save_clear)
+			instance_create_layer(room_width/2, room_height - 100, "Instances", obj_gui_cancel);
 		
 		break;
 	

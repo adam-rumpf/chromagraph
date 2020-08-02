@@ -74,6 +74,24 @@ switch global.puzzle
 		break;
 }
 
-// Reposition vertices
-if (g != id)
-	scr_vertex_reframe(g, 180, 180, 100, 100);
+// Reposition vertices only if a graph has been defined
+if (g == id)
+	exit;
+
+// Reposition vertices (except for menu puzzle and save deletion puzzle)
+switch room
+{
+	// Save Clear Puzzle
+	case rm_save_clear:
+		scr_vertex_reframe(g, 200, 200, 200, 200);
+		break;
+	
+	// Menu Puzzle
+	case rm_menu_puzzle:
+		//###
+		break;
+	
+	// Puzzle Room
+	default:
+		scr_vertex_reframe(g, 180, 180, 100, 100);
+}

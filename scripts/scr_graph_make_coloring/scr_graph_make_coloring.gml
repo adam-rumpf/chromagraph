@@ -13,6 +13,7 @@ switch rm
 	// Triangle
 	case rm_coloring_triangle_new:
 	case rm_coloring_triangle:
+	case rm_save_clear:
 		g = scr_graph_cycle(3);
 		break;
 	

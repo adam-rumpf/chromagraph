@@ -6,6 +6,10 @@
 // Rename argument
 var rm = argument[0];
 
+// Save clear room puzzle type
+if (rm == rm_save_clear)
+	return 1;
+
 // Search through the global puzzle arrays until finding a match for the given room
 var found, type;
 found = false; // whether the next room has been found

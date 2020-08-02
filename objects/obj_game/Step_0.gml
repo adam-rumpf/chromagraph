@@ -1,7 +1,7 @@
 /// @desc Listen for puzzle to be solved.
 
 // Skip if not in a puzzle room
-if (room == rm_title || room == rm_menu || room == rm_credits || room == rm_save_clear || room == rm_ending)
+if (room == rm_title || room == rm_menu || room == rm_credits || room == rm_ending)
 	exit;
 
 // Check whether puzzle has just been solved for the first time
