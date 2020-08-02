@@ -5,7 +5,7 @@ if (room == rm_title)
 	exit;
 
 // Create particle system
-particle_system = part_system_create_layer("Overlays", true);
+particle_system = part_system_create_layer("Overlays", false);
 
 // Atmospheric dust
 
@@ -50,7 +50,7 @@ type_drip = part_type_create();
 part_type_shape(type_drip, pt_shape_square);
 part_type_size(type_drip, 0.04, 0.08, 0, 0);
 part_type_color2(type_drip, 16720932, 16727100);
-part_type_alpha3(type_drip, 0.50, 0.70, 0.70);
+part_type_alpha3(type_drip, 0.30, 0.50, 0.40);
 part_type_speed(type_drip, 0.08, 0.16, 0, 0);
 part_type_direction(type_drip, 0, 359, 0, 0);
 part_type_gravity(type_drip, 0.05, 270);

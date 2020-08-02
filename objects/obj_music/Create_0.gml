@@ -5,6 +5,7 @@ vol = 1; // sound volume (0 for silent, 1 for full)
 music = id; // current music ID
 songs = [mus_wet_riffs, mus_babylon]; // list of all songs
 index = 0; // index of current song
+prev = -1; // previous room (for use in determining certain types of change)
 
 // If music is turned off, set volume to 0
 if (global.music_on == false)
