@@ -16,7 +16,8 @@
         "77533a9b-9749-4370-8a1d-0156307dd56c",
         "ccff6c8d-a76e-42a6-81fe-81a356714196",
         "e441f18b-40d3-493c-a649-9ea21392e786",
-        "831c14d7-86e3-425c-a4bb-ce72c5c2b86a"
+        "831c14d7-86e3-425c-a4bb-ce72c5c2b86a",
+        "0167bfd5-6123-4174-8b09-1d62d4b41877"
     ],
     "filterType": "GMScript",
     "folderName": "verification",

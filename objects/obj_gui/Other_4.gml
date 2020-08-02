@@ -38,8 +38,8 @@ switch room
 	// Menu screen
 	case rm_menu:
 		
-		// Get GUI width
-		var width = display_get_gui_width();
+		// Set width (should match viewport width)
+		var width = obj_camera.w;
 		
 		// Save clear button
 		var save = instance_create_layer(hspace+3*hspace, vspace, "Overlays", obj_gui_save_clear);

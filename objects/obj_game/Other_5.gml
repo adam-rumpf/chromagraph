@@ -9,3 +9,6 @@ g = id;
 
 // Clear selectable object list
 global.selectable = [];
+
+// Fade out sounds
+audio_sound_gain(rumble, 0, 500);

@@ -16,3 +16,7 @@ state = 0; // puzzle state (0 for locked, 1 for unlocked, 2 for complete)
 // Create button overlay object
 overlay = instance_create_layer(x, y, "Button_Labels", obj_menu_button_number);
 overlay.button = id;
+
+// Set timer to delay activation
+active = false;
+alarm[1] = 1.5*room_speed;

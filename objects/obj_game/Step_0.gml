@@ -4,6 +4,18 @@
 if (room == rm_title || room == rm_menu || room == rm_credits || room == rm_ending)
 	exit;
 
+// Decide whether to play an error sound
+if (global.sound_on == true)
+{
+	// Play sound if there is an error, and otherwise cancel sound
+	if (scr_graph_errors(g) == true)
+		audio_sound_gain(rumble, 1, 500);
+	else
+		audio_sound_gain(rumble, 0, 500);
+}
+else
+	audio_sound_gain(rumble, 0, 500);
+
 // Check whether puzzle has just been solved for the first time
 if (global.puzzle_solved == true && solved == false)
 {

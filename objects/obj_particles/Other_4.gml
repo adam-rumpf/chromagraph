@@ -79,5 +79,5 @@ switch room
 		part_emitter_stream(particle_system, emit_dark_bottom, type_dark, 8*(60/room_speed)*(room_width/800));
 		
 		// Drips
-		part_emitter_stream(particle_system, emit_drip, type_drip, -90*(60/room_speed));
+		part_emitter_stream(particle_system, emit_drip, type_drip, -150*(60/room_speed));
 }

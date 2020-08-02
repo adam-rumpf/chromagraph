@@ -3,7 +3,7 @@
 
 // Define text
 var height = 320; // amount of vertical text movement allowed (increase for longer credits)
-var credits = @"Chromagraph
+var credits = @'Chromagraph
 Copyright (c) 2020 Adam Rumpf
 adam-rumpf.github.io
 
@@ -26,9 +26,9 @@ creativecommons.org/licenses/by/4.0
 --- Sound ---
 
 This game uses the following sounds from freesound:
-Chime2 by Neotone (freesound.org/people/Neotone)
-noise.deep.loop by xUMR (freesound.org/people/xUMR)
-Waves of Hawaii by florianreichelt (freesound.org/people/florianreichelt)
+"Chime2" by Neotone (freesound.org/people/Neotone)
+"train screech" by cognito perceptu (freesound.org/people/cognito%20perceptu)
+"Waves of Hawaii" by florianreichelt (freesound.org/people/florianreichelt)
 
 --- Play Testers ---
 
@@ -37,7 +37,7 @@ Waves of Hawaii by florianreichelt (freesound.org/people/florianreichelt)
 --- Special Thanks ---
 
 Hemanshu Kaul
-Douglas West";
+Douglas West';
 
 // Set text attributes
 draw_set_font(fnt_standard);

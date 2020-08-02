@@ -9,6 +9,10 @@ var v, flag;
 v = argument[0];
 flag = argument[1];
 
+// Skip if unlabeled
+if (v.label < 0)
+	return false;
+
 var proper = true;
 
 // Check all outgoing edges

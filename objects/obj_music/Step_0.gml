@@ -24,5 +24,8 @@ else
 }
 
 // Start a new song after a delay if the current one has ended
-if (audio_is_playing(music) == false)
+if (audio_is_playing(music) == false && swap == false)
+{
+	swap = true;
 	alarm[1] = 1*room_speed;
+}

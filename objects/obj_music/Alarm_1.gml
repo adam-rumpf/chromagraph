@@ -1,5 +1,7 @@
 /// @desc Start a new song.
 
+swap = false;
+
 // Increment song index
 index = (index+1) % array_length_1d(songs);
 	

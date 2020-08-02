@@ -9,6 +9,10 @@ var e, flag;
 e = argument[0];
 flag = argument[1];
 
+// Skip if unlabeled
+if (e.label < 0)
+	return false;
+
 var proper = true;
 
 // Check head and tail
