@@ -25,8 +25,10 @@ creativecommons.org/licenses/by/4.0
 
 --- Sound ---
 
-This game uses these sounds from freesound:
-noise.deep.loop.ogg by xUMR (freesound.org/people/xUMR)
+This game uses the following sounds from freesound:
+Chime2 by Neotone (freesound.org/people/Neotone)
+noise.deep.loop by xUMR (freesound.org/people/xUMR)
+Waves of Hawaii by florianreichelt (freesound.org/people/florianreichelt)
 
 --- Play Testers ---
 

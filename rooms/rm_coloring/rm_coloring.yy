@@ -199,7 +199,7 @@
             "id": "fd891a09-3e80-40b6-8b96-c8cbc5b81303",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4294967295 },
+            "colour": { "Value": 4289967027 },
             "depth": 700,
             "grid_x": 32,
             "grid_y": 32,
@@ -208,7 +208,7 @@
             "hspeed": 0,
             "htiled": false,
             "inheritLayerDepth": true,
-            "inheritLayerSettings": true,
+            "inheritLayerSettings": false,
             "inheritSubLayers": true,
             "inheritVisibility": true,
             "layers": [

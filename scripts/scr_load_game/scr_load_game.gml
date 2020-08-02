@@ -1,11 +1,17 @@
 /// @func scr_load_game()
 /// @desc Loads save data (only at beginning of game).
+/// @return {bool} Indicates whether a save file was found (true if so, false if not).
 
 // File name
 var save = "save.dat";
 
-// Check if file exists
+// Check whether a file exists
+var exists = false;
 if (file_exists(save))
+	exists = true;
+
+// If the file exists, read it
+if (exists == true)
 {
 	global.new_game = false;
 	
@@ -103,3 +109,6 @@ for (var i = 0; i < array_length_1d(global.fall_save); i++)
 	global.fall_save[i] = 2;
 for (var i = 0; i < array_length_1d(global.equitable_save); i++)
 	global.equitable_save[i] = 2;
+
+// Return whether the file was found
+return exists;

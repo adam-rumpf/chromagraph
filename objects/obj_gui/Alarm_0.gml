@@ -1,3 +1,3 @@
-/// @desc Begin decreasing opacity.
+/// @desc Begin fading in or out.
 
-fading = true;
+fade = true;

@@ -4,10 +4,21 @@
 if (room == rm_title)
 	exit;
 
-// Reset opacity
-alpha = 1;
-fading = false;
-alarm[0] = 5*room_speed;
+// Set text opacity for new game room
+if (room == rm_coloring_triangle_new)
+{
+	alpha = 0;
+	fade = false;
+	alarm[0] = 15*room_speed;
+}
+
+// Set text opacity for save delete room
+if (room == rm_save_clear)
+{
+	alpha = 1;
+	fade = false;
+	alarm[0] = 5*room_speed;
+}
 
 // Constant buttons
 
@@ -72,14 +83,19 @@ switch room
 		
 		// Get room width
 		var width = room_width;
+		var offset = 0; // offset to compensate for different button layouts
 		
-		// Menu return button
-		var menu = instance_create_layer(width-hspace, vspace, "Overlays", obj_gui_back);
-		menu.xx = width-hspace;
-		menu.yy = vspace;
+		// Menu return button (all puzzles except new game)
+		if (room != rm_coloring_triangle_new)
+		{
+			var menu = instance_create_layer(width-hspace, vspace, "Overlays", obj_gui_back);
+			menu.xx = width-hspace;
+			menu.yy = vspace;
+			offset = -1.5*hspace;
+		}
 
 		// Room reset button
-		var reset = instance_create_layer(width-hspace-1.5*hspace, vspace, "Overlays", obj_gui_reset);
-		reset.xx = width-hspace-1.5*hspace;
+		var reset = instance_create_layer(width-hspace+offset, vspace, "Overlays", obj_gui_reset);
+		reset.xx = width-hspace+offset;
 		reset.yy = vspace;
 }

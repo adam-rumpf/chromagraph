@@ -30,8 +30,10 @@ License: http://creativecommons.org/licenses/by/4.0/
 
 ### Sound
 
-This game uses these sounds from [freesound](https://freesound.org/):  
-[noise.deep.loop.ogg](https://freesound.org/people/xUMR/sounds/478654/) by xUMR (https://freesound.org/people/xUMR/)
+This game uses the following sounds from [freesound](https://freesound.org/):  
+[Chime2](https://freesound.org/people/Neotone/sounds/75337/) by Neotone (https://freesound.org/people/Neotone/)  
+[noise.deep.loop](https://freesound.org/people/xUMR/sounds/478654/) by xUMR (https://freesound.org/people/xUMR/)  
+[Waves of Hawaii](https://freesound.org/people/florianreichelt/sounds/450755/) by florianreichelt (https://freesound.org/people/florianreichelt/)
 
 ### Play Testers
 

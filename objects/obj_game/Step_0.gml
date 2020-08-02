@@ -7,7 +7,9 @@ if (room == rm_title || room == rm_menu || room == rm_credits || room == rm_endi
 // Check whether puzzle has just been solved for the first time
 if (global.puzzle_solved == true && solved == false)
 {
-	//### Play a sound effect
+	// Play a sound effect on save delete
+	if (room == rm_save_clear && global.sound_on == true)
+		audio_play_sound(snd_waves_in, 90, false);
 	
 	// Begin screen flash and set timer to create button
 	obj_screen_flash.fading = true;

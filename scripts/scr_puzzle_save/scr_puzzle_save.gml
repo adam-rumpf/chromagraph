@@ -8,6 +8,10 @@ var rm, state;
 rm = argument[0];
 state = argument[1];
 
+// Special room puzzle types
+if (rm == rm_coloring_triangle_new)
+	global.coloring_save[0] = 2;
+
 // Search through the global puzzle arrays until finding a match for the given room
 var found = false; // whether the puzzle room has been found
 if (found == false)

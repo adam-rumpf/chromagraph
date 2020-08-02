@@ -47,9 +47,4 @@ scr_load_settings(); // load saved settings
 scr_save_settings(); // create a settings file
 
 // Game progress
-global.new_game = true;
-scr_load_game(); // load saved game
-scr_save_game(); // create a save file
-
-//###
-// Check whether save file exists. If it does, go to the menu. If not, run new game code and go to new game room.
+global.new_game = !scr_load_game(); // load saved game and determine whether it's a new game

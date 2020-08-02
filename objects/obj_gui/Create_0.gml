@@ -4,6 +4,6 @@
 vspace = 16;
 hspace = 16;
 
-// Opacity of save delete instructions
-fading = false;
+// Opacity of instructions
+fade = false;
 alpha = 1;

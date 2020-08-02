@@ -6,8 +6,8 @@
 // Rename argument
 var rm = argument[0];
 
-// Save clear room puzzle type
-if (rm == rm_save_clear)
+// Special room puzzle types
+if (rm == rm_save_clear || rm == rm_coloring_triangle_new)
 	return 1;
 
 // Search through the global puzzle arrays until finding a match for the given room

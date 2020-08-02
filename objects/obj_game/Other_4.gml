@@ -78,9 +78,14 @@ switch global.puzzle
 if (g == id)
 	exit;
 
-// Reposition vertices (except for menu puzzle and save deletion puzzle)
+// Reposition vertices (except for special puzzle rooms)
 switch room
 {
+	// New Game Puzzle
+	case rm_coloring_triangle_new:
+		scr_vertex_reframe(g, 150, 150, 150, 150);
+		break;
+	
 	// Save Clear Puzzle
 	case rm_save_clear:
 		scr_vertex_reframe(g, 200, 200, 200, 200);
