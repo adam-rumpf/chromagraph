@@ -9,4 +9,4 @@ if (file_exists(save))
 	file_delete(save);
 
 // Restart game
-game_restart();
+scr_restart();

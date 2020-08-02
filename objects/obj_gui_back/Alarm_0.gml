@@ -2,4 +2,3 @@
 
 // Go to room and begin fading back in
 room_goto(rm_menu);
-obj_screen_fade.fading = false;

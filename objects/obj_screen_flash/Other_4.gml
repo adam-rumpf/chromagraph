@@ -7,5 +7,5 @@ alpha = 0;
 if (room == rm_save_clear)
 	fade_time = 5;
 else
-	fade_time = 0.1;
+	fade_time = 0.25;
 fade_speed = 1/(fade_time*room_speed);

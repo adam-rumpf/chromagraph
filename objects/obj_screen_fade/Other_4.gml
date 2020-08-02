@@ -1,7 +1,3 @@
-/// @desc Increase fading speed after initial screens.
+/// @desc Set an alarm to fade back in.
 
-if (room != rm_title && room != rm_coloring_triangle_new)
-{
-	fade_time = 0.5;
-	fade_speed = 1/(fade_time*room_speed);
-}
+alarm[0] = 1*room_speed;

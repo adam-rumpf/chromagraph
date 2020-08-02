@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "04ec566c-403c-45a3-89bf-fdfbc207903e",
+            "Value": {
+                "id": "6400a2b4-60bd-4eaf-9fb2-f75a77838095",
+                "resourcePath": "scripts\\scr_particle_cleanup\\scr_particle_cleanup.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "06b13c39-a846-4f3c-ac3e-5c83cc11f845",
             "Value": {
                 "id": "092bf988-0dde-4148-949e-b26ae92e3cea",
@@ -1399,6 +1407,14 @@
             }
         },
         {
+            "Key": "7c0715e5-f40c-4bb6-ad9f-33000f052826",
+            "Value": {
+                "id": "a73003d9-f111-43f4-84c7-90a12186aa5f",
+                "resourcePath": "scripts\\scr_restart\\scr_restart.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7c1ed484-cc08-4581-b2de-5b3daad65102",
             "Value": {
                 "id": "ba32f1ff-dd22-4819-b9fa-5d8ea8f84870",
@@ -2471,6 +2487,14 @@
             }
         },
         {
+            "Key": "dba21048-9315-4d25-8c80-61ba83a5bd84",
+            "Value": {
+                "id": "a1ca0e03-e7ee-4152-afca-217239f28577",
+                "resourcePath": "objects\\obj_particles\\obj_particles.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dbd5de66-e92f-4451-99ff-92c3560c352e",
             "Value": {
                 "id": "ce605891-5ae1-469c-9c0d-e07f72d9cab0",
@@ -3024,6 +3048,8 @@
         "13c754a0-8fb1-4ad2-b3c0-9defbedf1be6",
         "bf8b48aa-66b4-461b-99fb-fc8840dac8b1",
         "83693a4e-31f6-457f-8e04-1f226dd35fcf",
+        "7c0715e5-f40c-4bb6-ad9f-33000f052826",
+        "04ec566c-403c-45a3-89bf-fdfbc207903e",
         "7c1ed484-cc08-4581-b2de-5b3daad65102"
     ],
     "tutorial": ""

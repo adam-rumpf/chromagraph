@@ -24,7 +24,7 @@ Babylon by Kevin MacLeod
 Link: https://incompetech.filmmusic.io/song/3406-babylon  
 License: http://creativecommons.org/licenses/by/4.0/
 
-Wet Riffs by Kevin MacLeod
+Wet Riffs by Kevin MacLeod  
 Link: https://incompetech.filmmusic.io/song/4618-wet-riffs
 License: http://creativecommons.org/licenses/by/4.0/
 
