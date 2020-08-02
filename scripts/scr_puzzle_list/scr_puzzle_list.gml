@@ -7,6 +7,8 @@ The first element is a unique ID number used for field names in the save file.
 The second element is the room corresponding to that puzzle.
 The third element is the puzzle limit associated with the puzzle (e.g. number of colors).
 
+//### Additional elements could include the coordinates and sprites.
+
 Each puzzle type also has a 1D array to store the state of the puzzle (0 if locked, 1 if unlocked, 2 if solved).
 
 The random puzzle rooms are listed as a separate array containing only their rooms.
@@ -51,7 +53,7 @@ global.edge_puzzles =
 	[204, rm_edge_fullerene26, 3], // moderate
 	[205, rm_edge_chord, 3], // training
 	[206, rm_edge_hypercube, 4], // easy/moderate
-	[207, rm_edge_k4, 3], // training
+	[207, rm_edge_k4, 3], // training (interesting connection to total coloring version as well as total coloring K5)
 	[208, rm_edge_octahedron, 4] // easy/moderate
 ];
 global.edge_save = [];
@@ -63,10 +65,11 @@ global.total_puzzles =
 [
 	[300, rm_total_dart, 5], // training
 	[301, rm_total_k4, 5], // moderate
-	[302, rm_total_k5, 5], // training and leads to a neat pattern
+	[302, rm_total_k5, 5], // training and leads to a neat pattern (actually easier than K4)
 	[303, rm_total_k4op3, 7], // challenging
 	[304, rm_total_cube, 5], // easy (similar to edge version)
-	[305, rm_total_hypercube, 6] // easy (similar to edge version)
+	[305, rm_total_hypercube, 6], // easy (similar to edge version)
+	[306, rm_total_w4, 5] // easy/moderate
 ];
 global.total_save = [];
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
@@ -150,8 +153,8 @@ global.equitable_puzzles =
 	[803, rm_equitable_cube_4, 4], // training, could branch from standard coloring cube
 	[804, rm_equitable_crab, 3], // training
 	[805, rm_equitable_snowflake_5_3, 3], // easy
-	[806, rm_equitable_flower_6_3, 3], // easy
-	[807, rm_equitable_flower_6_4, 4] // easy
+	[806, rm_equitable_flower_6_4, 4], // easy
+	[807, rm_equitable_clebsch, 4] // moderate
 ];
 global.equitable_save = [];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)

@@ -13,7 +13,7 @@ draw_set_valign(fa_middle);
 if (room == rm_coloring_triangle_new)
 {
 	// Delay hint on click
-	if (mouse_check_button_pressed(mb_left))
+	if (mouse_check_button_pressed(mb_left) || global.puzzle_solved)
 		alarm[0] = max(alarm[0], 5*room_speed);
 	
 	// Increase opacity

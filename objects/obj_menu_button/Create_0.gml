@@ -19,4 +19,5 @@ overlay.button = id;
 
 // Set timer to delay activation
 active = false;
+mouseover = false;
 alarm[1] = 1.5*room_speed;

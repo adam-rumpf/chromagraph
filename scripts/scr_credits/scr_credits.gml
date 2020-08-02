@@ -27,6 +27,7 @@ creativecommons.org/licenses/by/4.0
 
 This game uses the following sounds from freesound:
 "Chime2" by Neotone (freesound.org/people/Neotone)
+"stone_on_stone" by thanvannispen (freesound.org/people/thanvannispen)
 "train screech" by cognito perceptu (freesound.org/people/cognito%20perceptu)
 "Waves of Hawaii" by florianreichelt (freesound.org/people/florianreichelt)
 

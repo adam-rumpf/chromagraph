@@ -41,9 +41,13 @@ switch rm
 		break;
 	
 	// Flower (6 petals)
-	case rm_equitable_flower_6_3:
 	case rm_equitable_flower_6_4:
 		g = scr_graph_flower_6();
+		break;
+	
+	// Clebsch
+	case rm_equitable_clebsch:
+		g = scr_graph_clebsch_star();
 		break;
 	
 	// Random

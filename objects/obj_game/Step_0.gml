@@ -21,7 +21,11 @@ if (global.puzzle_solved == true && solved == false)
 {
 	// Play a sound effect on save delete
 	if (room == rm_save_clear && global.sound_on == true)
-		audio_play_sound(snd_waves_in, 90, false);
+	{
+		var waves = audio_play_sound(snd_waves_in, 90, false);
+		audio_sound_gain(waves, 0, 0);
+		audio_sound_gain(waves, 1, 1000);
+	}
 	
 	// Begin screen flash and set timer to create button
 	obj_screen_flash.fading = true;

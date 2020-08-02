@@ -40,6 +40,11 @@ switch rm
 		g = scr_graph_hypercube();
 		break;
 	
+	// W4
+	case rm_total_w4:
+		g = scr_graph_wheel(4);
+		break;
+	
 	// Random
 	default:
 		

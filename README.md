@@ -25,13 +25,14 @@ Link: https://incompetech.filmmusic.io/song/3406-babylon
 License: http://creativecommons.org/licenses/by/4.0/
 
 Wet Riffs by Kevin MacLeod  
-Link: https://incompetech.filmmusic.io/song/4618-wet-riffs
+Link: https://incompetech.filmmusic.io/song/4618-wet-riffs  
 License: http://creativecommons.org/licenses/by/4.0/
 
 ### Sound
 
 This game uses the following sounds from [freesound](https://freesound.org/):  
 [Chime2](https://freesound.org/people/Neotone/sounds/75337/) by Neotone (https://freesound.org/people/Neotone/)  
+[stone_on_stone](https://freesound.org/people/thanvannispen/sounds/29986/) by thanvannispen (https://freesound.org/people/thanvannispen/)  
 [train screech](https://freesound.org/people/cognito%20perceptu/sounds/181868/) by cognito perceptu (https://freesound.org/people/cognito%20perceptu/)  
 [Waves of Hawaii](https://freesound.org/people/florianreichelt/sounds/450755/) by florianreichelt (https://freesound.org/people/florianreichelt/)
 

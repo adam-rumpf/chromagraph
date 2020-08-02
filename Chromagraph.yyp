@@ -447,14 +447,6 @@
             }
         },
         {
-            "Key": "2906f165-3c93-4c3a-aac4-5483a27a1527",
-            "Value": {
-                "id": "516e705a-cdc7-4b5e-ad82-a46882fede43",
-                "resourcePath": "rooms\\rm_equitable_flower_6_3\\rm_equitable_flower_6_3.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "29f9663b-ca32-4064-a146-fb9a9cfc5f17",
             "Value": {
                 "id": "60e8e200-663b-4de0-8164-288363213d68",
@@ -884,6 +876,14 @@
                 "id": "1b0139c0-b1ba-4cb2-9749-609c164062f7",
                 "resourcePath": "scripts\\scr_highlight_edge\\scr_highlight_edge.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4e13f175-d69f-4e92-966d-199b07d3d356",
+            "Value": {
+                "id": "5453deb8-3d19-487e-9a63-6eaee050275e",
+                "resourcePath": "rooms\\rm_equitable_clebsch\\rm_equitable_clebsch.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1959,6 +1959,14 @@
             }
         },
         {
+            "Key": "af33fd85-922b-405f-ac24-61717b96be83",
+            "Value": {
+                "id": "eac01bde-d291-4343-9f93-da40e7f1ea95",
+                "resourcePath": "rooms\\rm_total_w4\\rm_total_w4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "af6fb4b7-7107-482e-aca7-32b0b7d52c9d",
             "Value": {
                 "id": "f4a26d85-596a-4481-b244-ff15f491a021",
@@ -2220,6 +2228,14 @@
                 "id": "0b3e4439-001d-4447-8a18-7f56c1e297a8",
                 "resourcePath": "scripts\\scr_puzzle_save\\scr_puzzle_save.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c3641203-7747-48fb-8ba1-4117bc9171a4",
+            "Value": {
+                "id": "8f3a8b3f-54fb-4724-9a68-65709c99863f",
+                "resourcePath": "sounds\\snd_stone\\snd_stone.yy",
+                "resourceType": "GMSound"
             }
         },
         {

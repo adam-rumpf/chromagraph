@@ -13,7 +13,7 @@ type_dust = part_type_create();
 part_type_shape(type_dust, pt_shape_flare);
 part_type_size(type_dust, 0.04, 0.08, 0, 0);
 part_type_color2(type_dust, 5825279, 10415871);
-part_type_alpha3(type_dust, 0.27, 0.36, 0.33);
+part_type_alpha3(type_dust, 0.17, 0.36, 0.11);
 part_type_speed(type_dust, 0.02, 0.06, 0, 0.05);
 part_type_direction(type_dust, 0, 359, -0.05, 0.10);
 part_type_life(type_dust, 4*room_speed, 8*room_speed);
@@ -70,7 +70,7 @@ switch room
 	default:
 		
 		// Atmospheric dust
-		part_emitter_stream(particle_system, emit_dust, type_dust, -5*(60/room_speed));
+		part_emitter_stream(particle_system, emit_dust, type_dust, -4*(60/room_speed));
 		
 		// Dark borders
 		part_emitter_stream(particle_system, emit_dark_left, type_dark, 8*(60/room_speed));
