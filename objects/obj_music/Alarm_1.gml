@@ -2,6 +2,9 @@
 
 swap = false;
 
+// End current song
+audio_stop_sound(music);
+
 // Increment song index
 index = (index+1) % array_length_1d(songs);
 	

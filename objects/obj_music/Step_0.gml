@@ -7,7 +7,7 @@ if (global.music_on == true)
 	if (vol == 0)
 	{
 		audio_sound_gain(music, 0, 0);
-		audio_sound_gain(music, 1, 1000);
+		audio_sound_gain(music, 1, 4000);
 	}
 	
 	// Turn volume to full

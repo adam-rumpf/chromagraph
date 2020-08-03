@@ -46,6 +46,11 @@ switch rm
 		g = scr_graph_clebsch_star();
 		break;
 	
+	// 3x3 King Graph
+	case rm_fall_king_3:
+		g = scr_graph_king_grid(3, 3);
+		break;
+	
 	// Random
 	default:
 		

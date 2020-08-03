@@ -6,6 +6,10 @@ For downloads, please see this game's [itch.io page](https://adam-rumpf.itch.io/
 
 (Description.)
 
+## Controls
+
+Point and click to interact.
+
 ## Credits
 
 Chromagraph   

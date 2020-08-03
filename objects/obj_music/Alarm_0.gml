@@ -1,5 +1,8 @@
 /// @desc Switch song type depending on room.
 
+// End current song
+audio_stop_sound(music);
+
 switch room
 {
 	// Save delete

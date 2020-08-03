@@ -4,6 +4,9 @@
 if (v == id)
 	exit;
 
+// Randomly vary shine
+shine = clamp(shine + random_range(-0.001, 0.001), 0.04, 0.06);
+
 // Constant color for graceful trees
 if (global.puzzle == 4)
 	scr_color_vertex(v, scr_pallette(0, 1));
@@ -11,6 +14,19 @@ if (global.puzzle == 4)
 else
 	scr_color_vertex(v, scr_pallette(v.label, 1));
 
+// Draw orbiting effect for self and neighbors for dominating set and fall coloring
+if (global.puzzle == 6 || global.puzzle == 7)
+{
+	// Orbit self
+	scr_orbit_vertex(v, v.label, global.puzzle_limit);
+	
+	// Orbit all neighbors
+	for (var i = 0; i < array_length_1d(v.out_arcs); i++)
+		scr_orbit_vertex(v.out_arcs[i].head, v.label, global.puzzle_limit);
+	for (var i = 0; i < array_length_1d(v.in_arcs); i++)
+		scr_orbit_vertex(v.in_arcs[i].tail, v.label, global.puzzle_limit);
+}
+
 // Draw ring overlay and shine
 draw_sprite_ext(spr_vertex_ring, 0, x, y, 2, 2, 0, c_white, 1);
-draw_sprite_ext(spr_vertex_shine, 0, x, y, 2, 2, 0, c_white, 0.05);
+draw_sprite_ext(spr_vertex_shine, 0, x, y, 2, 2, 0, c_white, shine);

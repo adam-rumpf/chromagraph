@@ -134,11 +134,12 @@ global.fall_puzzles =
 	[700, rm_fall_cube_2, 2], // first (2 colors makes it trivial, but gives a chance to see the lines and compare to the 4-color version; possibly branch from cube puzzles in dominating set and standard coloring)
 	[701, rm_fall_cube_4, 4], // training
 	[702, rm_fall_tablet, 3], // easy
-	[703, rm_fall_c5_cart_c5, 3], // challenging (haven't solved yet, but solution supposedly exists)
+	[703, rm_fall_c5_cart_c5, 5], // moderate/challenging
 	[704, rm_fall_k3xhouse, 3], // looks challenging but easy symmetry solution
 	[705, rm_fall_c6_cart_p4, 3], // easy
 	[706, rm_fall_hypercube, 4], // moderate
-	[707, rm_fall_clebsch, 4] // moderate/challenging
+	[707, rm_fall_clebsch, 4], // moderate/challenging
+	[708, rm_fall_king_3, 4] // easy
 ];
 global.fall_save = [];
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
