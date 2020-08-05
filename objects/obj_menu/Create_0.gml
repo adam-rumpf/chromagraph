@@ -18,6 +18,8 @@ for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 	obj.state = global.coloring_save[i];
 }
 
+//###
+/*
 // Coloring Random
 if (global.coloring_save[array_length_1d(global.coloring_save)-1] == 2)
 {
@@ -25,6 +27,7 @@ if (global.coloring_save[array_length_1d(global.coloring_save)-1] == 2)
 	vortex.type = 1;
 	vortex.puzzle = rm_coloring_random;
 }
+*/
 
 // Edge Coloring Puzzles
 for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
@@ -41,6 +44,8 @@ for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
 	obj.state = global.edge_save[i];
 }
 
+//###
+/*
 // Edge Random
 if (global.edge_save[array_length_1d(global.edge_save)-1] == 2)
 {
@@ -48,6 +53,7 @@ if (global.edge_save[array_length_1d(global.edge_save)-1] == 2)
 	vortex.type = 2;
 	vortex.puzzle = rm_edge_random;
 }
+*/
 
 // Total Coloring Puzzles
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
@@ -64,6 +70,8 @@ for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
 	obj.state = global.total_save[i];
 }
 
+//###
+/*
 // Total Random
 if (global.total_save[array_length_1d(global.total_save)-1] == 2)
 {
@@ -71,6 +79,7 @@ if (global.total_save[array_length_1d(global.total_save)-1] == 2)
 	vortex.type = 3;
 	vortex.puzzle = rm_total_random;
 }
+*/
 
 // Graceful Tree Puzzles
 for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
@@ -87,6 +96,8 @@ for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
 	obj.state = global.graceful_save[i];
 }
 
+//###
+/*
 // Graceful Tree Random
 if (global.graceful_save[array_length_1d(global.graceful_save)-1] == 2)
 {
@@ -94,6 +105,7 @@ if (global.graceful_save[array_length_1d(global.graceful_save)-1] == 2)
 	vortex.type = 4;
 	vortex.puzzle = rm_graceful_random;
 }
+*/
 
 // Decomposition Puzzles
 for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
@@ -110,6 +122,8 @@ for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
 	obj.state = global.decomp_save[i];
 }
 
+//###
+/*
 // Decomposition Random
 if (global.decomp_save[array_length_1d(global.decomp_save)-1] == 2)
 {
@@ -117,6 +131,7 @@ if (global.decomp_save[array_length_1d(global.decomp_save)-1] == 2)
 	vortex.type = 5;
 	vortex.puzzle = rm_decomp_random;
 }
+*/
 
 // Dominating Set Puzzles
 for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
@@ -133,6 +148,8 @@ for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 	obj.state = global.dominating_save[i];
 }
 
+//###
+/*
 // Dominating Set Random
 if (global.dominating_save[array_length_1d(global.dominating_save)-1] == 2)
 {
@@ -140,6 +157,7 @@ if (global.dominating_save[array_length_1d(global.dominating_save)-1] == 2)
 	vortex.type = 6;
 	vortex.puzzle = rm_dominating_random;
 }
+*/
 
 // Fall Coloring Puzzles
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
@@ -156,6 +174,8 @@ for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
 	obj.state = global.fall_save[i];
 }
 
+//###
+/*
 // Fall Coloring Random
 if (global.fall_save[array_length_1d(global.fall_save)-1] == 2)
 {
@@ -163,6 +183,7 @@ if (global.fall_save[array_length_1d(global.fall_save)-1] == 2)
 	vortex.type = 7;
 	vortex.puzzle = rm_fall_random;
 }
+*/
 
 // Equitable Coloring Puzzles
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
@@ -179,6 +200,8 @@ for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
 	obj.state = global.equitable_save[i];
 }
 
+//###
+/*
 // Equitable Coloring Random
 if (global.equitable_save[array_length_1d(global.equitable_save)-1] == 2)
 {
@@ -186,3 +209,4 @@ if (global.equitable_save[array_length_1d(global.equitable_save)-1] == 2)
 	vortex.type = 8;
 	vortex.puzzle = rm_equitable_random;
 }
+*/

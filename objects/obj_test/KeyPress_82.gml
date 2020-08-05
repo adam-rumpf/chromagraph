@@ -1,6 +1,8 @@
 //###
 
-room_restart();
+scr_solve_graph(obj_game.g, global.puzzle, global.puzzle_limit);
+
+//room_restart();
 
 // Delete existing graph and generate a new one
 //if (room == rm_coloring_dart)

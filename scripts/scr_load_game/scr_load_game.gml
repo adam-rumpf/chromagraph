@@ -15,8 +15,16 @@ if (exists == true)
 {
 	global.new_game = false;
 	
-	// Load progress
 	var map = ds_map_secure_load(save);
+	
+	// Get version number
+	var version = 1.0;
+	if (ds_map_exists(map, "version") == true)
+		version = ds_map_find_value(map, "version");
+	
+	//### Use version number to account for changes in save structure
+	
+	// Get level progress
 	for (var i = 0; i < array_length_1d(global.coloring_save); i++)
 	{
 		var elem = global.coloring_puzzles[i];

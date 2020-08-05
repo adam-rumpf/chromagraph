@@ -20,11 +20,6 @@ switch rm
 		g = scr_graph_p4();
 		break;
 	
-	// Dragonfly
-	case rm_graceful_dragonfly:
-		g = scr_graph_dragonfly();
-		break;
-	
 	// Crab (2 spokes)
 	case rm_graceful_crab_2:
 		g = scr_graph_crab_2();
@@ -53,6 +48,11 @@ switch rm
 	// P2
 	case rm_graceful_p2:
 		g = scr_graph_p2();
+		break;
+	
+	// Y (Long)
+	case rm_graceful_y_long:
+		g = scr_graph_y_long();
 		break;
 	
 	// Random

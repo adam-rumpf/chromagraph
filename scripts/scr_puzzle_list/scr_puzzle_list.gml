@@ -7,37 +7,33 @@ The first element is a unique ID number used for field names in the save file.
 The second element is the room corresponding to that puzzle.
 The third element is the puzzle limit associated with the puzzle (e.g. number of colors).
 
-//### Additional elements could include the coordinates and sprites.
+//### Additional elements could include the x-coordinates.
+//### Find an efficient way to calculate what puzzle branches are unlocked.
+//### We might maintain a global array of branch points, in the format [1st prereq, 2nd prereq (or -1), unlock].
 
 Each puzzle type also has a 1D array to store the state of the puzzle (0 if locked, 1 if unlocked, 2 if solved).
 
 The random puzzle rooms are listed as a separate array containing only their rooms.
 */
 
-//### Edit as puzzle sequence is sorted out.
-
 // Coloring Puzzles
 global.coloring_puzzles =
 [
-	[100, rm_coloring_triangle, 3], // first
-	[101, rm_coloring_dart, 3], // training
-	[102, rm_coloring_p2, 2], // trivial
-	[103, rm_coloring_petersen_star, 3], // moderate (repeat)
-	//[104, rm_coloring_kite, 3], // training (repeat)
-	//[105, rm_coloring_petersen_claw, 3], // moderate (easier than star embedding due to symmetry)
-	//[106, rm_coloring_petersen_circle, 3], // moderate (easier than star embedding due to symmetry)
-	[107, rm_coloring_dodecahedron, 3], // moderate
-	//[108, rm_coloring_categorical_4, 2], // trivial
-	[109, rm_coloring_grotzsch_pentagon, 4], // moderate
-	[110, rm_coloring_necklace_3, 4], // moderate
-	[111, rm_coloring_w5, 4], // training
-	[112, rm_coloring_cube, 2], // training
-	[113, rm_coloring_hypercube, 2], // trivial
-	[114, rm_coloring_k3_cart_p4, 3], // training
-	[115, rm_coloring_triangle_star, 5], // challenging
-	[116, rm_coloring_tablet, 4], // easy
-	[117, rm_coloring_fullerene26, 3], // moderate
-	[118, rm_coloring_clebsch, 4] // moderate/challenging (possibly delete since it will be a fall coloring puzzle)
+	[100, rm_coloring_triangle, 3],
+	[101, rm_coloring_dart, 3],
+	[102, rm_coloring_w5, 4],
+	[103, rm_coloring_k3_cart_p4, 3],
+	[104, rm_coloring_petersen_star, 3], // branch to edge coloring
+	[105, rm_coloring_snowflake_3_2, 2], // 1/2 branch to graceful tree
+	[106, rm_coloring_tablet, 4], // branch to dominating set
+	[107, rm_coloring_cube, 2], // 1/2 branch to fall coloring
+	[108, rm_coloring_necklace_3, 4],
+	[109, rm_coloring_dodecahedron, 3], // branch to equitable coloring
+	[110, rm_coloring_grotzsch_pentagon, 4],
+	[111, rm_coloring_hypercube, 2], // 1/2 branch to total coloring
+	[112, rm_coloring_triangle_star, 5],
+	[113, rm_coloring_fullerene26, 3],
+	[114, rm_coloring_clebsch, 4]
 ];
 global.coloring_save = [];
 for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
@@ -46,15 +42,16 @@ for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 // Edge Coloring Puzzles
 global.edge_puzzles =
 [
-	[200, rm_edge_petersen_star, 4], // moderate (either use a different embedding or tie to the vertex coloring Petersen graph)
-	[201, rm_edge_grotzsch_pentagon, 5], // moderate
-	[202, rm_edge_cube, 3], // moderate
-	[203, rm_edge_k33, 3], // training
-	[204, rm_edge_fullerene26, 3], // moderate
-	[205, rm_edge_chord, 3], // training
-	[206, rm_edge_hypercube, 4], // easy/moderate
-	[207, rm_edge_k4, 3], // training (interesting connection to total coloring version as well as total coloring K5)
-	[208, rm_edge_octahedron, 4] // easy/moderate
+	[200, rm_edge_k4, 3],
+	[201, rm_edge_k33, 3],
+	[202, rm_edge_dragonfly, 5], // 1/2 branch to graceful tree
+	[203, rm_edge_petersen_star, 4],
+	[204, rm_edge_cube, 3],
+	[205, rm_edge_chord, 3],
+	[206, rm_edge_grotzsch_pentagon, 5],
+	[207, rm_edge_hypercube, 4], // 1/2 branch to total coloring (or replace with an earlier one)
+	[208, rm_edge_octahedron, 4], // branch to decomposition
+	[209, rm_edge_fullerene26, 3]
 ];
 global.edge_save = [];
 for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
@@ -63,13 +60,15 @@ for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
 // Total Coloring Puzzles
 global.total_puzzles =
 [
-	[300, rm_total_dart, 5], // training
-	[301, rm_total_k4, 5], // moderate
-	[302, rm_total_k5, 5], // training and leads to a neat pattern (actually easier than K4)
-	[303, rm_total_k4op3, 7], // challenging
-	[304, rm_total_cube, 5], // easy (similar to edge version)
-	[305, rm_total_hypercube, 6], // easy (similar to edge version)
-	[306, rm_total_w4, 5] // easy/moderate
+	[300, rm_total_dart, 5],
+	[301, rm_total_c7, 4],
+	[302, rm_total_k5, 5],
+	[303, rm_total_cube, 5],
+	[304, rm_total_hypercube, 6],
+	[305, rm_total_w4, 5],
+	[306, rm_total_petersen, 5],
+	[307, rm_total_k4, 5],
+	[308, rm_total_k4op3, 7]
 ];
 global.total_save = [];
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
@@ -78,15 +77,15 @@ for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
 // Graceful Tree Puzzles
 global.graceful_puzzles =
 [
-	[400, rm_graceful_s5, 0], // second
-	[401, rm_graceful_p4, 0], // third
-	[402, rm_graceful_dragonfly, 0], // varies (easy if you've done Y, which it's very similar to)
-	[403, rm_graceful_crab_2, 0], // challenging
-	[404, rm_graceful_butterfly, 0], // challenging
-	[405, rm_graceful_spider3, 0], // challenging
-	[406, rm_graceful_caterpillar_3_2, 0], // challenging
-	[407, rm_graceful_y, 0], // fourth
-	[408, rm_graceful_p2, 0] // first
+	[400, rm_graceful_p2, 0],
+	[401, rm_graceful_s5, 0],
+	[402, rm_graceful_p4, 0],
+	[403, rm_graceful_y, 0],
+	[404, rm_graceful_y_long, 0],
+	[405, rm_graceful_crab_2, 0],
+	[406, rm_graceful_spider3, 0],
+	[407, rm_graceful_butterfly, 0],
+	[408, rm_graceful_caterpillar_3_2, 0]
 ];
 global.graceful_save = [];
 for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
@@ -95,14 +94,15 @@ for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
 // Decomposition Puzzles
 global.decomp_puzzles =
 [
-	[500, rm_decomp_triangle, 2], // first
-	[501, rm_decomp_bowtie, 2], // second
-	[502, rm_decomp_triforce, 3], // third
-	[503, rm_decomp_k7, 7], // moderate
-	[504, rm_decomp_k33_box, 4], // easy
-	[505, rm_decomp_k8_subset, 8], // challenging
-	[506, rm_decomp_bowtie_cart_triangle, 11], // moderate/challenging
-	[507, rm_decomp_triangle_capsule, 4] // training
+	[500, rm_decomp_triangle, 2],
+	[501, rm_decomp_bowtie, 2],
+	[502, rm_decomp_triforce, 3],
+	[503, rm_decomp_triangle_capsule, 4],
+	[504, rm_decomp_k33_box, 4],
+	[505, rm_decomp_double_pentagon, 6],
+	[506, rm_decomp_k7, 7],
+	[507, rm_decomp_k8_subset, 8],
+	[508, rm_decomp_bowtie_cart_triangle, 11]
 ];
 global.decomp_save = [];
 for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
@@ -111,18 +111,18 @@ for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
 // Dominating Set Puzzles
 global.dominating_puzzles =
 [
-	[600, rm_dominating_spider3, 3], // training
-	[601, rm_dominating_p5, 2], // training
-	[602, rm_dominating_double_hexagon, 3], // easy
-	[603, rm_dominating_grid_5x5, 7], // moderate/easy
-	[604, rm_dominating_grid_6x6, 10], // challenging (haven't solved yet, but should be possible)
-	[605, rm_dominating_king_grid_6x6, 4], // easy
-	[606, rm_dominating_knight_grid_5x5, 5], // moderate/easy
-	[607, rm_dominating_knight_grid_6x6, 8], // moderate
-	[608, rm_dominating_cube, 2], // training
-	[609, rm_dominating_hypercube, 4], // easy
-	[610, rm_dominating_clebsch, 5], // moderate
-	[611, rm_dominating_andrasfai_4, 3] // easy
+	[600, rm_dominating_spider3, 3],
+	[601, rm_dominating_p5, 2],
+	[602, rm_dominating_cube, 2],
+	[603, rm_dominating_double_hexagon, 3],
+	[604, rm_dominating_hypercube, 4],
+	[605, rm_dominating_king_grid_6x6, 4],
+	[606, rm_dominating_andrasfai_4, 3],
+	[607, rm_dominating_grid_5x5, 7],
+	[608, rm_dominating_knight_grid_5x5, 5],
+	[609, rm_dominating_clebsch, 5], // 1/2 branch to fall coloring
+	[610, rm_dominating_knight_grid_6x6, 8],
+	[611, rm_dominating_grid_6x6, 10]
 ];
 global.dominating_save = [];
 for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
@@ -131,15 +131,15 @@ for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 // Fall Coloring Puzzles
 global.fall_puzzles =
 [
-	[700, rm_fall_cube_2, 2], // first (2 colors makes it trivial, but gives a chance to see the lines and compare to the 4-color version; possibly branch from cube puzzles in dominating set and standard coloring)
-	[701, rm_fall_cube_4, 4], // training
-	[702, rm_fall_tablet, 3], // easy
-	[703, rm_fall_c5_cart_c5, 5], // moderate/challenging
-	[704, rm_fall_k3xhouse, 3], // looks challenging but easy symmetry solution
-	[705, rm_fall_c6_cart_p4, 3], // easy
-	[706, rm_fall_hypercube, 4], // moderate
-	[707, rm_fall_clebsch, 4], // moderate/challenging
-	[708, rm_fall_king_3, 4] // easy
+	[700, rm_fall_cube_2, 2],
+	[701, rm_fall_tablet, 3],
+	[702, rm_fall_cube_4, 4],
+	[703, rm_fall_c6_cart_p4, 3],
+	[704, rm_fall_king_3, 4],
+	[705, rm_fall_hypercube, 4],
+	[706, rm_fall_k3xhouse, 3],
+	[707, rm_fall_clebsch, 4],
+	[708, rm_fall_c5_cart_c5, 5]
 ];
 global.fall_save = [];
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
@@ -148,14 +148,15 @@ for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
 // Equitable Coloring Puzzles
 global.equitable_puzzles =
 [
-	[800, rm_equitable_c6, 3], // training
-	[801, rm_equitable_hypercube_4, 4], // moderate
-	[802, rm_equitable_dodecahedron, 4], // easy/moderate
-	[803, rm_equitable_cube_4, 4], // training, could branch from standard coloring cube
-	[804, rm_equitable_crab, 3], // training
-	[805, rm_equitable_snowflake_5_3, 3], // easy
-	[806, rm_equitable_flower_6_4, 4], // easy
-	[807, rm_equitable_clebsch, 4] // moderate
+	[800, rm_equitable_c6, 3],
+	[801, rm_equitable_crab, 3],
+	[802, rm_equitable_cube_4, 4],
+	[803, rm_equitable_snowflake_5_3, 3],
+	[804, rm_equitable_flower_6_4, 4],
+	[805, rm_equitable_5cube_sun, 3],
+	[806, rm_equitable_hypercube_4, 4],
+	[807, rm_equitable_dodecahedron, 4],
+	[808, rm_equitable_clebsch, 4]
 ];
 global.equitable_save = [];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
@@ -173,5 +174,3 @@ global.random_puzzles =
 	rm_fall_random,
 	rm_equitable_random
 ];
-
-//### Figure out a way to encode prerequisites and branches. This should affect the "next" button to return to main menu whenever a branch is unlocked.

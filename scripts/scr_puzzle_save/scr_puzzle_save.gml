@@ -118,3 +118,5 @@ if (found == false)
 		}
 	}
 }
+
+//### Then check for unlocking new branches.

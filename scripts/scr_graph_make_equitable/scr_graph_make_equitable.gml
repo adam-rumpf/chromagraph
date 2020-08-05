@@ -50,6 +50,11 @@ switch rm
 		g = scr_graph_clebsch_star();
 		break;
 	
+	// 5-Cube Sun
+	case rm_equitable_5cube_sun:
+		g = scr_graph_5cube_sun();
+		break;
+	
 	// Random
 	default:
 		

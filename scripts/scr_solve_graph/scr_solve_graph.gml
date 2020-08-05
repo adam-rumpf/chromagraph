@@ -19,6 +19,7 @@ switch type
 {
 	// Vertex coloring puzzles
 	case 1:
+	case 4:
 	case 7:
 	case 8:
 		
@@ -45,6 +46,7 @@ switch type
 		switch type
 		{
 			case 1: global.puzzle_solved = scr_properly_colored(g);
+			case 4: global.puzzle_solved = scr_graceful_edge_update(g);
 			case 7: global.puzzle_solved = scr_properly_fall_colored(g);
 			case 8: global.puzzle_solved = scr_equitably_colored(g, 0);
 		}
@@ -72,6 +74,7 @@ switch type
 			switch type
 			{
 				case 1: global.puzzle_solved = scr_properly_colored(g);
+				case 4: global.puzzle_solved = scr_graceful_edge_update(g);
 				case 7: global.puzzle_solved = scr_properly_fall_colored(g);
 				case 8: global.puzzle_solved = scr_equitably_colored(g, 0);
 			}

@@ -10,6 +10,7 @@ if (file_exists(save))
 
 // Save level progress (which consists of writing the save states within each global puzzle array)
 var map = ds_map_create();
+ds_map_add(map, "version", 1.0); // record version number
 for (var i = 0; i < array_length_1d(global.coloring_save); i++)
 {
 	var elem = global.coloring_puzzles[i];

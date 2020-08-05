@@ -17,9 +17,9 @@ switch rm
 		g = scr_graph_cycle(3);
 		break;
 	
-	// P2
-	case rm_coloring_p2:
-		g = scr_graph_p2();
+	// Snowflake
+	case rm_coloring_snowflake_3_2:
+		g = scr_graph_snowflake_3_2();
 		break;
 	
 	// Dart
@@ -27,34 +27,14 @@ switch rm
 		g = scr_graph_dart();
 		break;
 	
-	// Kite
-	case rm_coloring_kite:
-		g = scr_graph_kite();
-		break;
-	
 	// Petersen (Star)
 	case rm_coloring_petersen_star:
 		g = scr_graph_petersen_star();
 		break;
 	
-	// Petersen (Claw)
-	case rm_coloring_petersen_claw:
-		g = scr_graph_petersen_claw();
-		break;
-	
-	// Petersen (Circle)
-	case rm_coloring_petersen_circle:
-		g = scr_graph_petersen_circle();
-		break;
-	
 	// Dodecahedron
 	case rm_coloring_dodecahedron:
 		g = scr_graph_dodecahedron();
-		break;
-	
-	// K2 x K4
-	case rm_coloring_categorical_4:
-		g = scr_graph_categorical_4();
 		break;
 	
 	// Grotzsch (Pentagon)

@@ -135,4 +135,6 @@ if (found == false)
 	}
 }
 
+//### If we've just unlocked a new puzzle branch, then "next" should be the main menu.
+
 return next;

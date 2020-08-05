@@ -63,21 +63,16 @@ part_emitter_region(particle_system, emit_drip, 0, room_width, -200, -200, ps_sh
 systems = [particle_system];
 types = [type_dust, type_dark, type_drip];
 
-// Create particles depending on room
-switch room
-{
-	// Default particles
-	default:
+// Create particles
+
+// Atmospheric dust
+part_emitter_stream(particle_system, emit_dust, type_dust, -4*(60/room_speed)*(800/room_width));
 		
-		// Atmospheric dust
-		part_emitter_stream(particle_system, emit_dust, type_dust, -4*(60/room_speed));
+// Dark borders
+part_emitter_stream(particle_system, emit_dark_left, type_dark, 8*(60/room_speed));
+part_emitter_stream(particle_system, emit_dark_right, type_dark, 8*(60/room_speed));
+part_emitter_stream(particle_system, emit_dark_top, type_dark, 8*(60/room_speed)*(room_width/800));
+part_emitter_stream(particle_system, emit_dark_bottom, type_dark, 8*(60/room_speed)*(room_width/800));
 		
-		// Dark borders
-		part_emitter_stream(particle_system, emit_dark_left, type_dark, 8*(60/room_speed));
-		part_emitter_stream(particle_system, emit_dark_right, type_dark, 8*(60/room_speed));
-		part_emitter_stream(particle_system, emit_dark_top, type_dark, 8*(60/room_speed)*(room_width/800));
-		part_emitter_stream(particle_system, emit_dark_bottom, type_dark, 8*(60/room_speed)*(room_width/800));
-		
-		// Drips
-		part_emitter_stream(particle_system, emit_drip, type_drip, -150*(60/room_speed));
-}
+// Drips
+part_emitter_stream(particle_system, emit_drip, type_drip, -150*(60/room_speed)*(room_width/800));

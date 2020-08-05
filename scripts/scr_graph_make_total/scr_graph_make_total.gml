@@ -45,6 +45,16 @@ switch rm
 		g = scr_graph_wheel(4);
 		break;
 	
+	// C7
+	case rm_total_c7:
+		g = scr_graph_cycle(7);
+		break;
+	
+	// Petersen
+	case rm_total_petersen:
+		g = scr_graph_petersen_star();
+		break;
+	
 	// Random
 	default:
 		

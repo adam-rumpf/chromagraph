@@ -1,6 +1,6 @@
 # Chromagraph
 
-A puzzle game about graph theory and inductive reasoning.
+A game about graph theory and inductive logic.
 
 For downloads, please see this game's [itch.io page](https://adam-rumpf.itch.io/chromagraph).
 

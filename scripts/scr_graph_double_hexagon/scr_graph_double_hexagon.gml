@@ -15,7 +15,7 @@ var coords =
 	[room_width/2 + r*cos(pi/6), room_height/2 - r],
 	[room_width/2 + 2*r*cos(pi/6), room_height/2 - r*sin(pi/6)],
 	[room_width/2 + 2*r*cos(pi/6), room_height/2 + r*sin(pi/6)],
-	[room_width/2 + r*cos(pi/6), room_height/2 + r],
+	[room_width/2 + r*cos(pi/6), room_height/2 + r]
 ];
 
 // Define pairs of adjacent vertices

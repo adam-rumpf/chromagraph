@@ -50,6 +50,11 @@ switch rm
 		g = scr_graph_triangle_capsule();
 		break;
 	
+	// Double Pentagon
+	case rm_decomp_double_pentagon:
+		g = scr_graph_double_pentagon();
+		break;
+	
 	// Random
 	default:
 		

@@ -55,6 +55,11 @@ switch rm
 		g = scr_graph_octahedron();
 		break;
 	
+	// Dragonfly Tree
+	case rm_edge_dragonfly:
+		g = scr_graph_dragonfly_long();
+		break;
+	
 	// Random
 	default:
 		
