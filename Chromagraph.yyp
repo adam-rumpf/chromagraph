@@ -719,6 +719,14 @@
             }
         },
         {
+            "Key": "38324db6-5f0a-4824-ad3d-80e47a436012",
+            "Value": {
+                "id": "2c4640e9-ed57-43ca-94bd-9454e1cb4361",
+                "resourcePath": "rooms\\rm_edge_dart\\rm_edge_dart.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "394e7a16-0784-423f-ad25-fe01d1a67efd",
             "Value": {
                 "id": "5f918696-fa9b-48a4-bcad-44e5a355467d",
@@ -2191,6 +2199,14 @@
             }
         },
         {
+            "Key": "b7c8fa19-dd0f-4e24-8fd1-0fe8becf4086",
+            "Value": {
+                "id": "95fa436c-b96f-4558-86d7-22b3aa33200b",
+                "resourcePath": "scripts\\scr_find_array_row_1d\\scr_find_array_row_1d.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b83bfd3b-dc65-46df-b5ae-19dd773ce3cd",
             "Value": {
                 "id": "1b374daa-ddf8-45cd-89da-e508a4854bfb",
@@ -3043,6 +3059,7 @@
         "9c492a92-3a31-400a-bc3a-6064dfa87d2e",
         "d47f2fcd-9873-4612-92cc-c2d379c67c5b",
         "379f8df3-5893-4d83-b244-44e26b61491b",
+        "b7c8fa19-dd0f-4e24-8fd1-0fe8becf4086",
         "7942c966-5ee8-4189-9379-29023c9bfbd2",
         "f20586ac-50d3-444d-b537-abcaf8f9c53d",
         "d32752e7-db44-43fe-a179-58f8637d92b5",

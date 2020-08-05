@@ -60,6 +60,11 @@ switch rm
 		g = scr_graph_dragonfly_long();
 		break;
 	
+	// Dart
+	case rm_edge_dart:
+		g = scr_graph_dart();
+		break;
+	
 	// Random
 	default:
 		

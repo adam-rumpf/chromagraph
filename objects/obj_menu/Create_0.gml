@@ -1,21 +1,72 @@
 /// @desc Create array of menu buttons.
 
 // Vortex object
-var vortex;
+//###var vortex;
+
+// Menu button graph
+var g, v, e, vp;
+v = [];
+e = [];
+vp = []; // vertex IDs of prerequisite puzzles (2D array, each row consists of vertex list IDs of puzzle branch beginning followed by all prerequisites)
+for (var i = 0; i < 8; i++)
+	vp[i,0] = -1;
+
+// Menu button coordinates
+var xx, yy;
+
+// Menu button vertical order
+var vert =
+[
+	5*room_height/9,
+	2*room_height/9,
+	3*room_height/9,
+	4*room_height/9,
+	1*room_height/9,
+	7*room_height/9,
+	6*room_height/9,
+	8*room_height/9
+];
+
+// Puzzle type
+var type;
+
+// Number of menu buttons and connections
+var n, m;
+n = 0;
+m = 0;
 
 // Coloring Puzzles
+type = 1;
+xx = 0;
+yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 {
 	// Define puzzle button
 	var elem, xx, yy, obj;
 	elem = global.coloring_puzzles[i];
-	yy = room_height/9;
-	xx = room_height/9 + 80*i;
+	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
-	obj.type = 1;
+	obj.type = type;
 	obj.puzzle = elem[1];
 	obj.image = i;
 	obj.state = global.coloring_save[i];
+	
+	// Define menu graph elements
+	v[n] = instance_create_layer(xx, yy, "Vertices", obj_vertex);
+	v[n].visible = false;
+	n++;
+	if (i == 0)
+		vp[type-1,0] = n-1;
+	else
+	{
+		e[m] = scr_create_edge(v[n-2], v[n-1]);
+		m++;
+	}
+	
+	// Find if the current room is a prerequisite
+	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
+	if (row >= 0)
+		vp[row,array_length_2d(vp,row)] = n-1;
 }
 
 //###
@@ -30,18 +81,37 @@ if (global.coloring_save[array_length_1d(global.coloring_save)-1] == 2)
 */
 
 // Edge Coloring Puzzles
+type = 2;
+xx = 0;
+yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
 {
 	// Define puzzle button
 	var elem, xx, yy, obj;
 	elem = global.edge_puzzles[i];
-	yy = 2*room_height/9;
-	xx = room_height/9 + 80*i;
+	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
-	obj.type = 2;
+	obj.type = type;
 	obj.puzzle = elem[1];
 	obj.image = i;
 	obj.state = global.edge_save[i];
+	
+	// Define menu graph elements
+	v[n] = instance_create_layer(xx, yy, "Vertices", obj_vertex);
+	v[n].visible = false;
+	n++;
+	if (i == 0)
+		vp[1,0] = n-1;
+	else
+	{
+		e[m] = scr_create_edge(v[n-2], v[n-1]);
+		m++;
+	}
+	
+	// Find if the current room is a prerequisite
+	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
+	if (row >= 0)
+		vp[row,array_length_2d(vp,row)] = n-1;
 }
 
 //###
@@ -56,18 +126,37 @@ if (global.edge_save[array_length_1d(global.edge_save)-1] == 2)
 */
 
 // Total Coloring Puzzles
+type = 3;
+xx = 0;
+yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
 {
 	// Define puzzle button
 	var elem, xx, yy, obj;
 	elem = global.total_puzzles[i];
-	yy = 3*room_height/9;
-	xx = room_height/9 + 80*i;
+	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
-	obj.type = 3;
+	obj.type = type;
 	obj.puzzle = elem[1];
 	obj.image = i;
 	obj.state = global.total_save[i];
+	
+	// Define menu graph elements
+	v[n] = instance_create_layer(xx, yy, "Vertices", obj_vertex);
+	v[n].visible = false;
+	n++;
+	if (i == 0)
+		vp[2,0] = n-1;
+	else
+	{
+		e[m] = scr_create_edge(v[n-2], v[n-1]);
+		m++;
+	}
+	
+	// Find if the current room is a prerequisite
+	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
+	if (row >= 0)
+		vp[row,array_length_2d(vp,row)] = n-1;
 }
 
 //###
@@ -82,18 +171,37 @@ if (global.total_save[array_length_1d(global.total_save)-1] == 2)
 */
 
 // Graceful Tree Puzzles
+type = 4;
+xx = 0;
+yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
 {
 	// Define puzzle button
 	var elem, xx, yy, obj;
 	elem = global.graceful_puzzles[i];
-	yy = 4*room_height/9;
-	xx = room_height/9 + 80*i;
+	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
-	obj.type = 4;
+	obj.type = type;
 	obj.puzzle = elem[1];
 	obj.image = i;
 	obj.state = global.graceful_save[i];
+	
+	// Define menu graph elements
+	v[n] = instance_create_layer(xx, yy, "Vertices", obj_vertex);
+	v[n].visible = false;
+	n++;
+	if (i == 0)
+		vp[3,0] = n-1;
+	else
+	{
+		e[m] = scr_create_edge(v[n-2], v[n-1]);
+		m++;
+	}
+	
+	// Find if the current room is a prerequisite
+	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
+	if (row >= 0)
+		vp[row,array_length_2d(vp,row)] = n-1;
 }
 
 //###
@@ -108,18 +216,37 @@ if (global.graceful_save[array_length_1d(global.graceful_save)-1] == 2)
 */
 
 // Decomposition Puzzles
+type = 5;
+xx = 0;
+yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
 {
 	// Define puzzle button
 	var elem, xx, yy, obj;
 	elem = global.decomp_puzzles[i];
-	yy = 5*room_height/9;
-	xx = room_height/9 + 80*i;
+	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
-	obj.type = 5;
+	obj.type = type;
 	obj.puzzle = elem[1];
 	obj.image = i;
 	obj.state = global.decomp_save[i];
+	
+	// Define menu graph elements
+	v[n] = instance_create_layer(xx, yy, "Vertices", obj_vertex);
+	v[n].visible = false;
+	n++;
+	if (i == 0)
+		vp[4,0] = n-1;
+	else
+	{
+		e[m] = scr_create_edge(v[n-2], v[n-1]);
+		m++;
+	}
+	
+	// Find if the current room is a prerequisite
+	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
+	if (row >= 0)
+		vp[row,array_length_2d(vp,row)] = n-1;
 }
 
 //###
@@ -134,18 +261,37 @@ if (global.decomp_save[array_length_1d(global.decomp_save)-1] == 2)
 */
 
 // Dominating Set Puzzles
+type = 6;
+xx = 0;
+yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 {
 	// Define puzzle button
 	var elem, xx, yy, obj;
 	elem = global.dominating_puzzles[i];
-	yy = 6*room_height/9;
-	xx = room_height/9 + 80*i;
+	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
-	obj.type = 6;
+	obj.type = type;
 	obj.puzzle = elem[1];
 	obj.image = i;
 	obj.state = global.dominating_save[i];
+	
+	// Define menu graph elements
+	v[n] = instance_create_layer(xx, yy, "Vertices", obj_vertex);
+	v[n].visible = false;
+	n++;
+	if (i == 0)
+		vp[5,0] = n-1;
+	else
+	{
+		e[m] = scr_create_edge(v[n-2], v[n-1]);
+		m++;
+	}
+	
+	// Find if the current room is a prerequisite
+	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
+	if (row >= 0)
+		vp[row,array_length_2d(vp,row)] = n-1;
 }
 
 //###
@@ -160,18 +306,37 @@ if (global.dominating_save[array_length_1d(global.dominating_save)-1] == 2)
 */
 
 // Fall Coloring Puzzles
+type = 7;
+xx = 0;
+yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
 {
 	// Define puzzle button
 	var elem, xx, yy, obj;
 	elem = global.fall_puzzles[i];
-	yy = 7*room_height/9;
-	xx = room_height/9 + 80*i;
+	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
-	obj.type = 7;
+	obj.type = type;
 	obj.puzzle = elem[1];
 	obj.image = i;
 	obj.state = global.fall_save[i];
+	
+	// Define menu graph elements
+	v[n] = instance_create_layer(xx, yy, "Vertices", obj_vertex);
+	v[n].visible = false;
+	n++;
+	if (i == 0)
+		vp[6,0] = n-1;
+	else
+	{
+		e[m] = scr_create_edge(v[n-2], v[n-1]);
+		m++;
+	}
+	
+	// Find if the current room is a prerequisite
+	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
+	if (row >= 0)
+		vp[row,array_length_2d(vp,row)] = n-1;
 }
 
 //###
@@ -186,18 +351,37 @@ if (global.fall_save[array_length_1d(global.fall_save)-1] == 2)
 */
 
 // Equitable Coloring Puzzles
+type = 8;
+xx = 0;
+yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
 {
 	// Define puzzle button
 	var elem, xx, yy, obj;
 	elem = global.equitable_puzzles[i];
-	yy = 8*room_height/9;
-	xx = room_height/9 + 80*i;
+	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
-	obj.type = 8;
+	obj.type = type;
 	obj.puzzle = elem[1];
 	obj.image = i;
 	obj.state = global.equitable_save[i];
+	
+	// Define menu graph elements
+	v[n] = instance_create_layer(xx, yy, "Vertices", obj_vertex);
+	v[n].visible = false;
+	n++;
+	if (i == 0)
+		vp[7,0] = n-1;
+	else
+	{
+		e[m] = scr_create_edge(v[n-2], v[n-1]);
+		m++;
+	}
+	
+	// Find if the current room is a prerequisite
+	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
+	if (row >= 0)
+		vp[row,array_length_2d(vp,row)] = n-1;
 }
 
 //###
@@ -210,3 +394,17 @@ if (global.equitable_save[array_length_1d(global.equitable_save)-1] == 2)
 	vortex.puzzle = rm_equitable_random;
 }
 */
+
+// Define prerequisite menu edges
+for (var i = 0; i < array_height_2d(vp); i++)
+{
+	for (var j = 1; j < array_length_2d(vp, i); j++)
+	{
+		e[m] = scr_create_edge(v[vp[i,0]], v[vp[i,j]]);
+		m++;
+	}
+}
+
+// Define menu graph
+g = scr_create_graph(v, e);
+scr_vertex_rebase(g);

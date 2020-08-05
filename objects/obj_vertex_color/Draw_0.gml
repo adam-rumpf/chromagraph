@@ -4,6 +4,10 @@
 if (v == id)
 	exit;
 
+// If vertex is invisible, do nothing
+if (v.visible == false)
+	exit;
+
 // Randomly vary shine
 shine = clamp(shine + random_range(-0.001, 0.001), 0.04, 0.06);
 
