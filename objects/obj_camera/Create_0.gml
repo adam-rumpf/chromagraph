@@ -6,6 +6,7 @@ h = 600;
 
 // Define viewport position (left edge)
 pos = 0;
+alarm[0] = 1; // snap to left after room begins
 
 // Define rightmost allowed position
 pos_max = room_width - w - 1;

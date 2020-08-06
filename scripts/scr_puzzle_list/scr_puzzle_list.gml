@@ -24,8 +24,8 @@ global.coloring_puzzles =
 	[101, rm_coloring_dart, 3, space],
 	[102, rm_coloring_w5, 4, space],
 	[103, rm_coloring_petersen_star, 3, space], // branch to edge coloring
-	[104, rm_coloring_k3_cart_p4, 3, space], // 1/2 branch to total coloring
-	[105, rm_coloring_snowflake_3_2, 2, space], // branch to equitable coloring
+	[104, rm_coloring_snowflake_3_2, 2, space], // branch to equitable coloring
+	[105, rm_coloring_k3_cart_p4, 3, space], // 1/2 branch to total coloring
 	[106, rm_coloring_tablet, 4, space], // branch to dominating set
 	[107, rm_coloring_cube, 2, space],
 	[108, rm_coloring_necklace_3, 4, space],
@@ -185,10 +185,18 @@ global.puzzle_prereq =
 [
 	[], // vertex coloring
 	[103], // edge coloring
-	[104, 203], // total coloring
+	[105, 203], // total coloring
 	[301], // graceful trees
 	[202], // decomposition
 	[106], // dominating set
 	[110, 604], // fall coloring
-	[105] // equitable coloring
+	[104] // equitable coloring
 ]
+
+// Checklist indicating which prerequisites have been met
+global.puzzle_prereq_checklist = [];
+for (var i = 0; i < array_length_1d(global.puzzle_prereq); i++)
+{
+	for (var j = 0; j < array_length_1d(global.puzzle_prereq[i]); j++)
+		global.puzzle_prereq_checklist[i,j] = false;
+}

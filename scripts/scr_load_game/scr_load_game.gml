@@ -2,8 +2,9 @@
 /// @desc Loads save data (only at beginning of game).
 /// @return {bool} Indicates whether a save file was found (true if so, false if not).
 
-// File name
-var save = "save.dat";
+// File name and version
+var save, version;
+save = "save.dat";
 
 // Check whether a file exists
 var exists = false;
@@ -18,7 +19,6 @@ if (exists == true)
 	var map = ds_map_secure_load(save);
 	
 	// Get version number
-	var version = 1.0;
 	if (ds_map_exists(map, "version") == true)
 		version = ds_map_find_value(map, "version");
 	
@@ -75,21 +75,19 @@ if (exists == true)
 	}
 }
 
-//###
-// Process results so that all unlock series' make sense
 
 // Ensure that first coloring puzzle is unlocked
 if (global.coloring_save[0] == 0)
 	global.coloring_save[0] = 1;
 
 //### Unlock other puzzle sequences
-global.edge_save[0] = 1;
+/*global.edge_save[0] = 1;
 global.total_save[0] = 1;
 global.graceful_save[0] = 1;
 global.decomp_save[0] = 1;
 global.dominating_save[0] = 1;
 global.fall_save[0] = 1;
-global.equitable_save[0] = 1;
+global.equitable_save[0] = 1;*/
 
 // Ensure that all puzzle solve states are at least as complete as the following puzzles' solve states
 var latest = 0; // solve state of latest solved puzzle
@@ -98,9 +96,55 @@ for (var i = array_length_1d(global.coloring_save)-1; i >= 0; i--)
 	latest = max(latest, global.coloring_save[i]);
 	global.coloring_save[i] = latest;
 }
+latest = 0;
+for (var i = array_length_1d(global.edge_save)-1; i >= 0; i--)
+{
+	latest = max(latest, global.edge_save[i]);
+	global.edge_save[i] = latest;
+}
+latest = 0;
+for (var i = array_length_1d(global.total_save)-1; i >= 0; i--)
+{
+	latest = max(latest, global.total_save[i]);
+	global.total_save[i] = latest;
+}
+latest = 0;
+for (var i = array_length_1d(global.graceful_save)-1; i >= 0; i--)
+{
+	latest = max(latest, global.graceful_save[i]);
+	global.graceful_save[i] = latest;
+}
+latest = 0;
+for (var i = array_length_1d(global.decomp_save)-1; i >= 0; i--)
+{
+	latest = max(latest, global.decomp_save[i]);
+	global.decomp_save[i] = latest;
+}
+latest = 0;
+for (var i = array_length_1d(global.dominating_save)-1; i >= 0; i--)
+{
+	latest = max(latest, global.dominating_save[i]);
+	global.dominating_save[i] = latest;
+}
+latest = 0;
+for (var i = array_length_1d(global.fall_save)-1; i >= 0; i--)
+{
+	latest = max(latest, global.fall_save[i]);
+	global.fall_save[i] = latest;
+}
+latest = 0;
+for (var i = array_length_1d(global.equitable_save)-1; i >= 0; i--)
+{
+	latest = max(latest, global.equitable_save[i]);
+	global.equitable_save[i] = latest;
+}
+
+// Update prerequisite checklist
+scr_puzzle_unlock();
 
 //########################################################
 //### Unlock all puzzles during testing
+/*
 for (var i = 0; i < array_length_1d(global.coloring_save); i++)
 	global.coloring_save[i] = 2;
 for (var i = 0; i < array_length_1d(global.edge_save); i++)
@@ -117,6 +161,7 @@ for (var i = 0; i < array_length_1d(global.fall_save); i++)
 	global.fall_save[i] = 2;
 for (var i = 0; i < array_length_1d(global.equitable_save); i++)
 	global.equitable_save[i] = 2;
+	*/
 
 // Return whether the file was found
 return exists;

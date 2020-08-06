@@ -2351,6 +2351,14 @@
             }
         },
         {
+            "Key": "c54b0637-812b-4a1c-a446-6a36a25bb256",
+            "Value": {
+                "id": "92f1ff78-b4e8-4b9a-938e-81327d1adfdd",
+                "resourcePath": "scripts\\scr_puzzle_unlock\\scr_puzzle_unlock.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c5baa19a-26b5-4b76-b558-0f307421263e",
             "Value": {
                 "id": "36dad6a5-0342-4ecd-af96-a5b6110362ee",
@@ -3189,6 +3197,7 @@
         "83693a4e-31f6-457f-8e04-1f226dd35fcf",
         "7c0715e5-f40c-4bb6-ad9f-33000f052826",
         "04ec566c-403c-45a3-89bf-fdfbc207903e",
+        "c54b0637-812b-4a1c-a446-6a36a25bb256",
         "7c1ed484-cc08-4581-b2de-5b3daad65102"
     ],
     "tutorial": ""
