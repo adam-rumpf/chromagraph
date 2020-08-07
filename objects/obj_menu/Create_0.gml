@@ -3,13 +3,18 @@
 // Vortex object
 //###var vortex;
 
-// Menu button graph
+// Menu button graph objects
 var g, v, e, vp;
 v = [];
 e = [];
 vp = []; // vertex IDs of prerequisite puzzles (2D array, each row consists of vertex list IDs of puzzle branch beginning followed by all prerequisites)
 for (var i = 0; i < 8; i++)
 	vp[i,0] = -1;
+
+// Number of menu buttons and connections
+var n, m;
+n = 0;
+m = 0;
 
 // Menu button coordinates
 var xx, yy;
@@ -30,11 +35,6 @@ var vert =
 // Puzzle type
 var type;
 
-// Number of menu buttons and connections
-var n, m;
-n = 0;
-m = 0;
-
 // Coloring Puzzles
 type = 1;
 xx = 0;
@@ -45,10 +45,10 @@ for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 	var elem, xx, yy, obj;
 	elem = global.coloring_puzzles[i];
 	xx += elem[3];
-	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
+	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_coloring);
 	obj.type = type;
 	obj.puzzle = elem[1];
-	obj.image = i;
+	obj.image_index = i;
 	obj.state = global.coloring_save[i];
 	
 	// Define menu graph elements
@@ -90,10 +90,10 @@ for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
 	var elem, xx, yy, obj;
 	elem = global.edge_puzzles[i];
 	xx += elem[3];
-	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
+	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_edge);
 	obj.type = type;
 	obj.puzzle = elem[1];
-	obj.image = i;
+	obj.image_index = i;
 	obj.state = global.edge_save[i];
 	
 	// Define menu graph elements
@@ -135,10 +135,10 @@ for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
 	var elem, xx, yy, obj;
 	elem = global.total_puzzles[i];
 	xx += elem[3];
-	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
+	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_total);
 	obj.type = type;
 	obj.puzzle = elem[1];
-	obj.image = i;
+	obj.image_index = i;
 	obj.state = global.total_save[i];
 	
 	// Define menu graph elements
@@ -180,10 +180,10 @@ for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
 	var elem, xx, yy, obj;
 	elem = global.graceful_puzzles[i];
 	xx += elem[3];
-	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
+	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_graceful);
 	obj.type = type;
 	obj.puzzle = elem[1];
-	obj.image = i;
+	obj.image_index = i;
 	obj.state = global.graceful_save[i];
 	
 	// Define menu graph elements
@@ -225,10 +225,10 @@ for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
 	var elem, xx, yy, obj;
 	elem = global.decomp_puzzles[i];
 	xx += elem[3];
-	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
+	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_decomp);
 	obj.type = type;
 	obj.puzzle = elem[1];
-	obj.image = i;
+	obj.image_index = i;
 	obj.state = global.decomp_save[i];
 	
 	// Define menu graph elements
@@ -270,10 +270,10 @@ for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 	var elem, xx, yy, obj;
 	elem = global.dominating_puzzles[i];
 	xx += elem[3];
-	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
+	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_dominating);
 	obj.type = type;
 	obj.puzzle = elem[1];
-	obj.image = i;
+	obj.image_index = i;
 	obj.state = global.dominating_save[i];
 	
 	// Define menu graph elements
@@ -315,10 +315,10 @@ for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
 	var elem, xx, yy, obj;
 	elem = global.fall_puzzles[i];
 	xx += elem[3];
-	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
+	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_fall);
 	obj.type = type;
 	obj.puzzle = elem[1];
-	obj.image = i;
+	obj.image_index = i;
 	obj.state = global.fall_save[i];
 	
 	// Define menu graph elements
@@ -360,10 +360,10 @@ for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
 	var elem, xx, yy, obj;
 	elem = global.equitable_puzzles[i];
 	xx += elem[3];
-	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button);
+	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_equitable);
 	obj.type = type;
 	obj.puzzle = elem[1];
-	obj.image = i;
+	obj.image_index = i;
 	obj.state = global.equitable_save[i];
 	
 	// Define menu graph elements

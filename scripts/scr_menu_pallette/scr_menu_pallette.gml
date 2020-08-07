@@ -1,6 +1,6 @@
 /// @func scr_menu_pallette(num, multi)
 /// @desc Produces colors from a standard, global pallette (for menu icons).
-/// @param {int} num Color ID (corresponds to puzzle type).
+/// @param {int} num Color ID.
 /// @param {real} multi Multiplicative factor to apply to lightness value.
 /// @return {real} Color value corresponding to given ID.
 
@@ -13,18 +13,17 @@ multi = argument[1];
 if (num < 0)
 	return c_white;
 
-//###
 // Define basic color pallette
 var pallette =
 [
-	[200, 204, 225], // vertex coloring
-	[231, 238, 231], // edge coloring
-	[218, 210, 223], // total coloring
-	[240, 214, 205], // graceful trees
+	[231, 238, 231], // vertex coloring
+	[199, 204, 195], // edge coloring
+	[240, 214, 205], // total coloring
+	[219, 238, 206], // graceful trees
 	[244, 235, 241], // decomposition
-	[199, 204, 195], // dominating set
-	[219, 238, 206], // fall coloring
-	[227, 197, 212], // equitable coloring
+	[227, 197, 212], // dominating set
+	[218, 210, 223], // fall coloring
+	[200, 204, 225] // equitable coloring
 ];
 
 // Select color

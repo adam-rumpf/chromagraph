@@ -1,22 +1,21 @@
 /// @desc Update appearance and listen for mouse clicks.
 
-image_index = type;
-//### Eventually decide on styles.
+// Tint sprite based on unlock status
 switch state
 {
 	// Locked
 	case 0:
-		image_blend = scr_menu_pallette(type, 0.4);
+		image_blend = scr_menu_pallette(type-1, 0.4);
 		exit; // no actions for locked buttons
 	
 	// Unlocked
 	case 1:
-		image_blend = scr_menu_pallette(type, 0.8+0.1*cos(0.005*current_time));
+		image_blend = scr_menu_pallette(type-1, 0.8+0.1*cos(0.005*current_time));
 		break;
 	
 	// Solved
 	case 2:
-		image_blend = scr_menu_pallette(type, 0.7);
+		image_blend = scr_menu_pallette(type-1, 0.7);
 }
 
 // Reset mouseover state

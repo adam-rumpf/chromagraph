@@ -19,6 +19,8 @@ if (rm == rm_coloring_triangle_new)
 	global.coloring_save[1] = 1;
 	unlock = true;
 }
+if (rm == rm_save_clear)
+	return unlock;
 
 // Search through the global puzzle arrays until finding a match for the given room
 var found = false; // whether the puzzle room has been found
@@ -144,6 +146,10 @@ if (state != 2)
 var next = scr_puzzle_next(rm);
 if (next != rm_menu)
 	scr_puzzle_save(next, 1);
+
+// Quit if this is the intro room
+if (rm == rm_coloring_triangle_new)
+	return unlock;
 
 // Check whether this new solution unlocks any new branches
 for (var i = 0; i < array_length_1d(global.puzzle_prereq); i++)

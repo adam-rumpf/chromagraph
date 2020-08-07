@@ -32,9 +32,8 @@ global.coloring_puzzles =
 	[109, rm_coloring_dodecahedron, 3, space],
 	[110, rm_coloring_hypercube, 2, space], // 1/2 branch to fall coloring
 	[111, rm_coloring_grotzsch_pentagon, 4, space],
-	[112, rm_coloring_triangle_star, 5, space],
-	[113, rm_coloring_fullerene26, 3, space],
-	[114, rm_coloring_clebsch, 4, space]
+	[114, rm_coloring_fullerene26, 3, space],
+	[115, rm_coloring_clebsch, 4, space]
 ];
 global.coloring_save = [];
 for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
