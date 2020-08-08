@@ -80,15 +80,6 @@ if (exists == true)
 if (global.coloring_save[0] == 0)
 	global.coloring_save[0] = 1;
 
-//### Unlock other puzzle sequences
-/*global.edge_save[0] = 1;
-global.total_save[0] = 1;
-global.graceful_save[0] = 1;
-global.decomp_save[0] = 1;
-global.dominating_save[0] = 1;
-global.fall_save[0] = 1;
-global.equitable_save[0] = 1;*/
-
 // Ensure that all puzzle solve states are at least as complete as the following puzzles' solve states
 var latest = 0; // solve state of latest solved puzzle
 for (var i = array_length_1d(global.coloring_save)-1; i >= 0; i--)
@@ -141,27 +132,6 @@ for (var i = array_length_1d(global.equitable_save)-1; i >= 0; i--)
 
 // Update prerequisite checklist
 scr_puzzle_unlock();
-
-//########################################################
-//### Unlock all puzzles during testing
-/*
-for (var i = 0; i < array_length_1d(global.coloring_save); i++)
-	global.coloring_save[i] = 2;
-for (var i = 0; i < array_length_1d(global.edge_save); i++)
-	global.edge_save[i] = 2;
-for (var i = 0; i < array_length_1d(global.total_save); i++)
-	global.total_save[i] = 2;
-for (var i = 0; i < array_length_1d(global.graceful_save); i++)
-	global.graceful_save[i] = 2;
-for (var i = 0; i < array_length_1d(global.decomp_save); i++)
-	global.decomp_save[i] = 2;
-for (var i = 0; i < array_length_1d(global.dominating_save); i++)
-	global.dominating_save[i] = 2;
-for (var i = 0; i < array_length_1d(global.fall_save); i++)
-	global.fall_save[i] = 2;
-for (var i = 0; i < array_length_1d(global.equitable_save); i++)
-	global.equitable_save[i] = 2;
-	*/
 
 // Return whether the file was found
 return exists;

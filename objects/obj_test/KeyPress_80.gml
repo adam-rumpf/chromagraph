@@ -1,1 +1,0 @@
-scr_print_graph(obj_game.g);

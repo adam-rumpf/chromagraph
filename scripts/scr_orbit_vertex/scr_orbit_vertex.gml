@@ -19,8 +19,6 @@ var col = scr_pallette(lab, 1); // set color based on given label
 var r = 26; // orbit radius
 var angle = 0.00225*(60/room_speed)*current_time + (v.x*v.y % 360) + 2*pi*(lab/lim); // orbit angle
 
-//### Particles?
-
 // Draw dots
 for (var i = 0; i < lab+1; i++)
 {

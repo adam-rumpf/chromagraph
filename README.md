@@ -4,7 +4,11 @@ A game about graph theory and inductive logic.
 
 For downloads, please see this game's [itch.io page](https://adam-rumpf.itch.io/chromagraph).
 
-(Description.)
+This is a minimalist puzzle game that explores a variety of [graph coloring](https://en.wikipedia.org/wiki/Graph_coloring) problems. The goal of each puzzle is to color the given graph according to a particular set of rules. Simply point and click to cycle components of the graph through different states.
+
+A [graph](https://en.wikipedia.org/wiki/Graph_theory) (also known as a network) is a mathematical object used to represent pairwise relationships. We encounter graphs constantly in our everyday lives, and they can be used to represent an endless variety of physical and abstract structures ranging from social connections to infrastructure networks to biological pathways to digital data structures to symmetric systems of sets, just to name a few.
+
+This game is divided into several sections, each of which follows a different set of rules regarding which elements can be colored and what criteria must be met in order to solve the puzzle. Part of the challenge lies in figuring out what, exactly, the rules are in each of these sections, which will require observation and experimentation.
 
 ## Controls
 
@@ -39,10 +43,6 @@ This game uses the following sounds from [freesound](https://freesound.org/):
 [stone_on_stone](https://freesound.org/people/thanvannispen/sounds/29986/) by thanvannispen (https://freesound.org/people/thanvannispen/)  
 [train screech](https://freesound.org/people/cognito%20perceptu/sounds/181868/) by cognito perceptu (https://freesound.org/people/cognito%20perceptu/)  
 [Waves of Hawaii](https://freesound.org/people/florianreichelt/sounds/450755/) by florianreichelt (https://freesound.org/people/florianreichelt/)
-
-### Play Testers
-
-(Testers)
 
 ### Special Thanks
 

@@ -47,12 +47,4 @@ for (var i = 0; i < array_length_1d(eo); i++)
 for (var i = 0; i < array_length_1d(eo_new); i++)
 	eo_all[i+array_length_1d(eo)] = eo_new[i];
 
-//###
-// Initialize correct vertex labels for testing.
-/*for (var i = 0; i < array_height_2d(part); i++)
-{
-	for (var j = 0; j < array_length_2d(part, i); j++)
-		vo[part[i,j]].label = i;
-}*/
-
 return scr_create_graph(vo, eo_all);

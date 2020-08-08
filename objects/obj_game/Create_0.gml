@@ -51,5 +51,3 @@ scr_save_settings(); // create a settings file
 
 // Game progress
 global.new_game = !scr_load_game(); // load saved game and determine whether it's a new game
-
-//### Search for uses of audio_play_sound to ensure that all obey the global sound settings.

@@ -407,4 +407,3 @@ for (var i = 0; i < array_height_2d(vp); i++)
 
 // Define menu graph
 g = scr_create_graph(v, e);
-scr_vertex_rebase(g);

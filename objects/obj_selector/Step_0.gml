@@ -10,7 +10,7 @@ var nearest = -1; // list index of nearest object
 for (var i = 0; i < array_length_1d(global.selectable); i++)
 {
 	var dist_new = scr_distance_to_cursor(global.selectable[i]);
-	if (dist_new < min(dist, 20)) //### Decide on cutoff distance
+	if (dist_new < min(dist, 20))
 	{
 		nearest = i;
 		dist = dist_new;
