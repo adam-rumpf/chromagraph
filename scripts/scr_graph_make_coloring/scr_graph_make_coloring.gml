@@ -67,11 +67,6 @@ switch rm
 		g = scr_graph_k3_cart_p4();
 		break;
 	
-	// Triangle Star
-	case rm_coloring_triangle_star:
-		g = scr_graph_triangle_star();
-		break;
-	
 	// Tablet
 	case rm_coloring_tablet:
 		g = scr_graph_tablet();
