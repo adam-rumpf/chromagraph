@@ -42,7 +42,7 @@ for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 // Edge Coloring Puzzles
 global.edge_puzzles =
 [
-	[200, rm_edge_dart, 3, space/2 + 5*space],
+	[200, rm_edge_dart, 4, space/2 + 5*space],
 	[201, rm_edge_k33, 3, space],
 	[202, rm_edge_k4, 3, space], // branch to decomposition
 	[203, rm_edge_petersen_star, 4, space], // 1/2 branch to total coloring (or replace with an earlier one)

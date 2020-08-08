@@ -5,7 +5,7 @@ switch state
 {
 	// Locked
 	case 0:
-		image_blend = scr_menu_pallette(type-1, 0.4);
+		image_blend = scr_menu_pallette(type-1, 0.25);
 		exit; // no actions for locked buttons
 	
 	// Unlocked
