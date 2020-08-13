@@ -2,7 +2,7 @@
 /// @desc Display credits text.
 
 // Define text
-var height = 320; // amount of vertical text movement allowed (increase for longer credits)
+var height = 400; // amount of vertical text movement allowed (increase for longer credits)
 var credits = @'Chromagraph
 Copyright (c) 2020 Adam Rumpf
 adam-rumpf.github.io
@@ -31,47 +31,16 @@ This game uses the following sounds from freesound:
 "train screech" by cognito perceptu (freesound.org/people/cognito%20perceptu)
 "Waves of Hawaii" by florianreichelt (freesound.org/people/florianreichelt)
 
+--- Playtesters ---
+
+Katie Ruble
+Manpreet Singh
+Cullen Tanoue
+
 --- Special Thanks ---
 
 Hemanshu Kaul
 Douglas West';
-//### Update as play testers are added.
-/*@'Chromagraph
-Copyright (c) 2020 Adam Rumpf
-adam-rumpf.github.io
-
-Made in GameMaker Studio 2
-2017 YoYo Games Ltd
-
-Source code released under MIT License
-github.com/adam-rumpf/chromagraph
-
---- Music ---
-
-Babylon by Kevin MacLeod
-incompetech.filmmusic.io/song/3406-babylon
-creativecommons.org/licenses/by/4.0
-
-Wet Riffs by Kevin MacLeod
-incompetech.filmmusic.io/song/4618-wet-riffs
-creativecommons.org/licenses/by/4.0
-
---- Sound ---
-
-This game uses the following sounds from freesound:
-"Chime2" by Neotone (freesound.org/people/Neotone)
-"stone_on_stone" by thanvannispen (freesound.org/people/thanvannispen)
-"train screech" by cognito perceptu (freesound.org/people/cognito%20perceptu)
-"Waves of Hawaii" by florianreichelt (freesound.org/people/florianreichelt)
-
---- Play Testers ---
-
-(testers)
-
---- Special Thanks ---
-
-Hemanshu Kaul
-Douglas West';*/
 
 // Set text attributes
 draw_set_font(fnt_standard);

@@ -1,5 +1,15 @@
 /// @desc Alter self if activated.
 
+// Decide whether to tint (for dominating set only)
+if (global.puzzle == 6 && label < 0)
+{
+	if (tinted == true)
+		image_blend = scr_pallette(0, 0.25);
+	else
+		image_blend = c_black;
+}
+tinted = false;
+
 // Quit if not activated
 if (activated == false)
 	exit;

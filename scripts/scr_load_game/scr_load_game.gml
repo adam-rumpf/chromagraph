@@ -7,9 +7,7 @@ var save, version;
 save = "save.dat";
 
 // Check whether a file exists
-var exists = false;
-if (file_exists(save))
-	exists = true;
+var exists = file_exists(save);
 
 // If the file exists, read it
 if (exists == true)
@@ -74,7 +72,6 @@ if (exists == true)
 			global.equitable_save[i] = round(ds_map_find_value(map, string(elem[0])));
 	}
 }
-
 
 // Ensure that first coloring puzzle is unlocked
 if (global.coloring_save[0] == 0)

@@ -18,11 +18,20 @@ if (global.puzzle == 4)
 else
 	scr_color_vertex(v, scr_pallette(v.label, 1));
 
-// Draw orbiting effect for self and neighbors for dominating set and fall coloring
-if (global.puzzle == 6 || global.puzzle == 7)
+// Tint covered vertices in dominating set
+if (global.puzzle == 6 && v.label >= 0)
+{
+	for (var i = 0; i < array_length_1d(v.out_arcs); i++)
+		v.out_arcs[i].head.tinted = true;
+	for (var i = 0; i < array_length_1d(v.in_arcs); i++)
+		v.in_arcs[i].tail.tinted = true;
+}
+
+// Draw orbiting effect for self and neighbors in fall coloring
+if (global.puzzle == 7)
 {
 	// Orbit self
-	scr_orbit_vertex(v, v.label, global.puzzle_limit);
+	scr_orbit_vertex(v, v.label, global.puzzle_limit, false);
 	
 	// Orbit all neighbors
 	for (var i = 0; i < array_length_1d(v.out_arcs); i++)
