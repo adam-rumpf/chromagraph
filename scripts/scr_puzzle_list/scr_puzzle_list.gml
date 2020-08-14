@@ -17,6 +17,15 @@ The random puzzle rooms are listed as a separate array containing only their roo
 // Standard spacing
 var space = 90;
 
+//###
+/*
+Most reused puzzles:
+Cube (7) (3)
+Hypercube (6) (3)
+Clebsch (4) (3)
+Petersen (3) (3)
+*/
+
 // Coloring Puzzles
 global.coloring_puzzles =
 [
@@ -27,11 +36,11 @@ global.coloring_puzzles =
 	[104, rm_coloring_snowflake_3_2, 2, space], // branch to equitable coloring
 	[105, rm_coloring_k3_cart_p4, 3, space], // 1/2 branch to total coloring
 	[106, rm_coloring_tablet, 4, space], // branch to dominating set
-	[107, rm_coloring_cube, 2, space],
+	//[107, rm_coloring_cube, 2, space],
 	[108, rm_coloring_necklace_3, 4, space],
 	[109, rm_coloring_dodecahedron, 3, space],
-	[110, rm_coloring_hypercube, 2, space], // 1/2 branch to fall coloring
-	[111, rm_coloring_grotzsch_pentagon, 4, space],
+	//[110, rm_coloring_hypercube, 2, space], //XXX 1/2 branch to fall coloring
+	[111, rm_coloring_grotzsch_pentagon, 4, space], // 1/2 branch to fall coloring
 	[114, rm_coloring_fullerene26, 3, space],
 	[115, rm_coloring_clebsch, 4, space]
 ];
@@ -47,8 +56,8 @@ global.edge_puzzles =
 	[202, rm_edge_k4, 3, space], // branch to decomposition
 	[203, rm_edge_petersen_star, 4, space], // 1/2 branch to total coloring (or replace with an earlier one)
 	[204, rm_edge_dragonfly, 5, space],
-	[205, rm_edge_cube, 3, space],
-	[206, rm_edge_chord, 3, space],
+	//[205, rm_edge_cube, 3, space],
+	//[206, rm_edge_chord, 3, space],
 	[207, rm_edge_grotzsch_pentagon, 5, space],
 	[208, rm_edge_hypercube, 4, space],
 	[209, rm_edge_octahedron, 4, space],
@@ -64,8 +73,8 @@ global.total_puzzles =
 	[300, rm_total_dart, 5, 8*space],
 	[301, rm_total_c7, 4, space], // branch to graceful tree
 	[302, rm_total_k5, 5, space],
-	[303, rm_total_cube, 5, space],
-	[304, rm_total_hypercube, 6, space],
+	//[303, rm_total_cube, 5, space],
+	//[304, rm_total_hypercube, 6, space],
 	[305, rm_total_w4, 5, space],
 	[306, rm_total_petersen, 5, space],
 	[307, rm_total_k4, 5, space],
@@ -85,7 +94,7 @@ global.graceful_puzzles =
 	[404, rm_graceful_y_long, 0, space],
 	[405, rm_graceful_crab_2, 0, space],
 	[406, rm_graceful_spider3, 0, space],
-	[407, rm_graceful_butterfly, 0, space],
+	//[407, rm_graceful_butterfly, 0, space],
 	[408, rm_graceful_caterpillar_3_2, 0, space]
 ];
 global.graceful_save = [];
@@ -134,7 +143,7 @@ global.fall_puzzles =
 [
 	[700, rm_fall_cube_2, 2, space/2 + 11*space],
 	[701, rm_fall_tablet, 3, space],
-	[702, rm_fall_cube_4, 4, space],
+	//[702, rm_fall_cube_4, 4, space],
 	[703, rm_fall_c6_cart_p4, 3, space],
 	[704, rm_fall_king_3, 4, space],
 	[705, rm_fall_hypercube, 4, space],
@@ -155,9 +164,9 @@ global.equitable_puzzles =
 	[803, rm_equitable_snowflake_5_3, 3, space],
 	[804, rm_equitable_flower_6_4, 4, space],
 	[805, rm_equitable_5cube_sun, 3, space],
-	[806, rm_equitable_hypercube_4, 4, space],
+	//[806, rm_equitable_hypercube_4, 4, space],
 	[807, rm_equitable_dodecahedron, 4, space],
-	[808, rm_equitable_clebsch, 4, space]
+	//[808, rm_equitable_clebsch, 4, space]
 ];
 global.equitable_save = [];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
@@ -188,7 +197,8 @@ global.puzzle_prereq =
 	[301], // graceful trees
 	[202], // decomposition
 	[106], // dominating set
-	[110, 604], // fall coloring
+	//[110, 604], // fall coloring
+	[111, 604], // fall coloring
 	[104] // equitable coloring
 ]
 

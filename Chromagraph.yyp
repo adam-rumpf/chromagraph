@@ -1751,6 +1751,14 @@
             }
         },
         {
+            "Key": "90395f3c-e8d5-4568-9c22-acd51021d2a5",
+            "Value": {
+                "id": "1d720e27-892f-4174-9600-6b00931d7530",
+                "resourcePath": "views\\90395f3c-e8d5-4568-9c22-acd51021d2a5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "91203a7d-caaa-463f-8574-60e01c940144",
             "Value": {
                 "id": "c12dafea-c03a-4d20-a237-ad2cd7a02bd1",
@@ -1964,6 +1972,14 @@
                 "id": "d03b8325-107d-4763-bf82-67082ff7b6a1",
                 "resourcePath": "rooms\\rm_total_k4op3\\rm_total_k4op3.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a5c8cca6-dd5d-4f22-89f5-8eb645db42ff",
+            "Value": {
+                "id": "e1f2440d-d82a-4231-ba67-3cef41e183ae",
+                "resourcePath": "scripts\\scr_count_puzzles\\scr_count_puzzles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2348,6 +2364,14 @@
                 "id": "978ebbad-de3c-44df-b9dc-80364963d585",
                 "resourcePath": "rooms\\rm_fall_c5_cart_c5\\rm_fall_c5_cart_c5.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "bec3f072-3399-4b65-ae00-2bffc086e8b4",
+            "Value": {
+                "id": "24192e7a-75c1-402d-86bf-b5f22df3f82c",
+                "resourcePath": "scripts\\scr_unlock_puzzles\\scr_unlock_puzzles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3183,7 +3207,6 @@
         "5285b623-eb93-4314-b476-f9f1d9b11633",
         "86f23bea-b7f3-40a8-a190-ec890523bded",
         "5978f53a-4695-4402-9a00-db9af21fc42f",
-        "d4a88d25-ee5c-4a36-97bb-3a47c6c555c5",
         "b1f88251-5686-41f5-beb1-8f56f6911d5a",
         "665f3ab8-e1e8-411b-936b-409562913be0",
         "923a1a18-1c9a-45a4-9141-5547b2884db9",
@@ -3294,7 +3317,10 @@
         "7c0715e5-f40c-4bb6-ad9f-33000f052826",
         "04ec566c-403c-45a3-89bf-fdfbc207903e",
         "c54b0637-812b-4a1c-a446-6a36a25bb256",
-        "7c1ed484-cc08-4581-b2de-5b3daad65102"
+        "7c1ed484-cc08-4581-b2de-5b3daad65102",
+        "d4a88d25-ee5c-4a36-97bb-3a47c6c555c5",
+        "a5c8cca6-dd5d-4f22-89f5-8eb645db42ff",
+        "bec3f072-3399-4b65-ae00-2bffc086e8b4"
     ],
     "tutorial": ""
 }
