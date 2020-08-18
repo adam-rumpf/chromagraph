@@ -2,7 +2,7 @@
 /// @desc Display credits text.
 
 // Define text
-var height = 400; // amount of vertical text movement allowed (increase for longer credits)
+var height = 600; // amount of vertical text movement allowed (increase for longer credits)
 var credits = @'Chromagraph
 Copyright (c) 2020 Adam Rumpf
 adam-rumpf.github.io
@@ -13,7 +13,7 @@ Made in GameMaker Studio 2
 Source code released under MIT License
 github.com/adam-rumpf/chromagraph
 
---- Music ---
+~ Music ~
 
 Babylon by Kevin MacLeod
 incompetech.filmmusic.io/song/3406-babylon
@@ -23,7 +23,7 @@ Wet Riffs by Kevin MacLeod
 incompetech.filmmusic.io/song/4618-wet-riffs
 creativecommons.org/licenses/by/4.0
 
---- Sound ---
+~ Sound ~
 
 This game uses the following sounds from freesound:
 "Chime2" by Neotone (freesound.org/people/Neotone)
@@ -31,13 +31,12 @@ This game uses the following sounds from freesound:
 "train screech" by cognito perceptu (freesound.org/people/cognito%20perceptu)
 "Waves of Hawaii" by florianreichelt (freesound.org/people/florianreichelt)
 
---- Playtesters ---
+~ Playtesters ~
 
 Katie Ruble
-Manpreet Singh
 Cullen Tanoue
 
---- Special Thanks ---
+~ Special Thanks ~
 
 Hemanshu Kaul
 Douglas West';

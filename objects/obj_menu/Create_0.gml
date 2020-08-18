@@ -2,6 +2,7 @@
 
 // Vortex object
 //###var vortex;
+//### Use the global.game_complete variable.
 
 // Menu button graph objects
 var g, v, e, vp;

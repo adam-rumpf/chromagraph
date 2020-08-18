@@ -49,7 +49,6 @@ This game uses the following sounds from [freesound](https://freesound.org/):
 ### Playtesters
 
 Katie Ruble  
-Manpreet Singh  
 Cullen Tanoue
 
 ### Special Thanks

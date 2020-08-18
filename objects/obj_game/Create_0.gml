@@ -40,6 +40,7 @@ global.puzzle_limit = 0;
 global.puzzle_solved = false;
 solved = false; // local variable to determine when puzzle has *just* been solved
 unlock = false; // local variable indicating whether we've just unlocked a new puzzle branch
+next = rm_menu; // next room to go to
 rumble = audio_play_sound(snd_rumble, 30, true); // error sound (plays only when a puzzle element is incorrect)
 audio_sound_gain(rumble, 0, 0);
 
@@ -51,3 +52,4 @@ scr_save_settings(); // create a settings file
 
 // Game progress
 global.new_game = !scr_load_game(); // load saved game and determine whether it's a new game
+global.game_complete = scr_game_complete(); // whether the game has been completed

@@ -61,7 +61,7 @@ switch room
 	// Technical screens
 	case rm_credits:
 	case rm_save_clear:
-	case rm_ending:
+	case rm_ending: //### Reconsider (possibly cutscene and then move to credits room)
 		
 		// Get room width
 		var width = room_width;

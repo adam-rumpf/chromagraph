@@ -1,5 +1,8 @@
 /// @func scr_puzzle_unlock()
 /// @desc Updates the prerequisite checklist and unlocks any appropriate puzzles based on which are currently solved.
+/// @return {bool} Returns true if a new puzzle has been unlocked, and false otherwise.
+
+var new = false; // whether a new branch has been unlocked
 
 // Process each solution set
 for (var i = 0; i < array_length_1d(global.coloring_save); i++)
@@ -194,13 +197,70 @@ for (var i = 0; i < array_height_2d(global.puzzle_prereq_checklist); i++)
 	// If so, ensure that the first element of the puzzle sequence is (at least) unlocked
 	switch i
 	{
-		case 0: global.coloring_save[0] = max(global.coloring_save[0], 1); break;
-		case 1: global.edge_save[0] = max(global.edge_save[0], 1); break;
-		case 2: global.total_save[0] = max(global.total_save[0], 1); break;
-		case 3: global.graceful_save[0] = max(global.graceful_save[0], 1); break;
-		case 4: global.decomp_save[0] = max(global.decomp_save[0], 1); break;
-		case 5: global.dominating_save[0] = max(global.dominating_save[0], 1); break;
-		case 6: global.fall_save[0] = max(global.fall_save[0], 1); break;
-		case 7: global.equitable_save[0] = max(global.equitable_save[0], 1); break;
+		case 0:
+			if (global.coloring_save[0] < 1)
+			{
+				global.coloring_save[0] = 1;
+				new = true;
+			}
+			break;
+		
+		case 1:
+			if (global.edge_save[0] < 1)
+			{
+				global.edge_save[0] = 1;
+				new = true;
+			}
+			break;
+		
+		case 2:
+			if (global.total_save[0] < 1)
+			{
+				global.total_save[0] = 1;
+				new = true;
+			}
+			break;
+		
+		case 3:
+			if (global.graceful_save[0] < 1)
+			{
+				global.graceful_save[0] = 1;
+				new = true;
+			}
+			break;
+		
+		case 4:
+			if (global.decomp_save[0] < 1)
+			{
+				global.decomp_save[0] = 1;
+				new = true;
+			}
+			break;
+		
+		case 5:
+			if (global.dominating_save[0] < 1)
+			{
+				global.dominating_save[0] = 1;
+				new = true;
+			}
+			break;
+		
+		case 6:
+			if (global.fall_save[0] < 1)
+			{
+				global.fall_save[0] = 1;
+				new = true;
+			}
+			break;
+		
+		case 7:
+			if (global.equitable_save[0] < 1)
+			{
+				global.equitable_save[0] = 1;
+				new = true;
+			}
+			break;
 	}
 }
+
+return new;

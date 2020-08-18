@@ -38,10 +38,19 @@ if (global.puzzle_solved == true && solved == false)
 	unlock = scr_puzzle_save(room, 2);
 	
 	// Update next room (if there is one)
-	var next = scr_puzzle_next(room);
+	next = scr_puzzle_next(room);
 	if (next != rm_menu)
 		scr_puzzle_save(next, 1);
 	
 	// Save game
 	scr_save_game();
+	
+	// Check whether the game is complete
+	if (global.game_complete == false)
+	{
+		global.game_complete = scr_game_complete();
+		
+		// Go to ending room if we've just completed the game
+		next = rm_ending;
+	}
 }

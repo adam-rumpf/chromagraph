@@ -4,6 +4,10 @@
 if (room == rm_title)
 	exit;
 
+// Special particles for ending room
+if (room = rm_ending)
+	exit;//###
+
 // Create particle system
 particle_system = part_system_create_layer("Overlays", false);
 

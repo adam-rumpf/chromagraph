@@ -165,11 +165,11 @@ for (var i = 0; i < array_length_1d(global.puzzle_prereq); i++)
 		if (global.puzzle_prereq_checklist[i,j] == false)
 		{
 			// Update checklist
-			unlock = true;
 			global.puzzle_prereq_checklist[i,j] = true;
 				
-			// Attempt to unlock puzzles
-			scr_puzzle_unlock();
+			// Attempt to unlock puzzles and determine whether anything new has been unlocked
+			if (scr_puzzle_unlock() == true)
+				unlock = true;
 		}
 		
 		break;

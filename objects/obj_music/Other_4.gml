@@ -7,3 +7,11 @@ if ((prev == rm_title && room != rm_coloring_triangle_new) || prev == rm_colorin
 	audio_sound_gain(music, 0, 4000);
 	alarm[0] = 4*room_speed;
 }
+
+// Same for ending room
+if (prev == rm_ending || room == rm_ending)
+{
+	// Fade out current song and set timer to switch mode
+	audio_sound_gain(music, 0, 4000);
+	alarm[0] = 4*room_speed;
+}
