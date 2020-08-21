@@ -45,7 +45,7 @@ if (selected == true && active == true)
 			audio_sound_pitch(stone, random_range(0.8, 1.2));
 		}
 		
-		// Begin sreen fade and set alarm for room transition
+		// Begin screen fade and set alarm for room transition
 		obj_screen_fade.fading = true;
 		alarm[0] = 1*room_speed*obj_screen_fade.fade_time;
 	}

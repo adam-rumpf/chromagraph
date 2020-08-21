@@ -1,7 +1,7 @@
 /// @desc Spawn GUI buttons appropriate for current room.
 
-// Do nothing on title screen
-if (room == rm_title)
+// Do nothing on title and ending screens
+if (room == rm_title || room == rm_ending)
 	exit;
 
 // Set text opacity for new game room
@@ -61,7 +61,6 @@ switch room
 	// Technical screens
 	case rm_credits:
 	case rm_save_clear:
-	case rm_ending: //### Reconsider (possibly cutscene and then move to credits room)
 		
 		// Get room width
 		var width = room_width;
