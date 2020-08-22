@@ -9,7 +9,7 @@ vo = 120;
 
 // Define viewport position (top edge)
 pos = room_height - h + vo;
-alarm[0] = 1;//###12*room_speed; // begin moving up after a delay
+alarm[0] = 12*room_speed; // begin moving up after a delay
 
 // Define topmost allowed position
 pos_min = 40;
@@ -21,10 +21,5 @@ view_visible[0] = true;
 camera_set_view_size(view_camera[0], w, h);
 camera_set_view_pos(view_camera[0], 0, pos);
 
-// Set overlay opacity
-alpha = 0;
-fading = false;
-
-// Button position constants
-gvspace = 16;
-ghspace = 16;
+// Whether to listen for a mouse click for an early transition
+listen = false;

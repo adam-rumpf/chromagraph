@@ -12,27 +12,20 @@ if (scrolling == true)
 		pos = pos_min;
 		scrolling = false;
 	
-		// Set screen fade timer
-		alarm[1] = 1;//###5*room_speed;
+		// Set room transition timer
+		alarm[1] = 8*room_speed;
+		
+		// Start listening for mouse clicks
+		listen = true;
 	}
 	
 	// Move camera
 	camera_set_view_pos(view_camera[0], 0, pos);
 }
 
-// Screen fading
-if (fading == true)
+// If listening for a mouse click, allow early transition
+if (listen == true)
 {
-	// Increase overlay opacity
-	alpha += 1/(2*room_speed);
-	
-	// Stop at 75%
-	if (alpha > 0.75)
-	{
-		alpha = 0.75;
-		fading = false;
-		
-		// Show credits after a delay
-		alarm[2] = 1;//###2*room_speed;
-	}
+	if (mouse_check_button_pressed(mb_left))
+		alarm[1] = 1;
 }
