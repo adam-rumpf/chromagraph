@@ -3023,6 +3023,14 @@
             }
         },
         {
+            "Key": "f2eeea24-e87b-4b53-97ee-281da0df70bd",
+            "Value": {
+                "id": "4f96b306-18ec-43ba-b0ce-e1bdbbfe81e6",
+                "resourcePath": "objects\\obj_gui_next_ending\\obj_gui_next_ending.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f30d1800-0cce-4ede-9782-f8c7cea2bc16",
             "Value": {
                 "id": "4e2ef43d-53eb-4c9d-92d3-1c9e1837c84f",

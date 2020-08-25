@@ -418,3 +418,12 @@ for (var i = 0; i < array_height_2d(vp); i++)
 
 // Define menu graph
 g = scr_create_graph(v, e);
+
+//### (Replace this with a portal after the first content patch.)
+// If the game is complete, create a button for the ending cutscene
+if (global.game_complete == true)
+{
+	var next = instance_create_layer(room_width-36, room_height/2, "Overlays", obj_gui_next_ending);
+	next.xx = room_width-36;
+	next.yy = room_height/2;
+}

@@ -48,7 +48,7 @@ global.edge_puzzles =
 	[203, rm_edge_petersen_star, 4, space], // 1/2 branch to total coloring (or replace with an earlier one)
 	//[204, rm_edge_dragonfly, 5, space],
 	//[205, rm_edge_cube, 3, space],
-	//[206, rm_edge_chord, 3, space],
+	[206, rm_edge_chord, 3, space],
 	[207, rm_edge_grotzsch_pentagon, 5, space],
 	[208, rm_edge_hypercube, 4, space],
 	[209, rm_edge_octahedron, 4, space],
