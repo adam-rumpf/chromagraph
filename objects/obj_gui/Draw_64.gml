@@ -28,8 +28,8 @@ if (room == rm_coloring_triangle_new)
 if (room == rm_save_clear)
 {
 	// Decrease opacity
-	if (fade == true)
-		alpha -= 0.01*(60/room_speed);
+	/*if (fade == true)
+		alpha -= 0.01*(60/room_speed);*/
 	
 	// Draw text
 	draw_text_color(room_width/2, 100, "Complete the puzzle to delete your save file.", c_white, c_white, c_white, c_white, alpha);

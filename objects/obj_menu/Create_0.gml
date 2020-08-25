@@ -1,5 +1,15 @@
 /// @desc Create array of menu buttons.
 
+// If new game, display automatic save message
+msg = 0.0; // opacity of save message
+fading = false; // whether message is fading
+if (global.new_game == true)
+{
+	alarm[0] = 5*room_speed; // delay until message fades
+	msg = 1.0;
+	global.new_game = false;
+}
+
 // Vortex object
 //###var vortex;
 //### Use the global.game_complete variable.

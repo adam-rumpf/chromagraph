@@ -54,4 +54,5 @@ Cullen Tanoue
 ### Special Thanks
 
 Hemanshu Kaul  
-Douglas West
+Douglas West  
+Chris Mitillos

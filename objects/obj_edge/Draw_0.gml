@@ -1,5 +1,12 @@
 /// @desc Draw edge.
 
+// Special color for save deletion room
+if (room == rm_save_clear)
+{
+	scr_draw_edge(id, make_color_hsv(0, 0, 15));
+	exit;
+}
+
 // If unlabeled, color gray and then stop
 if (label < 0)
 {

@@ -17,17 +17,6 @@ The random puzzle rooms are listed as a separate array containing only their roo
 // Standard spacing
 var space = 90;
 
-//###
-/*
-Most reused puzzles:
-Cube (7) (3)
-Hypercube (6) (3)
-Clebsch (4) (2)
-Petersen (3) (3)
-
-Also eliminate tedious puzzles.
-*/
-
 // Coloring Puzzles
 global.coloring_puzzles =
 [

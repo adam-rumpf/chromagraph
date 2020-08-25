@@ -39,7 +39,8 @@ Cullen Tanoue
 ~ Special Thanks ~
 
 Hemanshu Kaul
-Douglas West';
+Douglas West
+Chris Mitillos';
 
 // Set text attributes
 draw_set_font(fnt_standard);
