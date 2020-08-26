@@ -1,9 +1,7 @@
 /// @desc Draw GUI button.
 
 // Choose image index based on global settings
-var index = 0;
-if (global.music_on == false)
-	index = 1;
+var index = global.music;
 
 // Choose image attributes based on selection
 if (selected == true)

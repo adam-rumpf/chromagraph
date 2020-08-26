@@ -53,8 +53,9 @@ part_emitter_region(particle_system, emit_dark_bottom, 0, room_width, room_heigh
 type_drip = part_type_create();
 part_type_shape(type_drip, pt_shape_square);
 part_type_size(type_drip, 0.04, 0.08, 0, 0);
-part_type_color2(type_drip, 16720932, 16727100);
-part_type_alpha3(type_drip, 0.30, 0.50, 0.40);
+//part_type_color2(type_drip, 16720932, 16727100);
+part_type_color2(type_drip, 16292499, 14783602);
+part_type_alpha3(type_drip, 0.2, 0.35, 0.3);
 part_type_speed(type_drip, 0.08, 0.16, 0, 0);
 part_type_direction(type_drip, 0, 359, 0, 0);
 part_type_gravity(type_drip, 0.05, 270);

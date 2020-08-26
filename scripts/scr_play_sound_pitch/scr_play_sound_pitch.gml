@@ -10,13 +10,10 @@ s = argument[0];
 p = argument[1];
 lab = argument[2];
 
-// If sound is off, do nothing
-if (global.sound_on == false)
-	exit;
-
 // Calculate pitch multiplier
 var pit = 0.6 + 0.025*lab;
 
 // Play sound
 var snd = audio_play_sound(s, p, false);
+audio_sound_gain(snd, global.gains[global.sound], 0);
 audio_sound_pitch(snd, pit);

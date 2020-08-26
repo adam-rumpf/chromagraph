@@ -45,8 +45,9 @@ rumble = audio_play_sound(snd_rumble, 30, true); // error sound (plays only when
 audio_sound_gain(rumble, 0, 0);
 
 // Global sound settings
-global.sound_on = true;
-global.music_on = true;
+global.gains = [0.0, 0.25, 1.0]; // array of gain values for each volume setting (0.0 is silent, 1.0 is normal)
+global.sound = 2; // normal sound volume
+global.music = 2; // normal music volume
 scr_load_settings(); // load saved settings
 scr_save_settings(); // create a settings file
 

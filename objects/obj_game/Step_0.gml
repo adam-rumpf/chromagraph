@@ -5,11 +5,11 @@ if (room == rm_title || room == rm_menu || room == rm_credits || room == rm_endi
 	exit;
 
 // Decide whether to play an error sound
-if (global.sound_on == true)
+if (global.sound > 0)
 {
 	// Play sound if there is an error, and otherwise cancel sound
 	if (scr_graph_errors(g) == true)
-		audio_sound_gain(rumble, 1, 500);
+		audio_sound_gain(rumble, global.gains[global.sound], 500);
 	else
 		audio_sound_gain(rumble, 0, 500);
 }
@@ -20,11 +20,11 @@ else
 if (global.puzzle_solved == true && solved == false)
 {
 	// Play a sound effect on save delete
-	if (room == rm_save_clear && global.sound_on == true)
+	if (room == rm_save_clear)
 	{
 		var waves = audio_play_sound(snd_waves_in, 90, false);
 		audio_sound_gain(waves, 0, 0);
-		audio_sound_gain(waves, 1, 1000);
+		audio_sound_gain(waves, global.gains[global.sound], 1000);
 	}
 	
 	// Begin screen flash and set timer to create button

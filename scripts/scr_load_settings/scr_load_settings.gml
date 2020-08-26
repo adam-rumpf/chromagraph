@@ -10,6 +10,6 @@ if (file_exists(settings) == false)
 
 // Read settings
 ini_open(settings);
-global.sound_on = round(ini_read_real("audio", "sound", true));
-global.music_on = round(ini_read_real("audio", "music", true));
+global.sound = round(ini_read_real("audio", "sound", 2));
+global.music = round(ini_read_real("audio", "music", 2));
 ini_close();

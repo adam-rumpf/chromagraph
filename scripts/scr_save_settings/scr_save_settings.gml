@@ -10,6 +10,6 @@ if (file_exists(settings))
 
 // Save settings
 ini_open(settings);
-ini_write_real("audio", "sound", global.sound_on);
-ini_write_real("audio", "music", global.music_on);
+ini_write_real("audio", "sound", global.sound);
+ini_write_real("audio", "music", global.music);
 ini_close();

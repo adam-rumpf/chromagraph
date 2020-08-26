@@ -1,5 +1,18 @@
 /// @desc Set volume and restart song.
 
+// If music setting has just changed, change the current song's volume
+if (global.gains[global.music] != vol)
+{
+	vol = global.gains[global.music];
+	
+	// Transition speed depends on whether we're turning the music off
+	if (vol > 0)
+		audio_sound_gain(music, vol, 4000);
+	else
+		audio_sound_gain(music, 0, 1000);
+}
+
+/*
 // Set volume based on global music setting
 if (global.music_on == true)
 {
@@ -22,6 +35,7 @@ else
 	// Turn volume off
 	vol = 0;
 }
+*/
 
 // Start a new song after a delay if the current one has ended
 if (audio_is_playing(music) == false && swap == false)

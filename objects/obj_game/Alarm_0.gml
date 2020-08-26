@@ -8,8 +8,8 @@ if (room == rm_save_clear)
 }
 
 // Play success sound
-if (global.sound_on == true)
-	audio_play_sound(snd_chime, 90, false);
+var chime = audio_play_sound(snd_chime, 90, false);
+audio_sound_gain(chime, global.gains[global.sound], 0);
 
 // Create "next" button
 var next = instance_create_layer(room_width-24, room_height/2, "Overlays", obj_gui_next);

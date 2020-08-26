@@ -24,10 +24,11 @@ var hc = [e.head.x - 1, e.head.y - 1]; // head coordinates
 if (e.angry == true)
 {
 	// Jostle coordinates if angry
-	tc[0] += irandom_range(-2,2);
-	tc[1] += irandom_range(-2,2);
-	hc[0] += irandom_range(-2,2);
-	hc[1] += irandom_range(-2,2);
+	var a = 4;
+	tc[0] += irandom_range(-a,a);
+	tc[1] += irandom_range(-a,a);
+	hc[0] += irandom_range(-a,a);
+	hc[1] += irandom_range(-a,a);
 }
 var tic = [tc[0] + vec[0], tc[1] + vec[1]]; // tail dot coordinates
 var hic = [hc[0] - vec[0], hc[1] - vec[1]]; // head dot coordinates

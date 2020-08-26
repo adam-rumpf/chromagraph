@@ -7,7 +7,9 @@ if (selected == false)
 // If selected, listen for mouse click to toggle sound setting
 if (mouse_check_button_pressed(mb_left))
 {
-	global.sound_on = !global.sound_on;
+	global.sound--;
+	if (global.sound < 0)
+		global.sound = array_length_1d(global.gains) - 1;
 	scr_save_settings();
 }
 
