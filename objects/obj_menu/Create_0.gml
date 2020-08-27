@@ -2,11 +2,10 @@
 
 // If new game, display automatic save message
 msg = 0.0; // opacity of save message
-fading = false; // whether message is fading
+fading = -0.01*(60/room_speed); // fade rate (negative to fade out, positive to fade in)
 if (global.new_game == true)
 {
-	alarm[0] = 5*room_speed; // delay until message fades
-	msg = 1.0;
+	alarm[0] = 2*room_speed; // delay until message fades in
 	global.new_game = false;
 }
 

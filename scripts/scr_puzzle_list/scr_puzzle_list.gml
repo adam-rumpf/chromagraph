@@ -43,8 +43,8 @@ for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 global.edge_puzzles =
 [
 	[200, rm_edge_dart, 4, space/2 + 5*space],
-	[201, rm_edge_k33, 3, space],
-	[202, rm_edge_k4, 3, space], // branch to decomposition
+	[201, rm_edge_k4, 3, space],
+	[202, rm_edge_k33, 3, space], // branch to decomposition
 	[203, rm_edge_petersen_star, 4, space], // 1/2 branch to total coloring (or replace with an earlier one)
 	//[204, rm_edge_dragonfly, 5, space],
 	//[205, rm_edge_cube, 3, space],
@@ -114,8 +114,8 @@ global.dominating_puzzles =
 [
 	[600, rm_dominating_spider3, 3, 8*space],
 	[601, rm_dominating_p5, 2, space],
-	[602, rm_dominating_cube, 2, space], // 1/2 branch to fall coloring
-	[603, rm_dominating_double_hexagon, 3, space],
+	//[602, rm_dominating_cube, 2, space], //XXX 1/2 branch to fall coloring
+	[603, rm_dominating_double_hexagon, 3, space], // 1/2 branch to fall coloring
 	[604, rm_dominating_hypercube, 4, space],
 	//[605, rm_dominating_king_grid_6x6, 4, space],
 	//[606, rm_dominating_andrasfai_4, 3, space],
@@ -139,8 +139,8 @@ global.fall_puzzles =
 	[704, rm_fall_king_3, 4, space],
 	[705, rm_fall_hypercube, 4, space],
 	//[706, rm_fall_k3xhouse, 3, space],
-	[707, rm_fall_clebsch, 4, space],
-	[708, rm_fall_c5_cart_c5, 5, space]
+	[707, rm_fall_c5_cart_c5, 5, space],
+	[708, rm_fall_clebsch, 4, space]
 ];
 global.fall_save = [];
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
@@ -153,7 +153,7 @@ global.equitable_puzzles =
 	[801, rm_equitable_crab, 3, space],
 	[802, rm_equitable_cube_4, 4, space],
 	[803, rm_equitable_snowflake_5_3, 3, space],
-	[804, rm_equitable_flower_6_4, 4, space],
+	//[804, rm_equitable_flower_6_4, 4, space],
 	[805, rm_equitable_5cube_sun, 3, space],
 	//[806, rm_equitable_hypercube_4, 4, space],
 	[807, rm_equitable_dodecahedron, 4, space]//,
@@ -188,7 +188,7 @@ global.puzzle_prereq =
 	[301], // graceful trees
 	[202], // decomposition
 	[106], // dominating set
-	[109, 602], // fall coloring
+	[109, 603], // fall coloring
 	[104] // equitable coloring
 ]
 

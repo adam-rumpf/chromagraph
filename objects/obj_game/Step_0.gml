@@ -35,12 +35,16 @@ if (global.puzzle_solved == true && solved == false)
 	solved = true;
 	
 	// Update internal puzzle progress variables (it returns true if we've unlocked a new branch)
-	unlock = scr_puzzle_save(room, 2);
+	var unlock = scr_puzzle_save(room, 2);
 	
 	// Update next room (if there is one)
 	next = scr_puzzle_next(room);
 	if (next != rm_menu)
 		scr_puzzle_save(next, 1);
+	
+	// Override next room to go to main menu if we've just unlocked something
+	if (unlock == true)
+		next = rm_menu;
 	
 	// Save game
 	scr_save_game();
@@ -51,6 +55,7 @@ if (global.puzzle_solved == true && solved == false)
 		global.game_complete = scr_game_complete();
 		
 		// Go to ending room if we've just completed the game
-		next = rm_ending;
+		if (global.game_complete == true)
+			next = rm_ending;
 	}
 }

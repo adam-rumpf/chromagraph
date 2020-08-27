@@ -1,12 +1,11 @@
 /// @desc Draw a save reminder if the game is new.
 
 // Do nothing if message is invisible
-if (msg <= 0)
+if (msg <= 0 && fading < 0)
 	exit;
 
-// Decrease opacity if fading
-if (fading == true)
-	msg -= 0.01*(60/room_speed);
+// Change opacity according to fade rate
+msg += fading;
 
 // Set text attributes
 draw_set_font(fnt_standard);

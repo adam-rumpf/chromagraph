@@ -4,12 +4,7 @@
 if (global.gains[global.music] != vol)
 {
 	vol = global.gains[global.music];
-	
-	// Transition speed depends on whether we're turning the music off
-	if (vol > 0)
-		audio_sound_gain(music, vol, 4000);
-	else
-		audio_sound_gain(music, 0, 1000);
+	audio_sound_gain(music, vol, 1000);
 }
 
 /*

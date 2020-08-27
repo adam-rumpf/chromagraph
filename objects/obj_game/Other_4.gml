@@ -6,7 +6,6 @@ class = [];
 // Reset solve status
 global.puzzle_solved = false;
 solved = false;
-unlock = false;
 audio_sound_gain(rumble, 0, 500);
 
 // Set global puzzle type
