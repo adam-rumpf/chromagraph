@@ -4,6 +4,8 @@ A game about graph theory and inductive logic.
 
 For downloads, please see this game's [itch.io page](https://adam-rumpf.itch.io/chromagraph).
 
+For mathematical background and design notes, please see the [author's page](https://adam-rumpf.github.io/programs/chromagraph.html).
+
 This is a minimalist puzzle game that explores a variety of [graph coloring](https://en.wikipedia.org/wiki/Graph_coloring) problems. The goal of each puzzle is to color the given graph according to a particular set of rules. The game is meant to be accessible to everyone and does not require any mathematical background.
 
 A [graph](https://en.wikipedia.org/wiki/Graph_theory) (also known as a network) is a mathematical object used to represent pairwise relationships. We encounter graphs constantly in our everyday lives, and they can be used to represent an endless variety of physical and abstract structures ranging from social connections to infrastructure networks to biological pathways to data structures to symmetric systems of sets, just to name a few.
@@ -48,6 +50,7 @@ This game uses the following sounds from [freesound](https://freesound.org/):
 
 ### Playtesters
 
+Alex Ruble  
 Katie Ruble  
 Cullen Tanoue
 

@@ -33,6 +33,7 @@ This game uses the following sounds from freesound:
 
 ~ Playtesters ~
 
+Alex Ruble
 Katie Ruble
 Cullen Tanoue
 
