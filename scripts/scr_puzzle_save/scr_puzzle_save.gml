@@ -19,7 +19,7 @@ if (rm == rm_coloring_triangle_new)
 	global.coloring_save[1] = 1;
 	unlock = true;
 }
-if (rm == rm_save_clear)
+if (rm == rm_save_clear || rm == rm_menu_puzzle)
 	return unlock;
 
 // Search through the global puzzle arrays until finding a match for the given room

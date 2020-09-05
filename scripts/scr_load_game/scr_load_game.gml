@@ -22,6 +22,10 @@ if (exists == true)
 	
 	//### Use version number to account for changes in save structure
 	
+	// Get game completion status
+	if (ds_map_exists(map, "complete") == true)
+		global.game_complete = bool(ds_map_find_value(map, "complete"));
+	
 	// Get level progress
 	for (var i = 0; i < array_length_1d(global.coloring_save); i++)
 	{

@@ -35,8 +35,9 @@ music.yy = vspace;
 // Room-specific buttons
 switch room
 {
-	// Menu screen
+	// Menu screen and menu puzzle
 	case rm_menu:
+	case rm_menu_puzzle:
 		
 		// Set width (should match viewport width)
 		var width = obj_camera.w;

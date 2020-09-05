@@ -1,5 +1,9 @@
 /// @desc Create array of menu buttons.
 
+// If all puzzles are complete but the main menu puzzle is not, go to the menu puzzle after a delay
+if ((global.game_complete == true) && (global.final_complete == false))
+	alarm[2] = 1;
+
 // If new game, display automatic save message
 msg = 0.0; // opacity of save message
 fading = -0.01*(60/room_speed); // fade rate (negative to fade out, positive to fade in)

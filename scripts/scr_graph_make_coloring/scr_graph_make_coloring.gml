@@ -10,6 +10,12 @@ var rm = argument[0];
 var g;
 switch rm
 {
+	// Menu Puzzle
+	case rm_menu_puzzle:
+		//###
+		g = scr_graph_complete(3);//###
+		break;
+	
 	// Triangle
 	case rm_coloring_triangle_new:
 	case rm_coloring_triangle:

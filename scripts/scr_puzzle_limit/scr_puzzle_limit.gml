@@ -7,7 +7,7 @@
 var rm = argument[0];
 
 // Special room puzzle types
-if (rm == rm_save_clear || rm == rm_coloring_triangle_new)
+if (rm == rm_save_clear || rm == rm_coloring_triangle_new || rm == rm_menu_puzzle)
 	return 3;
 
 // Search through the global puzzle arrays until finding a match for the given room

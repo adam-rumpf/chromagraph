@@ -94,8 +94,7 @@ switch room
 	
 	// Menu Puzzle
 	case rm_menu_puzzle:
-		//###
-		break;
+		break; // No reframing
 	
 	// Puzzle Room
 	default:

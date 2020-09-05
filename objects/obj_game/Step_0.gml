@@ -34,6 +34,10 @@ if (global.puzzle_solved == true && solved == false)
 	// Set solve state
 	solved = true;
 	
+	// Break if this is the menu puzzle (its solution is handled in the alarm event)
+	if (room == rm_menu_puzzle)
+		exit;
+	
 	// Update internal puzzle progress variables (it returns true if we've unlocked a new branch)
 	var unlock = scr_puzzle_save(room, 2);
 	

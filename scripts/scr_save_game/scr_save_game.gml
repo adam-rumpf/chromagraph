@@ -4,7 +4,7 @@
 // File name and version
 var save, version;
 save = "save.dat";
-version = 1.0;
+version = 1.1;
 
 // Clear file
 if (file_exists(save))
@@ -13,6 +13,7 @@ if (file_exists(save))
 // Save level progress (which consists of writing the save states within each global puzzle array)
 var map = ds_map_create();
 ds_map_add(map, "version", version); // record version number
+ds_map_add(map, "complete", global.final_complete); // whether the game has been completed
 for (var i = 0; i < array_length_1d(global.coloring_save); i++)
 {
 	var elem = global.coloring_puzzles[i];

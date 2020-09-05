@@ -51,5 +51,6 @@ scr_load_settings(); // load saved settings
 scr_save_settings(); // create a settings file
 
 // Game progress
+global.final_complete = false; // whether the final menu puzzle has been completed (thus unlocking the true ending)
 global.new_game = !scr_load_game(); // load saved game and determine whether it's a new game
-global.game_complete = scr_game_complete(); // whether the game has been completed
+global.game_complete = scr_game_complete(); // whether the main puzzle sequence has been completed
