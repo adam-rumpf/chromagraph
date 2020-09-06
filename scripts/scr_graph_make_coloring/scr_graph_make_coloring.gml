@@ -12,8 +12,7 @@ switch rm
 {
 	// Menu Puzzle
 	case rm_menu_puzzle:
-		//###
-		g = scr_graph_complete(3);//###
+		g = scr_menu_graph();
 		break;
 	
 	// Triangle

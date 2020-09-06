@@ -1,8 +1,9 @@
 /// @desc Define vertex-level attributes.
 
-// Resize sprite
-image_xscale = 2;
-image_yscale = 2;
+// Set image attributes
+image_speed = 0;
+image_xscale = 0.5;
+image_yscale = 0.5;
 
 // Index within graph's vertex list
 index = -1;
@@ -21,16 +22,10 @@ activated = false;
 // Whether the vertex should visually indicate a problem
 angry = false;
 
-// Whether to highlight the vertex (for dominating set puzzles only)
-tinted = false;
-
 // Vertex coloring object
-vc = instance_create_layer(x, y, "Vertex_Effects", obj_vertex_color);
+/*vc = instance_create_layer(x, y, "Vertex_Effects", obj_vertex_color);
 vc.v = id;
 
 // Vertex highlighting object
 vh = instance_create_layer(x, y, "Overlays", obj_vertex_selection);
-vh.v = id;
-
-// Initial color
-image_blend = c_black;
+vh.v = id;*/

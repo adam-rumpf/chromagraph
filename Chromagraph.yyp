@@ -1047,6 +1047,14 @@
             }
         },
         {
+            "Key": "5068a87b-0467-4897-8990-47151ce3e98b",
+            "Value": {
+                "id": "9b1d2026-dcae-434f-868a-35793ebdbd0a",
+                "resourcePath": "scripts\\scr_menu_graph\\scr_menu_graph.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "50ac1f5f-280f-4078-b9ed-fade36dd2166",
             "Value": {
                 "id": "f03219c0-0918-449e-89a0-9e2b1f7a5e51",
@@ -2007,6 +2015,14 @@
             }
         },
         {
+            "Key": "a6521a5e-d8e4-4325-ba30-3f3ae8e98ef0",
+            "Value": {
+                "id": "ce42657c-6e1a-4514-9abc-cf120e1490e3",
+                "resourcePath": "views\\a6521a5e-d8e4-4325-ba30-3f3ae8e98ef0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a6836ad2-a4da-4a9d-8936-241084abbd47",
             "Value": {
                 "id": "d8c2c7eb-5326-4638-82c0-92c98a8f1242",
@@ -2148,6 +2164,14 @@
                 "id": "8cd17af6-c5ef-4e58-bc2f-b91ffb3f5f05",
                 "resourcePath": "views\\6445cadd-49e6-4d1e-b2be-1ee809ee5ab6-room.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b19dbaa0-0a89-4a4d-9341-ad6b2189165c",
+            "Value": {
+                "id": "c1c5b418-ced1-483a-8c7a-ef153aec5f25",
+                "resourcePath": "sprites\\spr_stone_blank\\spr_stone_blank.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2388,6 +2412,14 @@
                 "id": "978ebbad-de3c-44df-b9dc-80364963d585",
                 "resourcePath": "rooms\\rm_fall_c5_cart_c5\\rm_fall_c5_cart_c5.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "bd8d8194-6491-411b-931f-66541de40590",
+            "Value": {
+                "id": "cda02f73-a0f9-4ce4-ac3a-f28a5e0c5201",
+                "resourcePath": "objects\\obj_vertex_menu\\obj_vertex_menu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3318,6 +3350,7 @@
         "02467764-b4ff-48fc-8786-45503b83e308",
         "f8831464-4932-4b6a-a1fb-0acedc59e569",
         "e53337d8-fb33-40e4-8959-f04e2d7b9edd",
+        "5068a87b-0467-4897-8990-47151ce3e98b",
         "7a843869-489c-42e2-bcc7-dc167afd70ec",
         "c413b92a-8fb0-4d93-8f8d-3b3638381d9f",
         "1c1dbae9-6b22-4c2b-9e9c-48a72abc8800",
