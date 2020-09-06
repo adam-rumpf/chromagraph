@@ -22,6 +22,10 @@ activated = false;
 // Whether the vertex should visually indicate a problem
 angry = false;
 
+// Define standard colors
+col_gray = make_color_rgb(127, 127, 127);
+col_light = c_white;
+
 // Vertex coloring object
 /*vc = instance_create_layer(x, y, "Vertex_Effects", obj_vertex_color);
 vc.v = id;

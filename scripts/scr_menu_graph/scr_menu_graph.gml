@@ -313,7 +313,22 @@ for (var i = 0; i < array_height_2d(vp); i++)
 	}
 }
 
-//### Define additional edges
+// Define adjacencies for all additional puzzle links
+for (var i = 0; i < array_length_1d(global.puzzle_link); i++)
+{
+	// Get pair of linkes puzzles
+	var elem, head, tail;
+	elem = global.puzzle_link[i];
+	tail = scr_puzzle_index(elem[0]);
+	head = scr_puzzle_index(elem[1]);
+	
+	// If both were found, create the adjacency
+	if ((tail >= 0) && (head >= 0))
+	{
+		adj[m] = [tail, head];
+		m++;
+	}
+}
 
 // Generate edges
 for (var i = 0; i < array_length_1d(adj); i++)

@@ -1,9 +1,14 @@
 /// @desc Draw edge.
 
-// Special color for save deletion room
+// Special colors for technical rooms
 if (room == rm_save_clear)
 {
 	scr_draw_edge(id, make_color_hsv(0, 0, 15));
+	exit;
+}
+if (room == rm_menu_puzzle)
+{
+	scr_draw_edge(id, make_color_hsv(0, 0, 5));
 	exit;
 }
 

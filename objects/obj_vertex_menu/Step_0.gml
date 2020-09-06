@@ -1,4 +1,22 @@
-/// @desc Alter self if activated.
+/// @desc Alter self if selected or activated.
+
+// Tinting multiplier
+var multi;
+if (selected == true)
+	multi = 1.2;
+else
+	multi = 0.5;
+
+// Set color (overwrite black color for blank labels)
+if (label < 0)
+{
+	if (multi > 1)
+		image_blend = col_light;
+	else
+		image_blend = col_gray;
+}
+else
+	image_blend = scr_pallette(label, multi);
 
 // Quit if not activated
 if (activated == false)
@@ -11,12 +29,6 @@ if (label >= global.puzzle_limit)
 		
 // Play a sound
 scr_play_sound_pitch(snd_breath, 50, label);
-		
-// Set color (overwrite black color for blank labels)
-if (label < 0)
-	image_blend = c_white;
-else
-	image_blend = scr_pallette(label, 0.5);
 		
 // Prompt a global solution test
 global.puzzle_solved = scr_properly_colored(obj_game.g);

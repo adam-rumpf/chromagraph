@@ -40,6 +40,14 @@ switch obj.object_index
 		
 		break;
 	
+	// Menu puzzle buttons
+	case obj_vertex_menu:
+		
+		// Scaled-down distance to account for large objects
+		dist = 0.7*scr_vector_distance([mouse_x, mouse_y], [obj.x, obj.y]);
+		
+		break;
+	
 	// Default (mostly used for vertices)
 	default:
 		

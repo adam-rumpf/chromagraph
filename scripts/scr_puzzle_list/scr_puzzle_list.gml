@@ -173,7 +173,7 @@ global.puzzle_prereq =
 	[106], // dominating set
 	[109, 603], // fall coloring
 	[104] // equitable coloring
-]
+];
 
 // Checklist indicating which prerequisites have been met
 global.puzzle_prereq_checklist = [];
@@ -182,3 +182,32 @@ for (var i = 0; i < array_length_1d(global.puzzle_prereq); i++)
 	for (var j = 0; j < array_length_1d(global.puzzle_prereq[i]); j++)
 		global.puzzle_prereq_checklist[i,j] = false;
 }
+
+/*
+The following is a list of additional pairs of linked menu nodes for use in defining the menu puzzle.
+The connection is hidden until both endpoints are solved.
+*/
+global.puzzle_link =
+[
+	[401, 306],
+	[501, 206],
+	[701, 603],
+	[603, 805],
+	[803, 603],
+	[600, 109],
+	[201, 300],
+	[109, 400],
+	[306, 403],
+	[604, 703],
+	[210, 506],
+	[306, 209],
+	[403, 704],
+	[600, 802],
+	[404, 707],
+	[707, 609],
+	[707, 610],
+	[300, 109],
+	[307, 405],
+	[400, 302],
+	[704, 608]
+];

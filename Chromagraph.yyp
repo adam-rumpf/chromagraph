@@ -1039,6 +1039,14 @@
             }
         },
         {
+            "Key": "4f93a96e-22e2-4959-8799-07efda9f82a1",
+            "Value": {
+                "id": "440928d3-cc3c-49b6-b273-7bcbf8ed799b",
+                "resourcePath": "scripts\\scr_puzzle_index\\scr_puzzle_index.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5053a87e-5683-432d-a128-eec83022bdac",
             "Value": {
                 "id": "3e862305-4a56-4bd7-b7d2-2f1c696962e6",
@@ -3375,6 +3383,7 @@
         "04ec566c-403c-45a3-89bf-fdfbc207903e",
         "c54b0637-812b-4a1c-a446-6a36a25bb256",
         "392eb36d-a821-4cd7-a534-a67d2d57e63b",
+        "4f93a96e-22e2-4959-8799-07efda9f82a1",
         "7c1ed484-cc08-4581-b2de-5b3daad65102",
         "d4a88d25-ee5c-4a36-97bb-3a47c6c555c5",
         "a5c8cca6-dd5d-4f22-89f5-8eb645db42ff",
