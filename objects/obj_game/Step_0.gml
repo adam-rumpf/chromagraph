@@ -58,8 +58,8 @@ if (global.puzzle_solved == true && solved == false)
 	{
 		global.game_complete = scr_game_complete();
 		
-		// Go to ending room if we've just completed the game
+		// Go to menu puzzle if we've just completed the game
 		if (global.game_complete == true)
-			next = rm_ending;
+			next = rm_menu_puzzle;
 	}
 }

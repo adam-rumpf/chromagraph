@@ -10,9 +10,10 @@ if (room == rm_save_clear)
 // Alternate procedure for main menu puzzle
 if (room == rm_menu_puzzle)
 {
-	//###
 	global.final_complete = true; // game is entirely complete
 	scr_save_game(); // save progress
+	obj_screen_flash.fading = false;
+	room_goto(rm_ending); // go to ending room
 	exit;
 }
 
