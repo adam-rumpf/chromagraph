@@ -19,6 +19,23 @@ else
 // Check whether puzzle has just been solved for the first time
 if (global.puzzle_solved == true && solved == false)
 {
+	// Set solve state
+	solved = true;
+	
+	// Special behavior for menu puzzle
+	if (room == rm_menu_puzzle)
+	{
+		// Begin fading screen
+		obj_screen_fade.fading = true;
+		alarm[1] = 1.5*room_speed*obj_screen_fade.fade_time;
+		
+		// Set save attributes
+		global.final_complete = true;
+		scr_save_game();
+		
+		exit;
+	}
+	
 	// Play a sound effect on save delete
 	if (room == rm_save_clear)
 	{
@@ -30,13 +47,6 @@ if (global.puzzle_solved == true && solved == false)
 	// Begin screen flash and set timer to create button
 	obj_screen_flash.fading = true;
 	alarm[0] = room_speed*obj_screen_flash.fade_time;
-	
-	// Set solve state
-	solved = true;
-	
-	// Break if this is the menu puzzle (its solution is handled in the alarm event)
-	if (room == rm_menu_puzzle)
-		exit;
 	
 	// Update internal puzzle progress variables (it returns true if we've unlocked a new branch)
 	var unlock = scr_puzzle_save(room, 2);

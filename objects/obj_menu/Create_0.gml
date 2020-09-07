@@ -13,10 +13,6 @@ if (global.new_game == true)
 	global.new_game = false;
 }
 
-// Vortex object
-//###var vortex;
-//### Use the global.game_complete variable.
-
 // Menu button graph objects
 var g, v, e, vp;
 v = [];
@@ -32,6 +28,9 @@ m = 0;
 
 // Menu button coordinates
 var xx, yy;
+
+// Space between final button and vortex icon
+var vx = 80;
 
 // Menu button vertical order
 var vert =
@@ -56,7 +55,7 @@ yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 {
 	// Define puzzle button
-	var elem, xx, yy, obj;
+	var elem, obj;
 	elem = global.coloring_puzzles[i];
 	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_coloring);
@@ -81,18 +80,19 @@ for (var i = 0; i < array_length_1d(global.coloring_puzzles); i++)
 	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
 	if (row >= 0)
 		vp[row,array_length_2d(vp,row)] = n-1;
+	
+	// Special procedures for last button in line
+	if (i < array_length_1d(global.coloring_puzzles)-1)
+		continue;
+	
+	// If game is complete, draw a vortex button
+	if (global.final_complete == true)
+	{
+		obj = instance_create_layer(xx + vx, yy, "Buttons", obj_menu_button_vortex);
+		obj.type = type;
+		obj.puzzle = global.random_puzzles[type-1];
+	}
 }
-
-//###
-/*
-// Coloring Random
-if (global.coloring_save[array_length_1d(global.coloring_save)-1] == 2)
-{
-	vortex = instance_create_layer(room_height/9 + 80*array_length_1d(global.coloring_puzzles), room_height/9, "Buttons", obj_menu_button_vortex);
-	vortex.type = 1;
-	vortex.puzzle = rm_coloring_random;
-}
-*/
 
 // Edge Coloring Puzzles
 type = 2;
@@ -101,7 +101,7 @@ yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
 {
 	// Define puzzle button
-	var elem, xx, yy, obj;
+	var elem, obj;
 	elem = global.edge_puzzles[i];
 	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_edge);
@@ -126,18 +126,19 @@ for (var i = 0; i < array_length_1d(global.edge_puzzles); i++)
 	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
 	if (row >= 0)
 		vp[row,array_length_2d(vp,row)] = n-1;
+	
+	// Special procedures for last button in line
+	if (i < array_length_1d(global.edge_puzzles)-1)
+		continue;
+	
+	// If game is complete, draw a vortex button
+	if (global.final_complete == true)
+	{
+		obj = instance_create_layer(xx + vx, yy, "Buttons", obj_menu_button_vortex);
+		obj.type = type;
+		obj.puzzle = global.random_puzzles[type-1];
+	}
 }
-
-//###
-/*
-// Edge Random
-if (global.edge_save[array_length_1d(global.edge_save)-1] == 2)
-{
-	vortex = instance_create_layer(room_height/9 + 80*array_length_1d(global.edge_puzzles), 2*room_height/9, "Buttons", obj_menu_button_vortex);
-	vortex.type = 2;
-	vortex.puzzle = rm_edge_random;
-}
-*/
 
 // Total Coloring Puzzles
 type = 3;
@@ -146,7 +147,7 @@ yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
 {
 	// Define puzzle button
-	var elem, xx, yy, obj;
+	var elem, obj;
 	elem = global.total_puzzles[i];
 	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_total);
@@ -171,18 +172,19 @@ for (var i = 0; i < array_length_1d(global.total_puzzles); i++)
 	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
 	if (row >= 0)
 		vp[row,array_length_2d(vp,row)] = n-1;
+	
+	// Special procedures for last button in line
+	if (i < array_length_1d(global.total_puzzles)-1)
+		continue;
+	
+	// If game is complete, draw a vortex button
+	if (global.final_complete == true)
+	{
+		obj = instance_create_layer(xx + vx, yy, "Buttons", obj_menu_button_vortex);
+		obj.type = type;
+		obj.puzzle = global.random_puzzles[type-1];
+	}
 }
-
-//###
-/*
-// Total Random
-if (global.total_save[array_length_1d(global.total_save)-1] == 2)
-{
-	vortex = instance_create_layer(room_height/9 + 80*array_length_1d(global.total_puzzles), 3*room_height/9, "Buttons", obj_menu_button_vortex);
-	vortex.type = 3;
-	vortex.puzzle = rm_total_random;
-}
-*/
 
 // Graceful Tree Puzzles
 type = 4;
@@ -191,7 +193,7 @@ yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
 {
 	// Define puzzle button
-	var elem, xx, yy, obj;
+	var elem, obj;
 	elem = global.graceful_puzzles[i];
 	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_graceful);
@@ -216,18 +218,19 @@ for (var i = 0; i < array_length_1d(global.graceful_puzzles); i++)
 	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
 	if (row >= 0)
 		vp[row,array_length_2d(vp,row)] = n-1;
+	
+	// Special procedures for last button in line
+	if (i < array_length_1d(global.graceful_puzzles)-1)
+		continue;
+	
+	// If game is complete, draw a vortex button
+	if (global.final_complete == true)
+	{
+		obj = instance_create_layer(xx + vx, yy, "Buttons", obj_menu_button_vortex);
+		obj.type = type;
+		obj.puzzle = global.random_puzzles[type-1];
+	}
 }
-
-//###
-/*
-// Graceful Tree Random
-if (global.graceful_save[array_length_1d(global.graceful_save)-1] == 2)
-{
-	vortex = instance_create_layer(room_height/9 + 80*array_length_1d(global.graceful_puzzles), 4*room_height/9, "Buttons", obj_menu_button_vortex);
-	vortex.type = 4;
-	vortex.puzzle = rm_graceful_random;
-}
-*/
 
 // Decomposition Puzzles
 type = 5;
@@ -236,7 +239,7 @@ yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
 {
 	// Define puzzle button
-	var elem, xx, yy, obj;
+	var elem, obj;
 	elem = global.decomp_puzzles[i];
 	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_decomp);
@@ -261,18 +264,19 @@ for (var i = 0; i < array_length_1d(global.decomp_puzzles); i++)
 	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
 	if (row >= 0)
 		vp[row,array_length_2d(vp,row)] = n-1;
+	
+	// Special procedures for last button in line
+	if (i < array_length_1d(global.decomp_puzzles)-1)
+		continue;
+	
+	// If game is complete, draw a vortex button
+	if (global.final_complete == true)
+	{
+		obj = instance_create_layer(xx + vx, yy, "Buttons", obj_menu_button_vortex);
+		obj.type = type;
+		obj.puzzle = global.random_puzzles[type-1];
+	}
 }
-
-//###
-/*
-// Decomposition Random
-if (global.decomp_save[array_length_1d(global.decomp_save)-1] == 2)
-{
-	vortex = instance_create_layer(room_height/9 + 80*array_length_1d(global.decomp_puzzles), 5*room_height/9, "Buttons", obj_menu_button_vortex);
-	vortex.type = 5;
-	vortex.puzzle = rm_decomp_random;
-}
-*/
 
 // Dominating Set Puzzles
 type = 6;
@@ -281,7 +285,7 @@ yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 {
 	// Define puzzle button
-	var elem, xx, yy, obj;
+	var elem, obj;
 	elem = global.dominating_puzzles[i];
 	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_dominating);
@@ -306,18 +310,19 @@ for (var i = 0; i < array_length_1d(global.dominating_puzzles); i++)
 	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
 	if (row >= 0)
 		vp[row,array_length_2d(vp,row)] = n-1;
+	
+	// Special procedures for last button in line
+	if (i < array_length_1d(global.dominating_puzzles)-1)
+		continue;
+	
+	// If game is complete, draw a vortex button
+	if (global.final_complete == true)
+	{
+		obj = instance_create_layer(xx + vx, yy, "Buttons", obj_menu_button_vortex);
+		obj.type = type;
+		obj.puzzle = global.random_puzzles[type-1];
+	}
 }
-
-//###
-/*
-// Dominating Set Random
-if (global.dominating_save[array_length_1d(global.dominating_save)-1] == 2)
-{
-	vortex = instance_create_layer(room_height/9 + 80*array_length_1d(global.dominating_puzzles), 6*room_height/9, "Buttons", obj_menu_button_vortex);
-	vortex.type = 6;
-	vortex.puzzle = rm_dominating_random;
-}
-*/
 
 // Fall Coloring Puzzles
 type = 7;
@@ -326,7 +331,7 @@ yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
 {
 	// Define puzzle button
-	var elem, xx, yy, obj;
+	var elem, obj;
 	elem = global.fall_puzzles[i];
 	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_fall);
@@ -351,18 +356,19 @@ for (var i = 0; i < array_length_1d(global.fall_puzzles); i++)
 	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
 	if (row >= 0)
 		vp[row,array_length_2d(vp,row)] = n-1;
+	
+	// Special procedures for last button in line
+	if (i < array_length_1d(global.fall_puzzles)-1)
+		continue;
+	
+	// If game is complete, draw a vortex button
+	if (global.final_complete == true)
+	{
+		obj = instance_create_layer(xx + vx, yy, "Buttons", obj_menu_button_vortex);
+		obj.type = type;
+		obj.puzzle = global.random_puzzles[type-1];
+	}
 }
-
-//###
-/*
-// Fall Coloring Random
-if (global.fall_save[array_length_1d(global.fall_save)-1] == 2)
-{
-	vortex = instance_create_layer(room_height/9 + 80*array_length_1d(global.fall_puzzles), 7*room_height/9, "Buttons", obj_menu_button_vortex);
-	vortex.type = 7;
-	vortex.puzzle = rm_fall_random;
-}
-*/
 
 // Equitable Coloring Puzzles
 type = 8;
@@ -371,7 +377,7 @@ yy = vert[type-1];
 for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
 {
 	// Define puzzle button
-	var elem, xx, yy, obj;
+	var elem, obj;
 	elem = global.equitable_puzzles[i];
 	xx += elem[3];
 	obj = instance_create_layer(xx, yy, "Buttons", obj_menu_button_equitable);
@@ -396,18 +402,19 @@ for (var i = 0; i < array_length_1d(global.equitable_puzzles); i++)
 	var row = scr_find_array_row_1d(global.puzzle_prereq, elem[0]);
 	if (row >= 0)
 		vp[row,array_length_2d(vp,row)] = n-1;
+	
+	// Special procedures for last button in line
+	if (i < array_length_1d(global.equitable_puzzles)-1)
+		continue;
+	
+	// If game is complete, draw a vortex button
+	if (global.final_complete == true)
+	{
+		obj = instance_create_layer(xx + vx, yy, "Buttons", obj_menu_button_vortex);
+		obj.type = type;
+		obj.puzzle = global.random_puzzles[type-1];
+	}
 }
-
-//###
-/*
-// Equitable Coloring Random
-if (global.equitable_save[array_length_1d(global.equitable_save)-1] == 2)
-{
-	vortex = instance_create_layer(room_height/9 + 80*array_length_1d(global.equitable_puzzles), 8*room_height/9, "Buttons", obj_menu_button_vortex);
-	vortex.type = 8;
-	vortex.puzzle = rm_equitable_random;
-}
-*/
 
 // Define prerequisite menu edges
 for (var i = 0; i < array_height_2d(vp); i++)
@@ -417,6 +424,30 @@ for (var i = 0; i < array_height_2d(vp); i++)
 		e[m] = scr_create_edge(v[vp[i,0]], v[vp[i,j]]);
 		m++;
 	}
+}
+
+// Define additional links, only when both endpoints are solved
+for (var i = 0; i < array_length_1d(global.puzzle_link); i++)
+{
+	// Get pair of linked puzzles
+	var elem, head, tail;
+	elem = global.puzzle_link[i];
+	tail = elem[0];
+	head = elem[1];
+	
+	// Skip if one wasn't found
+	if ((tail < 0) || (head < 0))
+		continue;
+	
+	// If either puzzle is unsolved, skip
+	if ((scr_puzzle_status(tail) < 2) || (scr_puzzle_status(head) < 2))
+		continue;
+	
+	// Define an edge
+	tail = v[scr_puzzle_index(tail)];
+	head = v[scr_puzzle_index(head)];
+	e[m] = scr_create_edge(tail, head);
+	m++;
 }
 
 // Define menu graph

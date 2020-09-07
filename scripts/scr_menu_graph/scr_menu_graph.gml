@@ -316,7 +316,7 @@ for (var i = 0; i < array_height_2d(vp); i++)
 // Define adjacencies for all additional puzzle links
 for (var i = 0; i < array_length_1d(global.puzzle_link); i++)
 {
-	// Get pair of linkes puzzles
+	// Get pair of linked puzzles
 	var elem, head, tail;
 	elem = global.puzzle_link[i];
 	tail = scr_puzzle_index(elem[0]);

@@ -26,6 +26,7 @@ creativecommons.org/licenses/by/4.0
 ~ Sound ~
 
 This game uses the following sounds from freesound:
+"Bass_Drum_Hit_single" by jcdecha (https://freesound.org/people/jcdecha/)
 "Chime2" by Neotone (freesound.org/people/Neotone)
 "stone_on_stone" by thanvannispen (freesound.org/people/thanvannispen)
 "train screech" by cognito perceptu (freesound.org/people/cognito%20perceptu)

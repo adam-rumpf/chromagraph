@@ -43,6 +43,7 @@ License: http://creativecommons.org/licenses/by/4.0/
 ### Sound
 
 This game uses the following sounds from [freesound](https://freesound.org/):  
+[Bass_Drum_Hit_single](https://freesound.org/people/jcdecha/sounds/235453/) by jcdecha (https://freesound.org/people/jcdecha/)
 [Chime2](https://freesound.org/people/Neotone/sounds/75337/) by Neotone (https://freesound.org/people/Neotone/)  
 [stone_on_stone](https://freesound.org/people/thanvannispen/sounds/29986/) by thanvannispen (https://freesound.org/people/thanvannispen/)  
 [train screech](https://freesound.org/people/cognito%20perceptu/sounds/181868/) by cognito perceptu (https://freesound.org/people/cognito%20perceptu/)  
