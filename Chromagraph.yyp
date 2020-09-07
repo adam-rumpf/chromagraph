@@ -1287,6 +1287,14 @@
             }
         },
         {
+            "Key": "62565731-42d4-4f90-b402-b8d7c6a2e5e6",
+            "Value": {
+                "id": "b94d031a-27d2-4ea3-8c3a-85404c27d0c8",
+                "resourcePath": "objects\\obj_vertex_color_menu\\obj_vertex_color_menu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "62813a67-853f-497b-97c3-4751e1cb62aa",
             "Value": {
                 "id": "b8787592-d0f7-406d-a207-d5e5e522b5f5",
@@ -2052,6 +2060,14 @@
                 "id": "242cd7bb-9109-4984-a69d-3bec60a3d564",
                 "resourcePath": "scripts\\scr_graph_k33_box\\scr_graph_k33_box.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a8ec998a-37b2-4e32-8023-1065950677f0",
+            "Value": {
+                "id": "7033c64d-3104-4b4e-81d9-d6cd94c31f97",
+                "resourcePath": "views\\a8ec998a-37b2-4e32-8023-1065950677f0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2900,6 +2916,14 @@
                 "id": "4debd329-b8f4-4db8-9002-761b6c101ebd",
                 "resourcePath": "rooms\\rm_coloring_petersen_star\\rm_coloring_petersen_star.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "e8395259-68d1-4500-bf4a-fb0197407aab",
+            "Value": {
+                "id": "a1aab667-7cdd-46b1-bc12-2e10e4cac54a",
+                "resourcePath": "sprites\\spr_oval_flare\\spr_oval_flare.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -25,3 +25,6 @@ angry = false;
 // Define standard colors
 col_gray = make_color_rgb(127, 127, 127);
 col_light = c_white;
+
+// Create coloring object after a delay
+alarm[0] = 1;
