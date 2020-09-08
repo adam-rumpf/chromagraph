@@ -93,15 +93,12 @@ switch rm
 		// Randomly choose a color limit
 		global.puzzle_limit = irandom_range(3, 5);
 		
-		// Create random graph
+		// Randomly choose parameters
 		var n = irandom_range(5+global.puzzle_limit, 10+global.puzzle_limit);
 		var m = irandom_range(n, floor(2.5*n));
+		
+		// Generate a random puzzle (may end up deviating from parameters after too many failed attempts)
 		g = scr_random_coloring_puzzle(n, m, global.puzzle_limit, 2, true);
-		
-		// Embed graph
-		scr_spring_embedding(g, 100, true, true, true, 100);
-		
-		break;
 }
 
 // Get numbers of vertices and selectable objects

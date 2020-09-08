@@ -56,6 +56,7 @@ switch rm
 		break;
 	
 	// Random
+	//###
 	default:
 		
 		// Create random graph

@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "1ef2a971-5af1-4cef-81d4-2bcda434d89f",
+            "Value": {
+                "id": "3a0fd7d8-b73c-4c51-8fbe-db3089524f17",
+                "resourcePath": "views\\1ef2a971-5af1-4cef-81d4-2bcda434d89f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1f0a6e4d-8536-4b44-8887-30cbb9c3f1f2",
             "Value": {
                 "id": "c4ad3860-bf45-4234-a93b-466acc881171",
@@ -852,6 +860,14 @@
                 "id": "0a5be628-4b2b-438c-94e3-71f109e4dc3d",
                 "resourcePath": "rooms\\rm_coloring_dodecahedron\\rm_coloring_dodecahedron.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "3d2b25e7-9331-407a-90a8-f04d5545b674",
+            "Value": {
+                "id": "bb4db39a-0baf-4e40-b7a4-b72bc5ae22b7",
+                "resourcePath": "views\\3d2b25e7-9331-407a-90a8-f04d5545b674.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1636,6 +1652,14 @@
                 "id": "b1c3ca02-f20c-436d-b710-23d1bc5d004c",
                 "resourcePath": "sprites\\spr_background_stone_01\\spr_background_stone_01.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "829fcd20-7407-4ad6-85de-88eea27ed4d2",
+            "Value": {
+                "id": "5fbb3b4e-89a8-47d5-9012-3b9cde2a463a",
+                "resourcePath": "scripts\\scr_random_coloring_puzzle\\scr_random_coloring_puzzle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2810,7 +2834,7 @@
             "Key": "db1ff5fc-e441-4f8e-aef1-b6f00b7844de",
             "Value": {
                 "id": "0a51c2aa-365a-4d7d-adc3-5394a008e2ba",
-                "resourcePath": "scripts\\scr_random_coloring_puzzle\\scr_random_coloring_puzzle.yy",
+                "resourcePath": "scripts\\scr_random_coloring_puzzle_driver\\scr_random_coloring_puzzle_driver.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3312,6 +3336,7 @@
         "33cc438d-55d0-4e07-938d-febd46ee45d1",
         "e325f5de-d903-4619-b98e-a0c3d9021692",
         "3fe94e85-8019-4614-b0e3-32496f19bb27",
+        "829fcd20-7407-4ad6-85de-88eea27ed4d2",
         "db1ff5fc-e441-4f8e-aef1-b6f00b7844de",
         "6eaaa4fc-c6b0-4897-86ab-9efc99114876",
         "c7c4dde3-2677-44cd-aff9-d1c60a6c0601",

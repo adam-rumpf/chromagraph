@@ -1,5 +1,5 @@
 /// @func scr_random_coloring_puzzle(n, m, c, eps, deg2)
-/// @desc Generates a graph for a random coloring puzzle.
+/// @desc Generates a graph for a random coloring puzzle (with no regard for embedding).
 /// @param {int} n Number of vertices.
 /// @param {int} m Number of edges.
 /// @param {int} c Number of color classes.
