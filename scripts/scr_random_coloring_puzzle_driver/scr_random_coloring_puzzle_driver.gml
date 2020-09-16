@@ -22,7 +22,7 @@ var g;
 var emax, gmax, smax;
 emax = 10; // number of times to try embedding a given graph with a random restart before generating a different graph
 gmax = 10; // number of times to try generating a graph before defaulting to a preset graph
-smax = 5; // number of times to try solving the puzzle with a greedy coloring
+smax = 10; // number of times to try solving the puzzle with a greedy coloring
 
 
 
@@ -84,10 +84,18 @@ while ((valid == false) && (gi < gmax))
 	repeat (smax)
 	{
 		// Attempt to greedily color the graph
-		//### (script)
+		var gc = scr_greedy_coloring(g);
 		
-		//### If it's 2-colorable, set valid = false and break
-		//### In any case set the puzzle limit to the min of its current value and the algorithm's solution
+		// If it's 2-colorable, break and generate a new graph
+		if (gc <= 2)
+		{
+			valid = false;
+			break;
+		}
+		
+		// Otherwise reduce the puzzle limit if needed
+		if (gc < global.puzzle_limit)
+			global.puzzle_limit = gc;
 	}
 	
 	//###

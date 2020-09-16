@@ -64,8 +64,6 @@ while (scr_count_nonnegative_1d(vu) > 0)
 	eo[m] = scr_create_edge(u, v);
 	m++;
 	
-	//show_message("Vu = " + string(vu) + "\nVp = " + string(vp) + "\nCh = " + string(set) + "\ne = ("+string(ii)+","+string(jj)+")");
-	
 	// Mark vertex as processed
 	vu[ii] = -1;
 	vp[ii] = ii;
