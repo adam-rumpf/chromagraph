@@ -70,15 +70,18 @@ while ((valid == false) && (gi < gmax))
 	// Graph embedding loop
 	while ((valid == false) && (ei < emax))
 	{
+		ei++;
+		
 		// Embed graph from a random restart
 		scr_spring_embedding(g, 100, true, true, true, 80);
 		
 		// Test whether embedding is valid
-		//### (script? controls value of "valid")
-		
-		//###
-		break;
+		valid = scr_valid_embedding(g, 80, 80);//###
 	}
+	
+	// If the embedding is still not valid, restart
+	if (valid == false)
+		continue;
 	
 	// Greedy coloring loop
 	repeat (smax)
