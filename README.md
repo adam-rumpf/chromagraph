@@ -4,7 +4,7 @@ A game about graph theory and inductive logic.
 
 For downloads, please see this game's [itch.io page](https://adam-rumpf.itch.io/chromagraph).
 
-For mathematical background and design notes, please see the [author's page](https://adam-rumpf.github.io/programs/chromagraph.html).
+For mathematical background and design notes, please see the [author's page](https://adam-rumpf.github.io/games/chromagraph.html).
 
 This is a minimalist puzzle game that explores a variety of [graph coloring](https://en.wikipedia.org/wiki/Graph_coloring) problems. The goal of each puzzle is to color the given graph according to a particular set of rules. The game is meant to be accessible to everyone and does not require any mathematical background.
 
