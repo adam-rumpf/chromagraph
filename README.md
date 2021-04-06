@@ -1,5 +1,7 @@
 # Chromagraph
 
+<a href="https://adam-rumpf.itch.io/chromagraph"><img src="https://img.shields.io/badge/download-itch.io-fa5c5c?style=plastic&logo=itch.io&logoColor=white" alt="itch.io page"/></a> <a href="https://github.com/adam-rumpf/chromagraph/search?l=game-maker-language"><img src="https://img.shields.io/badge/language-gml-blue?style=plastic"/></a> <a href="https://github.com/adam-rumpf/chromagraph/releases"><img src="https://img.shields.io/github/v/release/adam-rumpf/chromagraph?style=plastic"/></a> <a href="https://github.com/adam-rumpf/chromagraph/blob/master/LICENSE"><img src="https://img.shields.io/github/license/adam-rumpf/chromagraph?style=plastic"/></a> <a href="https://github.com/adam-rumpf/chromagraph/commits/master"><img src="https://img.shields.io/maintenance/no/2020?style=plastic"/></a>
+
 A game about graph theory and inductive logic.
 
 For downloads, please see this game's [itch.io page](https://adam-rumpf.itch.io/chromagraph).
